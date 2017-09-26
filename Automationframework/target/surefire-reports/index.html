@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Regression_Test">
+              <span class="suite-name border-passed">Regression Test</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Regression_Test">
+                    <span>C:\Anshul\Automationframework\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Regression_Test">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Regression_Test">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Regression_Test">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Regression_Test">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Regression_Test">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Regression_Test">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Regression_Test" class="hide-methods passed suite-Regression_Test"> (hide)</a> <!-- hide-methods passed suite-Regression_Test -->
+                      <a href="#" panel-name="suite-Regression_Test" class="show-methods passed suite-Regression_Test"> (show)</a> <!-- show-methods passed suite-Regression_Test -->
+                    </span>
+                    <div class="method-list-content passed suite-Regression_Test">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Test" title="com.loany.test.Signup.SeekerSignUp" hash-for-method="AboutMeScreen(About Me, NEXT)">AboutMeScreen(About Me, NEXT)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Test" title="com.loany.test.Signup.SeekerSignUp" hash-for-method="EMIScreen(Existing EMIs, *Please enter your existing loan EMIs, Amount, PREVIOUS, DONE)">EMIScreen(Existing EMIs, *Please enter your existing loan EMIs, Amount, PREVIOUS, DONE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Test" title="com.loany.test.Signup.SeekerSignUp" hash-for-method="LoanAmount(I Need Loan Amount, How much money do you need?, Amount, PREVIOUS, NEXT)">LoanAmount(I Need Loan Amount, How much money do you need?, Amount, PREVIOUS, NEXT)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Test" title="com.loany.test.Signup.SeekerSignUp" hash-for-method="LoanType(Loan Type cannot be changed in future)">LoanType(Loan Type cannot be changed in future)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Test" title="com.loany.test.Signup.SeekerSignUp" hash-for-method="LocationScreen(Where do you need agents for loan?, PREVIOUS, NEXT)">LocationScreen(Where do you need agents for loan?, PREVIOUS, NEXT)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Test" title="com.loany.test.Signup.SeekerSignUp" hash-for-method="MonthlySalarySrc(My Monthly Income, *Please enter your monthly take home salary, Amount, PREVIOUS, NEXT)">MonthlySalarySrc(My Monthly Income, *Please enter your monthly take home salary, Amount, PREVIOUS, NEXT)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Test" title="com.loany.test.Signup.SeekerSignUp" hash-for-method="ProfessionScreen(How do you earn?, Salaried, Business, Self Employed, PREVIOUS, NEXT)">ProfessionScreen(How do you earn?, Salaried, Business, Self Employed, PREVIOUS, NEXT)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Test" title="com.loany.test.Signup.SeekerSignUp" hash-for-method="VerifyPIN(Verify PIN Number, Yet to receive SMS ?, If you already received PIN, please enter below, Enter your...)">VerifyPIN(Verify PIN Number, Yet to receive SMS ?, If you already received PIN, please enter below, Enter your...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Test" title="com.loany.test.Signup.SeekerSignUp" hash-for-method="Welcomescreens(SKIP, Search for agents near you, You can look for agents near you, and notify the ones which look p...)">Welcomescreens(SKIP, Search for agents near you, You can look for agents near you, and notify the ones which look p...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Test" title="com.loany.test.Signup.SeekerSignUp" hash-for-method="mobileNumberScreen(Mobile Number, Please enter your valid mobile number to which the verification code will be sent., I...)">mobileNumberScreen(Mobile Number, Please enter your valid mobile number to which the verification code will be sent., I...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Regression_Test -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Regression_Test" class="panel Regression_Test">
+          <div class="suite-Regression_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.loany.test.Signup.SeekerSignUp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AboutMeScreen(About Me, NEXT)">
+                  </a> <!-- AboutMeScreen(About Me, NEXT) -->
+                  <span class="method-name">AboutMeScreen</span>
+                  <span class="parameters">(About Me, NEXT)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="EMIScreen(Existing EMIs, *Please enter your existing loan EMIs, Amount, PREVIOUS, DONE)">
+                  </a> <!-- EMIScreen(Existing EMIs, *Please enter your existing loan EMIs, Amount, PREVIOUS, DONE) -->
+                  <span class="method-name">EMIScreen</span>
+                  <span class="parameters">(Existing EMIs, *Please enter your existing loan EMIs, Amount, PREVIOUS, DONE)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoanAmount(I Need Loan Amount, How much money do you need?, Amount, PREVIOUS, NEXT)">
+                  </a> <!-- LoanAmount(I Need Loan Amount, How much money do you need?, Amount, PREVIOUS, NEXT) -->
+                  <span class="method-name">LoanAmount</span>
+                  <span class="parameters">(I Need Loan Amount, How much money do you need?, Amount, PREVIOUS, NEXT)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoanType(Loan Type cannot be changed in future)">
+                  </a> <!-- LoanType(Loan Type cannot be changed in future) -->
+                  <span class="method-name">LoanType</span>
+                  <span class="parameters">(Loan Type cannot be changed in future)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LocationScreen(Where do you need agents for loan?, PREVIOUS, NEXT)">
+                  </a> <!-- LocationScreen(Where do you need agents for loan?, PREVIOUS, NEXT) -->
+                  <span class="method-name">LocationScreen</span>
+                  <span class="parameters">(Where do you need agents for loan?, PREVIOUS, NEXT)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MonthlySalarySrc(My Monthly Income, *Please enter your monthly take home salary, Amount, PREVIOUS, NEXT)">
+                  </a> <!-- MonthlySalarySrc(My Monthly Income, *Please enter your monthly take home salary, Amount, PREVIOUS, NEXT) -->
+                  <span class="method-name">MonthlySalarySrc</span>
+                  <span class="parameters">(My Monthly Income, *Please enter your monthly take home salary, Amount, PREVIOUS, NEXT)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ProfessionScreen(How do you earn?, Salaried, Business, Self Employed, PREVIOUS, NEXT)">
+                  </a> <!-- ProfessionScreen(How do you earn?, Salaried, Business, Self Employed, PREVIOUS, NEXT) -->
+                  <span class="method-name">ProfessionScreen</span>
+                  <span class="parameters">(How do you earn?, Salaried, Business, Self Employed, PREVIOUS, NEXT)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyPIN(Verify PIN Number, Yet to receive SMS ?, If you already received PIN, please enter below, Enter your...)">
+                  </a> <!-- VerifyPIN(Verify PIN Number, Yet to receive SMS ?, If you already received PIN, please enter below, Enter your...) -->
+                  <span class="method-name">VerifyPIN</span>
+                  <span class="parameters">(Verify PIN Number, Yet to receive SMS ?, If you already received PIN, please enter below, Enter your PIN, VERIFY PIN)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Welcomescreens(SKIP, Search for agents near you, You can look for agents near you, and notify the ones which look p...)">
+                  </a> <!-- Welcomescreens(SKIP, Search for agents near you, You can look for agents near you, and notify the ones which look p...) -->
+                  <span class="method-name">Welcomescreens</span>
+                  <span class="parameters">(SKIP, Search for agents near you, You can look for agents near you, and notify the ones which look promising., Chat with your agents, Stay connected with agents to provide more information and know your loan status., Create cards with your info, Create once and share with different agents whenever required., Share your details as Cards, A more interactive chat with cards, so you don't have to text everything)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mobileNumberScreen(Mobile Number, Please enter your valid mobile number to which the verification code will be sent., I...)">
+                  </a> <!-- mobileNumberScreen(Mobile Number, Please enter your valid mobile number to which the verification code will be sent., I...) -->
+                  <span class="method-name">mobileNumberScreen</span>
+                  <span class="parameters">(Mobile Number, Please enter your valid mobile number to which the verification code will be sent., Ind(+91), Mobile Number)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Test-class-passed -->
+        </div> <!-- panel Regression_Test -->
+        <div panel-name="test-xml-Regression_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Anshul\Automationframework\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Regression Test&quot;&gt;
+  &lt;test name=&quot;SeekerSignUp&quot;&gt;
+    &lt;parameter name=&quot;device-name&quot; value=&quot;3a2b130&quot;/&gt;
+    &lt;parameter name=&quot;device-version&quot; value=&quot;6.0&quot;/&gt;
+    &lt;parameter name=&quot;device-url&quot; value=&quot;http://127.0.0.1:4723/wd/hub&quot;/&gt;
+    &lt;parameter name=&quot;testing_platform&quot; value=&quot;mobile_chrome&quot;/&gt;
+    &lt;parameter name=&quot;device-type&quot; value=&quot;mobile&quot;/&gt;
+    &lt;parameter name=&quot;app-package&quot; value=&quot;com.gyanmatrix.loany&quot;/&gt;
+    &lt;parameter name=&quot;mobile-platform&quot; value=&quot;android&quot;/&gt;
+    &lt;parameter name=&quot;test-suite-name&quot; value=&quot;Reg&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.loany.test.Signup.SeekerSignUp&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SeekerSignUp --&gt;
+&lt;/suite&gt; &lt;!-- Regression Test --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Regression_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Regression Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">SeekerSignUp (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Regression_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Regression Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Regression_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Regression Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Regression_Test');
+function tableData_Regression_Test() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'VerifyPIN')
+data.setCell(0, 2, 'com.loany.test.Signup.SeekerSignUp')
+data.setCell(0, 3, 21753);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Welcomescreens')
+data.setCell(1, 2, 'com.loany.test.Signup.SeekerSignUp')
+data.setCell(1, 3, 17776);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'AboutMeScreen')
+data.setCell(2, 2, 'com.loany.test.Signup.SeekerSignUp')
+data.setCell(2, 3, 17110);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'LoanType')
+data.setCell(3, 2, 'com.loany.test.Signup.SeekerSignUp')
+data.setCell(3, 3, 16754);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'mobileNumberScreen')
+data.setCell(4, 2, 'com.loany.test.Signup.SeekerSignUp')
+data.setCell(4, 3, 12732);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'ProfessionScreen')
+data.setCell(5, 2, 'com.loany.test.Signup.SeekerSignUp')
+data.setCell(5, 3, 6922);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'MonthlySalarySrc')
+data.setCell(6, 2, 'com.loany.test.Signup.SeekerSignUp')
+data.setCell(6, 3, 3695);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'LocationScreen')
+data.setCell(7, 2, 'com.loany.test.Signup.SeekerSignUp')
+data.setCell(7, 3, 3402);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'EMIScreen')
+data.setCell(8, 2, 'com.loany.test.Signup.SeekerSignUp')
+data.setCell(8, 3, 2538);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'LoanAmount')
+data.setCell(9, 2, 'com.loany.test.Signup.SeekerSignUp')
+data.setCell(9, 3, 2172);
+window.suiteTableData['Regression_Test']= { tableData: data, tableDiv: 'times-div-Regression_Test'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Regression_Test">
+              </div> <!-- times-div-Regression_Test -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Regression_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Regression Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">MonthlySalarySrc(My Monthly Income, *Please enter your monthly take home salary, Amount, PREVIOUS, NEXT)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Check whether Header On Monthly Salary Screen Showing or not</span>
+                <span class="reporter-method-output">Check whether Sub Header On Monthly Salary Screen Showing or not</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">VerifyPIN(Verify PIN Number, Yet to receive SMS ?, If you already received PIN, please enter below, Enter your...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Check whether PIN Text Field Showing Text or not</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Regression_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Regression_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.loany.test.Signup.SeekerSignUp</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite(Loany)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(mobile, http://127.0.0.1:4723/wd/hub, 3a2b130, 6.0, android, mobile_chrome, true, default, testserve...)</span>
+                <span class="method-start">641 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.loany.test.Signup.SeekerSignUp.Welcomescreens(java.lang.String,java.lang.String,java...)</span>
+                <span class="method-start">27168 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Welcomescreens(SKIP, Search for agents near you, You can look for agents near you, and notify the ones which look p...)</span>
+                <span class="method-start">27185 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=Welcomescreens status=SUCCESS method=SeekerSignUp.Welcomescreens(java.lang.String, ...)</span>
+                <span class="method-start">44962 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.loany.test.Signup.SeekerSignUp.mobileNumberScreen(java.lang.String,java.lang.String,...)</span>
+                <span class="method-start">45691 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">mobileNumberScreen(Mobile Number, Please enter your valid mobile number to which the verification code will be sent., I...)</span>
+                <span class="method-start">45691 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=mobileNumberScreen status=SUCCESS method=SeekerSignUp.mobileNumberScreen(java.lang....)</span>
+                <span class="method-start">58423 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">VerifyPIN(Verify PIN Number, Yet to receive SMS ?, If you already received PIN, please enter below, Enter your...)</span>
+                <span class="method-start">58612 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.loany.test.Signup.SeekerSignUp.VerifyPIN(java.lang.String,java.lang.String,java.lang...)</span>
+                <span class="method-start">58612 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=VerifyPIN status=SUCCESS method=SeekerSignUp.VerifyPIN(java.lang.String, java.lang....)</span>
+                <span class="method-start">80365 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">AboutMeScreen(About Me, NEXT)</span>
+                <span class="method-start">80501 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.loany.test.Signup.SeekerSignUp.AboutMeScreen(java.lang.String,java.lang.String) thro...)</span>
+                <span class="method-start">80501 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=AboutMeScreen status=SUCCESS method=SeekerSignUp.AboutMeScreen(java.lang.String, ja...)</span>
+                <span class="method-start">97612 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">LocationScreen(Where do you need agents for loan?, PREVIOUS, NEXT)</span>
+                <span class="method-start">97764 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.loany.test.Signup.SeekerSignUp.LocationScreen(java.lang.String,java.lang.String,java...)</span>
+                <span class="method-start">97764 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=LocationScreen status=SUCCESS method=SeekerSignUp.LocationScreen(java.lang.String, ...)</span>
+                <span class="method-start">101166 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.loany.test.Signup.SeekerSignUp.LoanType(java.lang.String) throws java.io.IOException...)</span>
+                <span class="method-start">101311 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LoanType(Loan Type cannot be changed in future)</span>
+                <span class="method-start">101312 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=LoanType status=SUCCESS method=SeekerSignUp.LoanType(java.lang.String)[pri:6, insta...)</span>
+                <span class="method-start">118066 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.loany.test.Signup.SeekerSignUp.LoanAmount(java.lang.String,java.lang.String,java.lan...)</span>
+                <span class="method-start">118271 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LoanAmount(I Need Loan Amount, How much money do you need?, Amount, PREVIOUS, NEXT)</span>
+                <span class="method-start">118272 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=LoanAmount status=SUCCESS method=SeekerSignUp.LoanAmount(java.lang.String, java.lan...)</span>
+                <span class="method-start">120444 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">ProfessionScreen(How do you earn?, Salaried, Business, Self Employed, PREVIOUS, NEXT)</span>
+                <span class="method-start">120565 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.loany.test.Signup.SeekerSignUp.ProfessionScreen(java.lang.String,java.lang.String,ja...)</span>
+                <span class="method-start">120565 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=ProfessionScreen status=SUCCESS method=SeekerSignUp.ProfessionScreen(java.lang.Stri...)</span>
+                <span class="method-start">127487 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.loany.test.Signup.SeekerSignUp.MonthlySalarySrc(java.lang.String,java.lang.String,ja...)</span>
+                <span class="method-start">127590 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MonthlySalarySrc(My Monthly Income, *Please enter your monthly take home salary, Amount, PREVIOUS, NEXT)</span>
+                <span class="method-start">127591 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MonthlySalarySrc status=SUCCESS method=SeekerSignUp.MonthlySalarySrc(java.lang.Stri...)</span>
+                <span class="method-start">131286 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.loany.test.Signup.SeekerSignUp.EMIScreen(java.lang.String,java.lang.String,java.lang...)</span>
+                <span class="method-start">131396 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">EMIScreen(Existing EMIs, *Please enter your existing loan EMIs, Amount, PREVIOUS, DONE)</span>
+                <span class="method-start">131397 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=EMIScreen status=SUCCESS method=SeekerSignUp.EMIScreen(java.lang.String, java.lang....)</span>
+                <span class="method-start">133936 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClasss</span>
+                <span class="method-start">133981 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">134098 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

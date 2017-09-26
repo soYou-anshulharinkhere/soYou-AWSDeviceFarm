@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="TestSc.CanvasPage">
+        <methods>
+          <include name="EnterMobileNumber" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="afterSuite"/>
+          <include name="VerifyallCommentsofAPost" invocation-numbers="0"/>
+          <include name="EnterOTPScreen"/>
+          <include name="SwipeBetweenCanvas"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="MakePostasPublicandpublick"/>
+          <include name="beforeSuite"/>
+          <include name="NavigatetoPostDetailView"/>
+          <include name="AddReplyCommentForAPost" invocation-numbers="0"/>
+          <include name="Navigatetosendercanvas"/>
+          <include name="afterMethod"/>
+          <include name="ReshareAPost"/>
+          <include name="AddCommentForAPost" invocation-numbers="0"/>
+          <include name="SelectCountryFromList" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TestSc.CanvasPage -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

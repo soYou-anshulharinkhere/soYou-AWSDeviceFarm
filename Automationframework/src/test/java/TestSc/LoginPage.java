@@ -20,7 +20,7 @@ public class LoginPage extends AppInitializer{
 	  return values;
 	 }
 	String MobileNumber=RandomGenerator.getNumber();
-	
+
 //	@Test(priority=6)
 	public void NotificationPoup() throws IOException {
 		LoginScreen login=new LoginScreen(getiosDriver());

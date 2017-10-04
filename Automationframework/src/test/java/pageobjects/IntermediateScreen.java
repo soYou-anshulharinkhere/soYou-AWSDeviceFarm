@@ -21,11 +21,10 @@ public class IntermediateScreen {
 	}
 
 	/* Page Labels */
-	By ActionList= By.xpath("//XCUIElementTypeOther/XCUIElementTypeButton");
-	By ProfilepicPlaceHolder = By.xpath("//XCUIElementTypeImage[@name='Default_FB']");
+	By camera = ByAccessibilityId.AccessibilityId("Camera");
+	By gallery = ByAccessibilityId.AccessibilityId("Gallery");
 	By EnterFirstName = By.xpath("//XCUIElementTypeTextField[@value='Enter First Name *']");
 	By EnterLastName = By.xpath("//XCUIElementTypeTextField[@value='Enter Last Name *']");
-	By EnterEmail = By.xpath("//XCUIElementTypeTextField[@value='Enter E-mail']");
 	By OkLetmeInButton = By.xpath("//XCUIElementTypeButton[@name='OK, let me in']");
 	By ORtitle = By.xpath("//XCUIElementTypeStaticText[@name='OR']");
 	By OKalert = By.xpath("//XCUIElementTypeButton[@name='Ok']");
@@ -39,6 +38,7 @@ public class IntermediateScreen {
 	By OKButton = By.xpath("//XCUIElementTypeButton[@name='OK']");
 	By captureButton = ByAccessibilityId.AccessibilityId("PhotoCapture");
 	By UsePhoto =By.xpath("//XCUIElementTypeButton[@name='Use Photo']");
+	By profilePicture = By.xpath("//XCUIElementTypeApplication[@name=\"soYou\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeImage");
 	
 	String emailId = "appsjoynworld@gmail.com";
 	String fbpassword = "soyou@123";
@@ -81,7 +81,7 @@ public class IntermediateScreen {
 	 */
 	public boolean VerifyclickOnLetMeIn() throws InterruptedException {
 		try {
-			assert (driver.findElement(OkLetmeInButton).isDisplayed());
+	//		assert (driver.findElement(OkLetmeInButton).isDisplayed());
 			driver.findElement(OkLetmeInButton).click();
 			Thread.sleep(5000);
 			return true;
@@ -152,9 +152,8 @@ public class IntermediateScreen {
 	public boolean setProfilePicture() throws InterruptedException {
 		try {
 			//To-Do
-			driver.findElementByName("Default_FB").click();
-			List<WebElement> ActionSheetList = driver.findElements(ActionList);
-			ActionSheetList.get(0).click();
+			driver.findElement(profilePicture).click();
+			driver.findElement(camera).click();
 			Thread.sleep(1000);
 			if (isOkayButtonDisplayed()) {
 				driver.findElement(OKButton).click();
@@ -162,7 +161,7 @@ public class IntermediateScreen {
 				driver.findElement(captureButton).click();
 				Thread.sleep(3000);
 				driver.findElement(UsePhoto).click();
-				Thread.sleep(10000);
+				Thread.sleep(25000);
 	//			driver.findElement(DoneButton).click();
 				return true;
 			} else {
@@ -170,7 +169,7 @@ public class IntermediateScreen {
 				driver.findElement(captureButton).click();
 				Thread.sleep(3000);
 				driver.findElement(UsePhoto).click();
-				Thread.sleep(10000);
+				Thread.sleep(30000);
 	//			driver.findElement(DoneButton).click();
 //			driver.findElementByName("Camera").click();
 //			if (isOkayButtonDisplayed()) {

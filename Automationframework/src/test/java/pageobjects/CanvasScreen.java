@@ -40,7 +40,7 @@ public class CanvasScreen {
 	/* click on notificationsTab button */
 	public boolean IscanvasPopUpDisplayed() throws InterruptedException {
 		try {
-			driver.wait(5000);
+			Thread.sleep(5000);
 			return driver.findElement(popovertext).isDisplayed();	 
 		} catch (org.openqa.selenium.NoSuchElementException e) {
 			return false;

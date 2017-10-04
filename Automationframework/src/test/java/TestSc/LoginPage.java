@@ -2,9 +2,9 @@ package TestSc;
 
 import org.testng.annotations.Test;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.*;
 
 import pageobjects.LoginScreen;
 import utility.ExcelReader;
@@ -58,6 +58,8 @@ public class LoginPage extends AppInitializer{
 	public void EnterOTPScreen() throws IOException, InterruptedException{
 		LoginScreen login = new LoginScreen(getiosDriver());
 
+		getiosDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(),login.VerifyEnterOTPtitle(),"Verify Enter OTP field is Displayed or not","Enter OTP field is Displayed");
 
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(),login.EnterOTP(),"OTP is entered or Not","OTP  is entered");

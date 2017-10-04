@@ -1,6 +1,7 @@
 package TestSc;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -21,15 +22,7 @@ public class CanvasPage extends AppInitializer {
 	  Object[][] values=ExcelReader.getTableArray(".//Data//user_details.xlsx", "values");
 	  return values;
 	 }
-	
-	@Test(priority=13)
-	public void CanvasPopUpMessage() throws IOException, InterruptedException {
-		CanvasScreen canvas=new CanvasScreen(getiosDriver());
-		
-		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), canvas.IscanvasPopUpDisplayed(), "Check Whether canvas PopUp is displaying or not", "canvas PopUp is displaying");
-		
-	//	verifyTrue(ExtentTestManager.getTest(), getiosDriver(), canvas.IsnoGiftsTextDisplayed(), "Verify whether no gits found text is displayed or not", "no gits found text is displayed");
-	}
+
 	
 	
 	@Test(priority=14)
@@ -79,13 +72,15 @@ public class CanvasPage extends AppInitializer {
 	public void NavigatetoPostDetailView() throws IOException, InterruptedException {
 		DetailedviewPage viewpage=new DetailedviewPage(getiosDriver());
 		
+		getiosDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.navigatetoDetailViewofPost(), "Check Whether navigation to detail view is done or not", "navigation to detail view is done");
 		
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.isBackButtonDisplayed(), "Verify whether Back Button Displayed", "Back Button Displayed");
 	}
 	
-	@Test(priority=19)
-	public void ReshareAPost(String description) throws IOException, InterruptedException {
+	@Test(priority=19,dataProvider="values")
+	public void ReshareAPost(String mobilenumber,String countryname,String Firstname,String Lastname,String email,String text,String link,String name,String groupName,String commentText) throws IOException, InterruptedException {
 		DetailedviewPage viewpage=new DetailedviewPage(getiosDriver());
 		
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.navigatetoDetailViewofPost(),"Check Whether navigation to detail view is done or not", "navigation to detail view is done");
@@ -96,13 +91,15 @@ public class CanvasPage extends AppInitializer {
 	
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.SelectContactfromList(), "Check Whether contacts from list selected or not", "contacts from list selected");
 		
-		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.ComposeTextWhileResharing(description), "Check Whether text is added  or not", "text is added");
-	
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.ComposeTextWhileResharing(text), "Check Whether text is added  or not", "text is added");
+		
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.isDoneDisplayed(), "Check Whether done is clicked or not", "done is clicked");
+	
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.isBackButtonDisplayed(), "Verify whether Back Button Displayed", "Back Button Displayed");
 	}
 	
 	@Test(priority=20)
-	public void MakePostasPublicandpublick() throws IOException, InterruptedException {
+	public void MakePostAsPrivateAndPublic() throws IOException, InterruptedException {
 		DetailedviewPage viewpage=new DetailedviewPage(getiosDriver());
 		CanvasScreen canvas=new CanvasScreen(getiosDriver());
 		
@@ -111,7 +108,8 @@ public class CanvasPage extends AppInitializer {
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), canvas.navigateToPrivateCanvas(), "Check Whether swipe to private canvas is displaying or not", "swipe to private canvas is displaying");
 		
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.markasPublic(), "Check Whether post is marked as public or not", "post is marked as public");
-		
+	
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), canvas.IsSwipePreviousDisplayed(), "Check Whether swipe Previous button is displaying or not", "swipe Previous button is displaying");
 	}
 	
 	@Test(priority=21)

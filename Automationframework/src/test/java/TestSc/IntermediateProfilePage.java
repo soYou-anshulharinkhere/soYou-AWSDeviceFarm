@@ -1,6 +1,7 @@
 package TestSc;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.Test;
 
@@ -8,6 +9,7 @@ import com.framework.internal.feature.AppInitializer;
 import com.extentReportManager.ExtentTestManager;
 import com.framework.internal.feature.AppiumDriverInitializer;
 
+import pageobjects.CanvasScreen;
 import pageobjects.IntermediateScreen;
 import pageobjects.composescreen;
 
@@ -36,5 +38,15 @@ public class IntermediateProfilePage extends AppInitializer {
 	public void IsLetMeInButtonClickable() throws InterruptedException, IOException {
 		IntermediateScreen profile = new IntermediateScreen(getiosDriver());
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), profile.VerifyclickOnLetMeIn(), "verify let me in button is clicked or not", "let me in button is clicked");
+	}
+	
+	@Test(priority=13)
+	public void CanvasPopUpMessage() throws IOException, InterruptedException {
+		CanvasScreen canvas=new CanvasScreen(getiosDriver());
+	//	getiosDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), canvas.IscanvasPopUpDisplayed(), "Check Whether canvas PopUp is displaying or not", "canvas PopUp is displaying");
+		
+	//	verifyTrue(ExtentTestManager.getTest(), getiosDriver(), canvas.IsnoGiftsTextDisplayed(), "Verify whether no gits found text is displayed or not", "no gits found text is displayed");
 	}
 }

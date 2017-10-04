@@ -95,7 +95,7 @@ public class LoginScreen {
 	 */
 	public boolean EnterOTP() throws InterruptedException {
 		try {
-			Thread.sleep(10000);
+			Thread.sleep(1000);
 			for (int i = 0; i <= 3; i++) {
 				// click the button 1 in loop
 				driver.findElement(OTPValue).click();
@@ -226,7 +226,7 @@ public class LoginScreen {
 	/* Verify EnterOTPtitle */
 	public boolean VerifyEnterOTPtitle() throws InterruptedException {
 		try {
-			Thread.sleep(5000);
+	//		Thread.sleep(5000);
 			return driver.findElement(EnterOTPtitle).isDisplayed();
 			
 		} catch (org.openqa.selenium.NoSuchElementException e) {

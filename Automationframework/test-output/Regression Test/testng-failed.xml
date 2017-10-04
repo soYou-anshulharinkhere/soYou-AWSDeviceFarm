@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Regression Test]">
-  <parameter name="app" value="/Users/gmx/Desktop/soYou_62/SoYou.app"/>
+  <parameter name="app" value="/Users/gmx/Desktop/soYou_66/SoYou.app"/>
   <parameter name="noReset" value="true"/>
   <parameter name="MobileOS" value="ios"/>
   <parameter name="xcodeOrgId" value="V862VGVUC2"/>
@@ -18,7 +18,7 @@
   <parameter name="platformName" value="iOS"/>
   <parameter name="udid" value="e03daa8b2365bf156e6b0a31977add1b013b3a8a"/>
   <test name="soYou(failed)">
-    <parameter name="app" value="/Users/gmx/Desktop/soYou_62/SoYou.app"/>
+    <parameter name="app" value="/Users/gmx/Desktop/soYou_66/SoYou.app"/>
     <parameter name="noReset" value="true"/>
     <parameter name="MobileOS" value="ios"/>
     <parameter name="xcodeOrgId" value="V862VGVUC2"/>
@@ -35,88 +35,21 @@
     <parameter name="platformName" value="iOS"/>
     <parameter name="udid" value="e03daa8b2365bf156e6b0a31977add1b013b3a8a"/>
     <classes>
-      <class name="TestSc.LoginPage">
-        <methods>
-          <include name="afterClass"/>
-          <include name="afterMethod"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- TestSc.LoginPage -->
-      <class name="TestSc.searchTabPage">
-        <methods>
-          <include name="afterClass"/>
-          <include name="afterMethod"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- TestSc.searchTabPage -->
-      <class name="TestSc.IntermediateProfilePage">
-        <methods>
-          <include name="afterClass"/>
-          <include name="afterMethod"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- TestSc.IntermediateProfilePage -->
-      <class name="TestSc.SettingsPage">
-        <methods>
-          <include name="afterClass"/>
-          <include name="afterMethod"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- TestSc.SettingsPage -->
-      <class name="TestSc.recentlist_tab">
-        <methods>
-          <include name="afterClass"/>
-          <include name="afterMethod"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- TestSc.recentlist_tab -->
       <class name="TestSc.composePage">
         <methods>
+          <include name="beforeSuite"/>
           <include name="composetextasGift" invocation-numbers="0"/>
           <include name="composeImageGiftFromGallery"/>
           <include name="composeWeblinkasGift" invocation-numbers="0"/>
           <include name="afterClass"/>
           <include name="afterMethod"/>
           <include name="composeVideoGiftFromGallery"/>
+          <include name="afterSuite"/>
           <include name="beforeClass"/>
+          <include name="composeGiftFromCamera"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- TestSc.composePage -->
-      <class name="TestSc.welcomescreen">
-        <methods>
-          <include name="beforeSuite"/>
-          <include name="afterClass"/>
-          <include name="afterMethod"/>
-          <include name="afterSuite"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- TestSc.welcomescreen -->
-      <class name="TestSc.CanvasPage">
-        <methods>
-          <include name="MakePostasPublicandpublick"/>
-          <include name="Navigatetosendercanvas"/>
-          <include name="afterClass"/>
-          <include name="afterMethod"/>
-          <include name="ReshareAPost"/>
-          <include name="CanvasPopUpMessage"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- TestSc.CanvasPage -->
-      <class name="TestSc.notificationPage">
-        <methods>
-          <include name="afterClass"/>
-          <include name="afterMethod"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- TestSc.notificationPage -->
     </classes>
   </test> <!-- soYou(failed) -->
 </suite> <!-- Failed suite [Regression Test] -->

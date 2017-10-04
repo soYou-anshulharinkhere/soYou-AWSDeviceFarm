@@ -24,6 +24,7 @@ public class composescreen {
 	By plusbutton = By.xpath("//XCUIElementTypeOther/XCUIElementTypeButton");
 	By descriptiontext = By.xpath("//XCUIElementTypeTextView[@name='Say some thing.....'");
 	By imageButton = By.xpath("//XCUIElementTypeButton[@name='Button']");
+	By AllPhotos = By.xpath("//XCUIElementTypeCell[@name='All Photos']");
 	By videoButton = By.xpath("//XCUIElementTypeButton[@name='Gift Video']");
 	By videoCellList = By.xpath("//XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeButton");
 	By cameraButton = By.xpath("//XCUIElementTypeButton[@name='Gift Camera']");
@@ -207,25 +208,22 @@ public class composescreen {
 	}
 	
 	
-	/* Selecting an image from collection view */
-	@SuppressWarnings("unchecked")
+	/* Selecting an image from camera */
 	public boolean ComposeImageFromCamera() throws InterruptedException {
 		try {
 			driver.findElement(giftcamera).click();
 			if (isOKButtonDisplayed()) {
-				driver.findElement(OKalert).click();
+				driver.findElement(OKButton).click();
 				driver.findElement(captureButton).click();
 				Thread.sleep(3000);
 				driver.findElement(UsePhoto).click();
 				Thread.sleep(10000);
-	//			driver.findElement(DoneButton).click();
 				return true;
 			} else {
 				driver.findElement(captureButton).click();
 				Thread.sleep(3000);
 				driver.findElement(UsePhoto).click();
 				Thread.sleep(10000);
-	//			driver.findElement(DoneButton).click();
 			}
 		} catch (org.openqa.selenium.NoSuchElementException e) {
 			return false;
@@ -233,10 +231,6 @@ public class composescreen {
 		return true;
 		
 	}
-	
-	
-	
-	
 	
 	/* Selecting an image from collection view */
 	@SuppressWarnings("unchecked")
@@ -251,7 +245,7 @@ public class composescreen {
 			List<WebElement> cellList2 = driver.findElements(cellView);
 			cellList2.get(25).click();
 			Thread.sleep(500);
-			assert (driver.findElement(chooseButton).isDisplayed());
+		//	assert (driver.findElement(chooseButton).isDisplayed());
 			driver.findElement(chooseButton).click();
 			Thread.sleep(20000);
 			return true;
@@ -350,24 +344,27 @@ public class composescreen {
 	@SuppressWarnings("unchecked")
 	public boolean selectImageFromGallery() throws InterruptedException {
 		try {
+			driver.findElement(imageButton).click();
 			if (isOKButtonDisplayed()) {
 				driver.findElement(OKButton).click();
-				driver.findElement(imageButton).click();
+				Thread.sleep(3000);
+				driver.findElement(AllPhotos).click();
 				System.out.println(driver.findElements(ImageCell).size());
 				List<WebElement> e = driver.findElements(ImageCell);
 				System.out.println(e);
 				e.get(0).click();
 				driver.findElement(imageselectButton).click();
-				Thread.sleep(15000);
+				Thread.sleep(25000);
 			}
 			else {
 				driver.findElement(imageButton).click();
+				driver.findElement(AllPhotos).click();
 				System.out.println(driver.findElements(ImageCell).size());
 				List<WebElement> e = driver.findElements(ImageCell);
 				System.out.println(e);
 				e.get(0).click();
 				driver.findElement(imageselectButton).click();
-				Thread.sleep(15000);
+				Thread.sleep(25000);
 			}
 			return true;
 		} catch (org.openqa.selenium.NoSuchElementException e) {

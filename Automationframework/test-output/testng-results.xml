@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="46" passed="46">
   <reporter-output>
+    <line>
+      <![CDATA[Check Whether canvas PopUp is displaying or not]]>
+    </line>
+    <line>
+      <![CDATA[Verify Enter OTP field is Displayed or not]]>
+    </line>
   </reporter-output>
-  <suite name="Regression Test" duration-ms="273176" started-at="2017-10-04T05:23:53Z" finished-at="2017-10-04T05:28:26Z">
+  <suite name="Regression Test" duration-ms="1335410" started-at="2017-10-04T06:47:27Z" finished-at="2017-10-04T07:09:43Z">
     <groups>
     </groups>
-    <test name="soYou" duration-ms="273176" started-at="2017-10-04T05:23:53Z" finished-at="2017-10-04T05:28:26Z">
-      <class name="TestSc.composePage">
-        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:TestSc.composePage@c540f5a]" name="beforeSuite" is-config="true" duration-ms="237" started-at="2017-10-04T10:53:53Z" finished-at="2017-10-04T10:53:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[soYou]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSc.composePage@c540f5a]" name="beforeClass" is-config="true" duration-ms="22741" started-at="2017-10-04T10:53:53Z" finished-at="2017-10-04T10:54:15Z">
+    <test name="soYou" duration-ms="1335410" started-at="2017-10-04T06:47:27Z" finished-at="2017-10-04T07:09:43Z">
+      <class name="TestSc.CanvasPage">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="beforeClass" is-config="true" duration-ms="17419" started-at="2017-10-04T12:20:14Z" finished-at="2017-10-04T12:20:32Z">
           <params>
             <param index="0">
               <value>
@@ -164,7 +159,2604 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.composePage@c540f5a]" name="beforeMethod" is-config="true" duration-ms="5" started-at="2017-10-04T10:54:16Z" finished-at="2017-10-04T10:54:16Z">
+        <test-method status="PASS" signature="logoutoftheApp()[pri:14, instance:TestSc.CanvasPage@46944ca9]" name="logoutoftheApp" duration-ms="9961" started-at="2017-10-04T12:20:32Z" finished-at="2017-10-04T12:20:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutoftheApp -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:20:32Z" finished-at="2017-10-04T12:20:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.CanvasPage.logoutoftheApp() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="afterMethod" is-config="true" duration-ms="19" started-at="2017-10-04T12:20:42Z" finished-at="2017-10-04T12:20:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logoutoftheApp status=SUCCESS method=CanvasPage.logoutoftheApp()[pri:14, instance:TestSc.CanvasPage@46944ca9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="SelectCountryFromList(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:15, instance:TestSc.CanvasPage@46944ca9]" name="SelectCountryFromList" duration-ms="15953" started-at="2017-10-04T12:20:42Z" data-provider="values" finished-at="2017-10-04T12:20:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7845640866]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[soYou]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[User]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[user@soyou.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Hello Dear ]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.google.co.in/]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Kiran Gmx]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Testing]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Hai, welcome to soYou]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectCountryFromList -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:20:42Z" finished-at="2017-10-04T12:20:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.CanvasPage.SelectCountryFromList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="afterMethod" is-config="true" duration-ms="34" started-at="2017-10-04T12:20:58Z" finished-at="2017-10-04T12:20:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SelectCountryFromList status=SUCCESS method=CanvasPage.SelectCountryFromList(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:15, instance:TestSc.CanvasPage@46944ca9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-10-04T12:20:58Z" finished-at="2017-10-04T12:20:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.CanvasPage.EnterMobileNumber(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="EnterMobileNumber(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:16, instance:TestSc.CanvasPage@46944ca9]" name="EnterMobileNumber" duration-ms="10411" started-at="2017-10-04T12:20:58Z" data-provider="values" finished-at="2017-10-04T12:21:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7845640866]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[soYou]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[User]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[user@soyou.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Hello Dear ]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.google.co.in/]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Kiran Gmx]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Testing]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Hai, welcome to soYou]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnterMobileNumber -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="afterMethod" is-config="true" duration-ms="35" started-at="2017-10-04T12:21:08Z" finished-at="2017-10-04T12:21:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EnterMobileNumber status=SUCCESS method=CanvasPage.EnterMobileNumber(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:16, instance:TestSc.CanvasPage@46944ca9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-10-04T12:21:08Z" finished-at="2017-10-04T12:21:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.CanvasPage.EnterOTPScreen() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="EnterOTPScreen()[pri:17, instance:TestSc.CanvasPage@46944ca9]" name="EnterOTPScreen" duration-ms="6336" started-at="2017-10-04T12:21:08Z" finished-at="2017-10-04T12:21:15Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verify Enter OTP field is Displayed or not]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- EnterOTPScreen -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="afterMethod" is-config="true" duration-ms="29" started-at="2017-10-04T12:21:15Z" finished-at="2017-10-04T12:21:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EnterOTPScreen status=SUCCESS method=CanvasPage.EnterOTPScreen()[pri:17, instance:TestSc.CanvasPage@46944ca9] output=Verify Enter OTP field is Displayed or not]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-10-04T12:21:15Z" finished-at="2017-10-04T12:21:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.CanvasPage.NavigatetoPostDetailView() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="NavigatetoPostDetailView()[pri:18, instance:TestSc.CanvasPage@46944ca9]" name="NavigatetoPostDetailView" duration-ms="11521" started-at="2017-10-04T12:21:15Z" finished-at="2017-10-04T12:21:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigatetoPostDetailView -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="afterMethod" is-config="true" duration-ms="16" started-at="2017-10-04T12:21:26Z" finished-at="2017-10-04T12:21:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NavigatetoPostDetailView status=SUCCESS method=CanvasPage.NavigatetoPostDetailView()[pri:18, instance:TestSc.CanvasPage@46944ca9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-10-04T12:21:26Z" finished-at="2017-10-04T12:21:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.CanvasPage.ReshareAPost(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="ReshareAPost(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:19, instance:TestSc.CanvasPage@46944ca9]" name="ReshareAPost" duration-ms="48807" started-at="2017-10-04T12:21:26Z" data-provider="values" finished-at="2017-10-04T12:22:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7845640866]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[soYou]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[User]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[user@soyou.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Hello Dear ]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.google.co.in/]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Kiran Gmx]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Testing]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Hai, welcome to soYou]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReshareAPost -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="afterMethod" is-config="true" duration-ms="18" started-at="2017-10-04T12:22:15Z" finished-at="2017-10-04T12:22:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ReshareAPost status=SUCCESS method=CanvasPage.ReshareAPost(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:19, instance:TestSc.CanvasPage@46944ca9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="MakePostAsPrivateAndPublic()[pri:20, instance:TestSc.CanvasPage@46944ca9]" name="MakePostAsPrivateAndPublic" duration-ms="25924" started-at="2017-10-04T12:22:15Z" finished-at="2017-10-04T12:22:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MakePostAsPrivateAndPublic -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:22:15Z" finished-at="2017-10-04T12:22:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.CanvasPage.MakePostAsPrivateAndPublic() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="afterMethod" is-config="true" duration-ms="18" started-at="2017-10-04T12:22:41Z" finished-at="2017-10-04T12:22:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MakePostAsPrivateAndPublic status=SUCCESS method=CanvasPage.MakePostAsPrivateAndPublic()[pri:20, instance:TestSc.CanvasPage@46944ca9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-10-04T12:22:41Z" finished-at="2017-10-04T12:22:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.CanvasPage.Navigatetosendercanvas() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Navigatetosendercanvas()[pri:21, instance:TestSc.CanvasPage@46944ca9]" name="Navigatetosendercanvas" duration-ms="14898" started-at="2017-10-04T12:22:41Z" finished-at="2017-10-04T12:22:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Navigatetosendercanvas -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="afterMethod" is-config="true" duration-ms="16" started-at="2017-10-04T12:22:56Z" finished-at="2017-10-04T12:22:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Navigatetosendercanvas status=SUCCESS method=CanvasPage.Navigatetosendercanvas()[pri:21, instance:TestSc.CanvasPage@46944ca9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="SwipeBetweenCanvas()[pri:22, instance:TestSc.CanvasPage@46944ca9]" name="SwipeBetweenCanvas" duration-ms="6174" started-at="2017-10-04T12:22:56Z" finished-at="2017-10-04T12:23:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SwipeBetweenCanvas -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:22:56Z" finished-at="2017-10-04T12:22:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.CanvasPage.SwipeBetweenCanvas() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="afterMethod" is-config="true" duration-ms="16" started-at="2017-10-04T12:23:02Z" finished-at="2017-10-04T12:23:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SwipeBetweenCanvas status=SUCCESS method=CanvasPage.SwipeBetweenCanvas()[pri:22, instance:TestSc.CanvasPage@46944ca9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:23:02Z" finished-at="2017-10-04T12:23:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.CanvasPage.AddCommentForAPost(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="AddCommentForAPost(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:23, instance:TestSc.CanvasPage@46944ca9]" name="AddCommentForAPost" duration-ms="16522" started-at="2017-10-04T12:23:02Z" data-provider="values" finished-at="2017-10-04T12:23:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7845640866]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[soYou]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[User]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[user@soyou.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Hello Dear ]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.google.co.in/]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Kiran Gmx]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Testing]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Hai, welcome to soYou]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddCommentForAPost -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="afterMethod" is-config="true" duration-ms="23" started-at="2017-10-04T12:23:19Z" finished-at="2017-10-04T12:23:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddCommentForAPost status=SUCCESS method=CanvasPage.AddCommentForAPost(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:23, instance:TestSc.CanvasPage@46944ca9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:23:19Z" finished-at="2017-10-04T12:23:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.CanvasPage.AddReplyCommentForAPost(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="AddReplyCommentForAPost(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:24, instance:TestSc.CanvasPage@46944ca9]" name="AddReplyCommentForAPost" duration-ms="17696" started-at="2017-10-04T12:23:19Z" data-provider="values" finished-at="2017-10-04T12:23:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7845640866]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[soYou]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[User]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[user@soyou.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Hello Dear ]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.google.co.in/]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Kiran Gmx]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Testing]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Hai, welcome to soYou]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddReplyCommentForAPost -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="afterMethod" is-config="true" duration-ms="18" started-at="2017-10-04T12:23:36Z" finished-at="2017-10-04T12:23:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddReplyCommentForAPost status=SUCCESS method=CanvasPage.AddReplyCommentForAPost(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:24, instance:TestSc.CanvasPage@46944ca9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:23:36Z" finished-at="2017-10-04T12:23:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.CanvasPage.VerifyallCommentsofAPost(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="VerifyallCommentsofAPost(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:25, instance:TestSc.CanvasPage@46944ca9]" name="VerifyallCommentsofAPost" duration-ms="236467" started-at="2017-10-04T12:23:36Z" data-provider="values" finished-at="2017-10-04T12:27:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7845640866]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[soYou]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[User]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[user@soyou.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Hello Dear ]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.google.co.in/]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Kiran Gmx]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Testing]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Hai, welcome to soYou]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyallCommentsofAPost -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="afterMethod" is-config="true" duration-ms="18" started-at="2017-10-04T12:27:33Z" finished-at="2017-10-04T12:27:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyallCommentsofAPost status=SUCCESS method=CanvasPage.VerifyallCommentsofAPost(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:25, instance:TestSc.CanvasPage@46944ca9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestSc.CanvasPage@46944ca9]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-10-04T12:27:33Z" finished-at="2017-10-04T12:27:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- TestSc.CanvasPage -->
+      <class name="TestSc.IntermediateProfilePage">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSc.IntermediateProfilePage@487db668]" name="beforeClass" is-config="true" duration-ms="18197" started-at="2017-10-04T12:19:03Z" finished-at="2017-10-04T12:19:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[testserver]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[10.2.1]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[so's iPhone]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[/Users/gmx/Desktop/soYou_66/SoYou.app]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[e03daa8b2365bf156e6b0a31977add1b013b3a8a]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[XCUITest]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[com.joyn.soyou]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[testserver]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[V862VGVUC2]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[/Users/gmx/Desktop/soYou_66/SoYou.app]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.IntermediateProfilePage@487db668]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:19:21Z" finished-at="2017-10-04T12:19:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.IntermediateProfilePage.setProfilePicture() throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="setProfilePicture()[pri:10, instance:TestSc.IntermediateProfilePage@487db668]" name="setProfilePicture" duration-ms="37247" started-at="2017-10-04T12:19:21Z" finished-at="2017-10-04T12:19:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setProfilePicture -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.IntermediateProfilePage@487db668]" name="afterMethod" is-config="true" duration-ms="22" started-at="2017-10-04T12:19:58Z" finished-at="2017-10-04T12:19:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=setProfilePicture status=SUCCESS method=IntermediateProfilePage.setProfilePicture()[pri:10, instance:TestSc.IntermediateProfilePage@487db668] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="Enterusername()[pri:11, instance:TestSc.IntermediateProfilePage@487db668]" name="Enterusername" duration-ms="4465" started-at="2017-10-04T12:19:58Z" finished-at="2017-10-04T12:20:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Enterusername -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.IntermediateProfilePage@487db668]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:19:58Z" finished-at="2017-10-04T12:19:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.IntermediateProfilePage.Enterusername() throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.IntermediateProfilePage@487db668]" name="afterMethod" is-config="true" duration-ms="22" started-at="2017-10-04T12:20:03Z" finished-at="2017-10-04T12:20:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Enterusername status=SUCCESS method=IntermediateProfilePage.Enterusername()[pri:11, instance:TestSc.IntermediateProfilePage@487db668] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="IsLetMeInButtonClickable()[pri:12, instance:TestSc.IntermediateProfilePage@487db668]" name="IsLetMeInButtonClickable" duration-ms="6072" started-at="2017-10-04T12:20:03Z" finished-at="2017-10-04T12:20:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IsLetMeInButtonClickable -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.IntermediateProfilePage@487db668]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:20:03Z" finished-at="2017-10-04T12:20:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.IntermediateProfilePage.IsLetMeInButtonClickable() throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.IntermediateProfilePage@487db668]" name="afterMethod" is-config="true" duration-ms="25" started-at="2017-10-04T12:20:09Z" finished-at="2017-10-04T12:20:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=IsLetMeInButtonClickable status=SUCCESS method=IntermediateProfilePage.IsLetMeInButtonClickable()[pri:12, instance:TestSc.IntermediateProfilePage@487db668] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="CanvasPopUpMessage()[pri:13, instance:TestSc.IntermediateProfilePage@487db668]" name="CanvasPopUpMessage" duration-ms="5366" started-at="2017-10-04T12:20:09Z" finished-at="2017-10-04T12:20:14Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Check Whether canvas PopUp is displaying or not]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CanvasPopUpMessage -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.IntermediateProfilePage@487db668]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:20:09Z" finished-at="2017-10-04T12:20:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.IntermediateProfilePage.CanvasPopUpMessage() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.IntermediateProfilePage@487db668]" name="afterMethod" is-config="true" duration-ms="33" started-at="2017-10-04T12:20:14Z" finished-at="2017-10-04T12:20:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CanvasPopUpMessage status=SUCCESS method=IntermediateProfilePage.CanvasPopUpMessage()[pri:13, instance:TestSc.IntermediateProfilePage@487db668] output=Check Whether canvas PopUp is displaying or not]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestSc.IntermediateProfilePage@487db668]" name="afterClass" is-config="true" duration-ms="1" started-at="2017-10-04T12:20:14Z" finished-at="2017-10-04T12:20:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- TestSc.IntermediateProfilePage -->
+      <class name="TestSc.notificationPage">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSc.notificationPage@63798ca7]" name="beforeClass" is-config="true" duration-ms="22096" started-at="2017-10-04T12:31:52Z" finished-at="2017-10-04T12:32:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[testserver]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[10.2.1]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[so's iPhone]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[/Users/gmx/Desktop/soYou_66/SoYou.app]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[e03daa8b2365bf156e6b0a31977add1b013b3a8a]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[XCUITest]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[com.joyn.soyou]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[testserver]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[V862VGVUC2]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[/Users/gmx/Desktop/soYou_66/SoYou.app]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.notificationPage@63798ca7]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:32:14Z" finished-at="2017-10-04T12:32:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.notificationPage.verifyPostNavigationFromNotificationTab() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyPostNavigationFromNotificationTab()[pri:31, instance:TestSc.notificationPage@63798ca7]" name="verifyPostNavigationFromNotificationTab" duration-ms="9289" started-at="2017-10-04T12:32:14Z" finished-at="2017-10-04T12:32:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPostNavigationFromNotificationTab -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.notificationPage@63798ca7]" name="afterMethod" is-config="true" duration-ms="16" started-at="2017-10-04T12:32:23Z" finished-at="2017-10-04T12:32:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPostNavigationFromNotificationTab status=SUCCESS method=notificationPage.verifyPostNavigationFromNotificationTab()[pri:31, instance:TestSc.notificationPage@63798ca7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.notificationPage@63798ca7]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:32:23Z" finished-at="2017-10-04T12:32:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.notificationPage.swipeBetweenTabs() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="swipeBetweenTabs()[pri:32, instance:TestSc.notificationPage@63798ca7]" name="swipeBetweenTabs" duration-ms="9387" started-at="2017-10-04T12:32:23Z" finished-at="2017-10-04T12:32:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- swipeBetweenTabs -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.notificationPage@63798ca7]" name="afterMethod" is-config="true" duration-ms="19" started-at="2017-10-04T12:32:32Z" finished-at="2017-10-04T12:32:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=swipeBetweenTabs status=SUCCESS method=notificationPage.swipeBetweenTabs()[pri:32, instance:TestSc.notificationPage@63798ca7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestSc.notificationPage@63798ca7]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-10-04T12:32:32Z" finished-at="2017-10-04T12:32:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- TestSc.notificationPage -->
+      <class name="TestSc.welcomescreen">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:TestSc.welcomescreen@7502291e]" name="beforeSuite" is-config="true" duration-ms="227" started-at="2017-10-04T12:17:27Z" finished-at="2017-10-04T12:17:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[soYou]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSc.welcomescreen@7502291e]" name="beforeClass" is-config="true" duration-ms="27766" started-at="2017-10-04T12:17:27Z" finished-at="2017-10-04T12:17:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[testserver]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[10.2.1]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[so's iPhone]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[/Users/gmx/Desktop/soYou_66/SoYou.app]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[e03daa8b2365bf156e6b0a31977add1b013b3a8a]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[XCUITest]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[com.joyn.soyou]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[testserver]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[V862VGVUC2]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[/Users/gmx/Desktop/soYou_66/SoYou.app]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.welcomescreen@7502291e]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2017-10-04T12:17:55Z" finished-at="2017-10-04T12:17:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.welcomescreen.Welcomepage() throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Welcomepage()[pri:1, instance:TestSc.welcomescreen@7502291e]" name="Welcomepage" duration-ms="2591" started-at="2017-10-04T12:17:55Z" finished-at="2017-10-04T12:17:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Welcomepage -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.welcomescreen@7502291e]" name="afterMethod" is-config="true" duration-ms="262" started-at="2017-10-04T12:17:58Z" finished-at="2017-10-04T12:17:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Welcomepage status=SUCCESS method=welcomescreen.Welcomepage()[pri:1, instance:TestSc.welcomescreen@7502291e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.welcomescreen@7502291e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-10-04T12:17:58Z" finished-at="2017-10-04T12:17:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.welcomescreen.Welcomepage2() throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Welcomepage2()[pri:2, instance:TestSc.welcomescreen@7502291e]" name="Welcomepage2" duration-ms="2737" started-at="2017-10-04T12:17:58Z" finished-at="2017-10-04T12:18:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Welcomepage2 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.welcomescreen@7502291e]" name="afterMethod" is-config="true" duration-ms="45" started-at="2017-10-04T12:18:01Z" finished-at="2017-10-04T12:18:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Welcomepage2 status=SUCCESS method=welcomescreen.Welcomepage2()[pri:2, instance:TestSc.welcomescreen@7502291e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="Welcomepage3()[pri:3, instance:TestSc.welcomescreen@7502291e]" name="Welcomepage3" duration-ms="3300" started-at="2017-10-04T12:18:01Z" finished-at="2017-10-04T12:18:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Welcomepage3 -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.welcomescreen@7502291e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:18:01Z" finished-at="2017-10-04T12:18:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.welcomescreen.Welcomepage3() throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.welcomescreen@7502291e]" name="afterMethod" is-config="true" duration-ms="37" started-at="2017-10-04T12:18:04Z" finished-at="2017-10-04T12:18:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Welcomepage3 status=SUCCESS method=welcomescreen.Welcomepage3()[pri:3, instance:TestSc.welcomescreen@7502291e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.welcomescreen@7502291e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:18:04Z" finished-at="2017-10-04T12:18:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.welcomescreen.Welcomepage4() throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Welcomepage4()[pri:4, instance:TestSc.welcomescreen@7502291e]" name="Welcomepage4" duration-ms="3202" started-at="2017-10-04T12:18:04Z" finished-at="2017-10-04T12:18:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Welcomepage4 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.welcomescreen@7502291e]" name="afterMethod" is-config="true" duration-ms="34" started-at="2017-10-04T12:18:07Z" finished-at="2017-10-04T12:18:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Welcomepage4 status=SUCCESS method=welcomescreen.Welcomepage4()[pri:4, instance:TestSc.welcomescreen@7502291e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.welcomescreen@7502291e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-10-04T12:18:07Z" finished-at="2017-10-04T12:18:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.welcomescreen.Welcomepage5() throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Welcomepage5()[pri:5, instance:TestSc.welcomescreen@7502291e]" name="Welcomepage5" duration-ms="1490" started-at="2017-10-04T12:18:07Z" finished-at="2017-10-04T12:18:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Welcomepage5 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.welcomescreen@7502291e]" name="afterMethod" is-config="true" duration-ms="31" started-at="2017-10-04T12:18:09Z" finished-at="2017-10-04T12:18:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Welcomepage5 status=SUCCESS method=welcomescreen.Welcomepage5()[pri:5, instance:TestSc.welcomescreen@7502291e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.welcomescreen@7502291e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-10-04T12:18:09Z" finished-at="2017-10-04T12:18:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.welcomescreen.NotificationPoup() throws java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="NotificationPoup()[pri:6, instance:TestSc.welcomescreen@7502291e]" name="NotificationPoup" duration-ms="1123" started-at="2017-10-04T12:18:09Z" finished-at="2017-10-04T12:18:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NotificationPoup -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.welcomescreen@7502291e]" name="afterMethod" is-config="true" duration-ms="24" started-at="2017-10-04T12:18:10Z" finished-at="2017-10-04T12:18:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NotificationPoup status=SUCCESS method=welcomescreen.NotificationPoup()[pri:6, instance:TestSc.welcomescreen@7502291e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestSc.welcomescreen@7502291e]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-10-04T12:18:10Z" finished-at="2017-10-04T12:18:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:TestSc.welcomescreen@7502291e]" name="afterSuite" is-config="true" duration-ms="16" started-at="2017-10-04T12:39:43Z" finished-at="2017-10-04T12:39:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- TestSc.welcomescreen -->
+      <class name="TestSc.SettingsPage">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSc.SettingsPage@5674e1f2]" name="beforeClass" is-config="true" duration-ms="22981" started-at="2017-10-04T12:36:42Z" finished-at="2017-10-04T12:37:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[testserver]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[10.2.1]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[so's iPhone]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[/Users/gmx/Desktop/soYou_66/SoYou.app]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[e03daa8b2365bf156e6b0a31977add1b013b3a8a]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[XCUITest]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[com.joyn.soyou]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[testserver]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[V862VGVUC2]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[/Users/gmx/Desktop/soYou_66/SoYou.app]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.SettingsPage@5674e1f2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:37:05Z" finished-at="2017-10-04T12:37:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.SettingsPage.CheckAboutText() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="CheckAboutText()[pri:44, instance:TestSc.SettingsPage@5674e1f2]" name="CheckAboutText" duration-ms="12092" started-at="2017-10-04T12:37:05Z" finished-at="2017-10-04T12:37:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckAboutText -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.SettingsPage@5674e1f2]" name="afterMethod" is-config="true" duration-ms="16" started-at="2017-10-04T12:37:17Z" finished-at="2017-10-04T12:37:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CheckAboutText status=SUCCESS method=SettingsPage.CheckAboutText()[pri:44, instance:TestSc.SettingsPage@5674e1f2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.SettingsPage@5674e1f2]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-10-04T12:37:17Z" finished-at="2017-10-04T12:37:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.SettingsPage.checkBlockedUsers() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="checkBlockedUsers()[pri:47, instance:TestSc.SettingsPage@5674e1f2]" name="checkBlockedUsers" duration-ms="25243" started-at="2017-10-04T12:37:17Z" finished-at="2017-10-04T12:37:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBlockedUsers -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.SettingsPage@5674e1f2]" name="afterMethod" is-config="true" duration-ms="19" started-at="2017-10-04T12:37:42Z" finished-at="2017-10-04T12:37:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkBlockedUsers status=SUCCESS method=SettingsPage.checkBlockedUsers()[pri:47, instance:TestSc.SettingsPage@5674e1f2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="checkprofilePage()[pri:48, instance:TestSc.SettingsPage@5674e1f2]" name="checkprofilePage" duration-ms="109043" started-at="2017-10-04T12:37:42Z" finished-at="2017-10-04T12:39:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkprofilePage -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.SettingsPage@5674e1f2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:37:42Z" finished-at="2017-10-04T12:37:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.SettingsPage.checkprofilePage() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.SettingsPage@5674e1f2]" name="afterMethod" is-config="true" duration-ms="15" started-at="2017-10-04T12:39:31Z" finished-at="2017-10-04T12:39:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkprofilePage status=SUCCESS method=SettingsPage.checkprofilePage()[pri:48, instance:TestSc.SettingsPage@5674e1f2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.SettingsPage@5674e1f2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:39:31Z" finished-at="2017-10-04T12:39:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.SettingsPage.verifyLogoutAction() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyLogoutAction()[pri:49, instance:TestSc.SettingsPage@5674e1f2]" name="verifyLogoutAction" duration-ms="11219" started-at="2017-10-04T12:39:31Z" finished-at="2017-10-04T12:39:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogoutAction -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.SettingsPage@5674e1f2]" name="afterMethod" is-config="true" duration-ms="18" started-at="2017-10-04T12:39:43Z" finished-at="2017-10-04T12:39:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogoutAction status=SUCCESS method=SettingsPage.verifyLogoutAction()[pri:49, instance:TestSc.SettingsPage@5674e1f2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestSc.SettingsPage@5674e1f2]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-10-04T12:39:43Z" finished-at="2017-10-04T12:39:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- TestSc.SettingsPage -->
+      <class name="TestSc.LoginPage">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSc.LoginPage@17aad511]" name="beforeClass" is-config="true" duration-ms="17573" started-at="2017-10-04T12:18:10Z" finished-at="2017-10-04T12:18:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[testserver]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[10.2.1]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[so's iPhone]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[/Users/gmx/Desktop/soYou_66/SoYou.app]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[e03daa8b2365bf156e6b0a31977add1b013b3a8a]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[XCUITest]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[com.joyn.soyou]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[testserver]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[V862VGVUC2]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[/Users/gmx/Desktop/soYou_66/SoYou.app]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.LoginPage@17aad511]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-10-04T12:18:28Z" finished-at="2017-10-04T12:18:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.LoginPage.SelectCountryFromList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="SelectCountryFromList(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:7, instance:TestSc.LoginPage@17aad511]" name="SelectCountryFromList" duration-ms="15646" started-at="2017-10-04T12:18:28Z" data-provider="details" finished-at="2017-10-04T12:18:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7845640866]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Bob]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Builder]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[BobBuilder@cn.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Hello Dear ]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.google.co.in/]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Kiran Gmx]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Testing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectCountryFromList -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.LoginPage@17aad511]" name="afterMethod" is-config="true" duration-ms="51" started-at="2017-10-04T12:18:44Z" finished-at="2017-10-04T12:18:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SelectCountryFromList status=SUCCESS method=LoginPage.SelectCountryFromList(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:7, instance:TestSc.LoginPage@17aad511] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.LoginPage@17aad511]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:18:44Z" finished-at="2017-10-04T12:18:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.LoginPage.EnterMobileNumber(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="EnterMobileNumber(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:TestSc.LoginPage@17aad511]" name="EnterMobileNumber" duration-ms="10300" started-at="2017-10-04T12:18:44Z" data-provider="details" finished-at="2017-10-04T12:18:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7845640866]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Bob]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Builder]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[BobBuilder@cn.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Hello Dear ]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.google.co.in/]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Kiran Gmx]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Testing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnterMobileNumber -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.LoginPage@17aad511]" name="afterMethod" is-config="true" duration-ms="26" started-at="2017-10-04T12:18:54Z" finished-at="2017-10-04T12:18:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EnterMobileNumber status=SUCCESS method=LoginPage.EnterMobileNumber(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:TestSc.LoginPage@17aad511] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.LoginPage@17aad511]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:18:54Z" finished-at="2017-10-04T12:18:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.LoginPage.EnterOTPScreen() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="EnterOTPScreen()[pri:9, instance:TestSc.LoginPage@17aad511]" name="EnterOTPScreen" duration-ms="8385" started-at="2017-10-04T12:18:54Z" finished-at="2017-10-04T12:19:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnterOTPScreen -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.LoginPage@17aad511]" name="afterMethod" is-config="true" duration-ms="22" started-at="2017-10-04T12:19:03Z" finished-at="2017-10-04T12:19:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EnterOTPScreen status=SUCCESS method=LoginPage.EnterOTPScreen()[pri:9, instance:TestSc.LoginPage@17aad511] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestSc.LoginPage@17aad511]" name="afterClass" is-config="true" duration-ms="1" started-at="2017-10-04T12:19:03Z" finished-at="2017-10-04T12:19:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- TestSc.LoginPage -->
+      <class name="TestSc.recentlist_tab">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSc.recentlist_tab@4612b856]" name="beforeClass" is-config="true" duration-ms="22560" started-at="2017-10-04T12:32:32Z" finished-at="2017-10-04T12:32:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[testserver]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[10.2.1]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[so's iPhone]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[/Users/gmx/Desktop/soYou_66/SoYou.app]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[e03daa8b2365bf156e6b0a31977add1b013b3a8a]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[XCUITest]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[com.joyn.soyou]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[testserver]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[V862VGVUC2]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[/Users/gmx/Desktop/soYou_66/SoYou.app]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="verifyrecentitemlist()[pri:34, instance:TestSc.recentlist_tab@4612b856]" name="verifyrecentitemlist" duration-ms="15175" started-at="2017-10-04T12:32:55Z" finished-at="2017-10-04T12:33:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyrecentitemlist -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.recentlist_tab@4612b856]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:32:55Z" finished-at="2017-10-04T12:32:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.recentlist_tab.verifyrecentitemlist() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.recentlist_tab@4612b856]" name="afterMethod" is-config="true" duration-ms="35" started-at="2017-10-04T12:33:10Z" finished-at="2017-10-04T12:33:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyrecentitemlist status=SUCCESS method=recentlist_tab.verifyrecentitemlist()[pri:34, instance:TestSc.recentlist_tab@4612b856] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.recentlist_tab@4612b856]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-10-04T12:33:10Z" finished-at="2017-10-04T12:33:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.recentlist_tab.createChannel(java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="createChannel(java.lang.String, java.lang.String, java.lang.String)[pri:35, instance:TestSc.recentlist_tab@4612b856]" name="createChannel" duration-ms="61091" started-at="2017-10-04T12:33:10Z" data-provider="search" finished-at="2017-10-04T12:34:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kiran gmx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[#gmx]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[soYou Testing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createChannel -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.recentlist_tab@4612b856]" name="afterMethod" is-config="true" duration-ms="18" started-at="2017-10-04T12:34:11Z" finished-at="2017-10-04T12:34:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createChannel status=SUCCESS method=recentlist_tab.createChannel(java.lang.String, java.lang.String, java.lang.String)[pri:35, instance:TestSc.recentlist_tab@4612b856] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.recentlist_tab@4612b856]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:34:11Z" finished-at="2017-10-04T12:34:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.recentlist_tab.verifyadminbadgeisDisplayed() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyadminbadgeisDisplayed()[pri:36, instance:TestSc.recentlist_tab@4612b856]" name="verifyadminbadgeisDisplayed" duration-ms="14156" started-at="2017-10-04T12:34:11Z" finished-at="2017-10-04T12:34:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyadminbadgeisDisplayed -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.recentlist_tab@4612b856]" name="afterMethod" is-config="true" duration-ms="16" started-at="2017-10-04T12:34:26Z" finished-at="2017-10-04T12:34:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyadminbadgeisDisplayed status=SUCCESS method=recentlist_tab.verifyadminbadgeisDisplayed()[pri:36, instance:TestSc.recentlist_tab@4612b856] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.recentlist_tab@4612b856]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:34:26Z" finished-at="2017-10-04T12:34:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.recentlist_tab.navigatetochannelinfopage() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="navigatetochannelinfopage()[pri:37, instance:TestSc.recentlist_tab@4612b856]" name="navigatetochannelinfopage" duration-ms="17297" started-at="2017-10-04T12:34:26Z" finished-at="2017-10-04T12:34:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatetochannelinfopage -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.recentlist_tab@4612b856]" name="afterMethod" is-config="true" duration-ms="19" started-at="2017-10-04T12:34:43Z" finished-at="2017-10-04T12:34:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=navigatetochannelinfopage status=SUCCESS method=recentlist_tab.navigatetochannelinfopage()[pri:37, instance:TestSc.recentlist_tab@4612b856] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestSc.recentlist_tab@4612b856]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-10-04T12:34:43Z" finished-at="2017-10-04T12:34:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- TestSc.recentlist_tab -->
+      <class name="TestSc.composePage">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSc.composePage@22bac7bc]" name="beforeClass" is-config="true" duration-ms="22222" started-at="2017-10-04T12:27:33Z" finished-at="2017-10-04T12:27:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[testserver]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[10.2.1]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[so's iPhone]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[/Users/gmx/Desktop/soYou_66/SoYou.app]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[e03daa8b2365bf156e6b0a31977add1b013b3a8a]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[XCUITest]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[com.joyn.soyou]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[testserver]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[V862VGVUC2]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[/Users/gmx/Desktop/soYou_66/SoYou.app]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="composeGiftFromCamera()[pri:26, instance:TestSc.composePage@22bac7bc]" name="composeGiftFromCamera" duration-ms="45880" started-at="2017-10-04T12:27:55Z" finished-at="2017-10-04T12:28:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- composeGiftFromCamera -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.composePage@22bac7bc]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:27:55Z" finished-at="2017-10-04T12:27:55Z">
           <params>
             <param index="0">
               <value>
@@ -180,22 +2772,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="composeGiftFromCamera()[pri:26, instance:TestSc.composePage@c540f5a]" name="composeGiftFromCamera" duration-ms="45271" started-at="2017-10-04T10:54:16Z" finished-at="2017-10-04T10:55:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- composeGiftFromCamera -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.composePage@c540f5a]" name="afterMethod" is-config="true" duration-ms="270" started-at="2017-10-04T10:55:01Z" finished-at="2017-10-04T10:55:01Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.composePage@22bac7bc]" name="afterMethod" is-config="true" duration-ms="18" started-at="2017-10-04T12:28:41Z" finished-at="2017-10-04T12:28:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=composeGiftFromCamera status=SUCCESS method=composePage.composeGiftFromCamera()[pri:26, instance:TestSc.composePage@c540f5a] output={null}]]]>
+                <![CDATA[[TestResult name=composeGiftFromCamera status=SUCCESS method=composePage.composeGiftFromCamera()[pri:26, instance:TestSc.composePage@22bac7bc] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.composePage@c540f5a]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-10-04T10:55:01Z" finished-at="2017-10-04T10:55:01Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.composePage@22bac7bc]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:28:41Z" finished-at="2017-10-04T12:28:41Z">
           <params>
             <param index="0">
               <value>
@@ -211,22 +2799,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="composeImageGiftFromGallery()[pri:27, instance:TestSc.composePage@c540f5a]" name="composeImageGiftFromGallery" duration-ms="60749" started-at="2017-10-04T10:55:01Z" finished-at="2017-10-04T10:56:02Z">
+        <test-method status="PASS" signature="composeImageGiftFromGallery()[pri:27, instance:TestSc.composePage@22bac7bc]" name="composeImageGiftFromGallery" duration-ms="48729" started-at="2017-10-04T12:28:41Z" finished-at="2017-10-04T12:29:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- composeImageGiftFromGallery -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.composePage@c540f5a]" name="afterMethod" is-config="true" duration-ms="44" started-at="2017-10-04T10:56:02Z" finished-at="2017-10-04T10:56:02Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.composePage@22bac7bc]" name="afterMethod" is-config="true" duration-ms="19" started-at="2017-10-04T12:29:30Z" finished-at="2017-10-04T12:29:30Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=composeImageGiftFromGallery status=SUCCESS method=composePage.composeImageGiftFromGallery()[pri:27, instance:TestSc.composePage@c540f5a] output={null}]]]>
+                <![CDATA[[TestResult name=composeImageGiftFromGallery status=SUCCESS method=composePage.composeImageGiftFromGallery()[pri:27, instance:TestSc.composePage@22bac7bc] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.composePage@c540f5a]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T10:56:02Z" finished-at="2017-10-04T10:56:02Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.composePage@22bac7bc]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-10-04T12:29:30Z" finished-at="2017-10-04T12:29:30Z">
           <params>
             <param index="0">
               <value>
@@ -242,22 +2830,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="composeVideoGiftFromGallery()[pri:28, instance:TestSc.composePage@c540f5a]" name="composeVideoGiftFromGallery" duration-ms="66420" started-at="2017-10-04T10:56:02Z" finished-at="2017-10-04T10:57:08Z">
+        <test-method status="PASS" signature="composeVideoGiftFromGallery()[pri:28, instance:TestSc.composePage@22bac7bc]" name="composeVideoGiftFromGallery" duration-ms="65649" started-at="2017-10-04T12:29:30Z" finished-at="2017-10-04T12:30:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- composeVideoGiftFromGallery -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.composePage@c540f5a]" name="afterMethod" is-config="true" duration-ms="38" started-at="2017-10-04T10:57:08Z" finished-at="2017-10-04T10:57:08Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.composePage@22bac7bc]" name="afterMethod" is-config="true" duration-ms="17" started-at="2017-10-04T12:30:35Z" finished-at="2017-10-04T12:30:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=composeVideoGiftFromGallery status=SUCCESS method=composePage.composeVideoGiftFromGallery()[pri:28, instance:TestSc.composePage@c540f5a] output={null}]]]>
+                <![CDATA[[TestResult name=composeVideoGiftFromGallery status=SUCCESS method=composePage.composeVideoGiftFromGallery()[pri:28, instance:TestSc.composePage@22bac7bc] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.composePage@c540f5a]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-10-04T10:57:09Z" finished-at="2017-10-04T10:57:09Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.composePage@22bac7bc]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-10-04T12:30:36Z" finished-at="2017-10-04T12:30:36Z">
           <params>
             <param index="0">
               <value>
@@ -273,7 +2861,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="composetextasGift(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:29, instance:TestSc.composePage@c540f5a]" name="composetextasGift" duration-ms="37384" started-at="2017-10-04T10:57:09Z" data-provider="details" finished-at="2017-10-04T10:57:46Z">
+        <test-method status="PASS" signature="composetextasGift(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:29, instance:TestSc.composePage@22bac7bc]" name="composetextasGift" duration-ms="36045" started-at="2017-10-04T12:30:36Z" data-provider="details" finished-at="2017-10-04T12:31:12Z">
           <params>
             <param index="0">
               <value>
@@ -324,18 +2912,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- composetextasGift -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.composePage@c540f5a]" name="afterMethod" is-config="true" duration-ms="25" started-at="2017-10-04T10:57:46Z" finished-at="2017-10-04T10:57:46Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.composePage@22bac7bc]" name="afterMethod" is-config="true" duration-ms="18" started-at="2017-10-04T12:31:12Z" finished-at="2017-10-04T12:31:12Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=composetextasGift status=SUCCESS method=composePage.composetextasGift(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:29, instance:TestSc.composePage@c540f5a] output={null}]]]>
+                <![CDATA[[TestResult name=composetextasGift status=SUCCESS method=composePage.composetextasGift(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:29, instance:TestSc.composePage@22bac7bc] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.composePage@c540f5a]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-10-04T10:57:47Z" finished-at="2017-10-04T10:57:47Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.composePage@22bac7bc]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-10-04T12:31:12Z" finished-at="2017-10-04T12:31:12Z">
           <params>
             <param index="0">
               <value>
@@ -351,7 +2939,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="composeWeblinkasGift(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:30, instance:TestSc.composePage@c540f5a]" name="composeWeblinkasGift" duration-ms="39377" started-at="2017-10-04T10:57:47Z" data-provider="details" finished-at="2017-10-04T10:58:26Z">
+        <test-method status="PASS" signature="composeWeblinkasGift(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:30, instance:TestSc.composePage@22bac7bc]" name="composeWeblinkasGift" duration-ms="39983" started-at="2017-10-04T12:31:12Z" data-provider="details" finished-at="2017-10-04T12:31:52Z">
           <params>
             <param index="0">
               <value>
@@ -402,26 +2990,428 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- composeWeblinkasGift -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.composePage@c540f5a]" name="afterMethod" is-config="true" duration-ms="30" started-at="2017-10-04T10:58:26Z" finished-at="2017-10-04T10:58:26Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.composePage@22bac7bc]" name="afterMethod" is-config="true" duration-ms="17" started-at="2017-10-04T12:31:52Z" finished-at="2017-10-04T12:31:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=composeWeblinkasGift status=SUCCESS method=composePage.composeWeblinkasGift(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:30, instance:TestSc.composePage@c540f5a] output={null}]]]>
+                <![CDATA[[TestResult name=composeWeblinkasGift status=SUCCESS method=composePage.composeWeblinkasGift(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:30, instance:TestSc.composePage@22bac7bc] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestSc.composePage@c540f5a]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-10-04T10:58:26Z" finished-at="2017-10-04T10:58:26Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestSc.composePage@22bac7bc]" name="afterClass" is-config="true" duration-ms="1" started-at="2017-10-04T12:31:52Z" finished-at="2017-10-04T12:31:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:TestSc.composePage@c540f5a]" name="afterSuite" is-config="true" duration-ms="40" started-at="2017-10-04T10:58:26Z" finished-at="2017-10-04T10:58:26Z">
+      </class> <!-- TestSc.composePage -->
+      <class name="TestSc.searchTabPage">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestSc.searchTabPage@22875539]" name="beforeClass" is-config="true" duration-ms="22739" started-at="2017-10-04T12:34:43Z" finished-at="2017-10-04T12:35:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[testserver]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[10.2.1]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[so's iPhone]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[/Users/gmx/Desktop/soYou_66/SoYou.app]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[e03daa8b2365bf156e6b0a31977add1b013b3a8a]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[XCUITest]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[com.joyn.soyou]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[testserver]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[V862VGVUC2]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[/Users/gmx/Desktop/soYou_66/SoYou.app]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[Default]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- TestSc.composePage -->
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.searchTabPage@22875539]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-10-04T12:35:06Z" finished-at="2017-10-04T12:35:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.searchTabPage.verifyTrendingTextisDisplayed() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyTrendingTextisDisplayed()[pri:38, instance:TestSc.searchTabPage@22875539]" name="verifyTrendingTextisDisplayed" duration-ms="6320" started-at="2017-10-04T12:35:06Z" finished-at="2017-10-04T12:35:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTrendingTextisDisplayed -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.searchTabPage@22875539]" name="afterMethod" is-config="true" duration-ms="17" started-at="2017-10-04T12:35:12Z" finished-at="2017-10-04T12:35:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTrendingTextisDisplayed status=SUCCESS method=searchTabPage.verifyTrendingTextisDisplayed()[pri:38, instance:TestSc.searchTabPage@22875539] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="searchforuserinsearchtab(java.lang.String, java.lang.String, java.lang.String)[pri:39, instance:TestSc.searchTabPage@22875539]" name="searchforuserinsearchtab" duration-ms="19951" started-at="2017-10-04T12:35:12Z" data-provider="search" finished-at="2017-10-04T12:35:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kiran gmx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[#gmx]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[soYou Testing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchforuserinsearchtab -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.searchTabPage@22875539]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:35:12Z" finished-at="2017-10-04T12:35:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.searchTabPage.searchforuserinsearchtab(java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.searchTabPage@22875539]" name="afterMethod" is-config="true" duration-ms="15" started-at="2017-10-04T12:35:32Z" finished-at="2017-10-04T12:35:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchforuserinsearchtab status=SUCCESS method=searchTabPage.searchforuserinsearchtab(java.lang.String, java.lang.String, java.lang.String)[pri:39, instance:TestSc.searchTabPage@22875539] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.searchTabPage@22875539]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-10-04T12:35:32Z" finished-at="2017-10-04T12:35:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.searchTabPage.verifyrecentsearch(java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyrecentsearch(java.lang.String, java.lang.String, java.lang.String)[pri:40, instance:TestSc.searchTabPage@22875539]" name="verifyrecentsearch" duration-ms="16079" started-at="2017-10-04T12:35:32Z" data-provider="search" finished-at="2017-10-04T12:35:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kiran gmx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[#gmx]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[soYou Testing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyrecentsearch -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.searchTabPage@22875539]" name="afterMethod" is-config="true" duration-ms="18" started-at="2017-10-04T12:35:48Z" finished-at="2017-10-04T12:35:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyrecentsearch status=SUCCESS method=searchTabPage.verifyrecentsearch(java.lang.String, java.lang.String, java.lang.String)[pri:40, instance:TestSc.searchTabPage@22875539] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="searchfHashtaginsearchtab(java.lang.String, java.lang.String, java.lang.String)[pri:41, instance:TestSc.searchTabPage@22875539]" name="searchfHashtaginsearchtab" duration-ms="25208" started-at="2017-10-04T12:35:48Z" data-provider="search" finished-at="2017-10-04T12:36:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kiran gmx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[#gmx]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[soYou Testing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchfHashtaginsearchtab -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.searchTabPage@22875539]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:35:48Z" finished-at="2017-10-04T12:35:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.searchTabPage.searchfHashtaginsearchtab(java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.searchTabPage@22875539]" name="afterMethod" is-config="true" duration-ms="18" started-at="2017-10-04T12:36:13Z" finished-at="2017-10-04T12:36:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchfHashtaginsearchtab status=SUCCESS method=searchTabPage.searchfHashtaginsearchtab(java.lang.String, java.lang.String, java.lang.String)[pri:41, instance:TestSc.searchTabPage@22875539] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="verifyrecentsearchhashtag(java.lang.String, java.lang.String, java.lang.String)[pri:42, instance:TestSc.searchTabPage@22875539]" name="verifyrecentsearchhashtag" duration-ms="14174" started-at="2017-10-04T12:36:13Z" data-provider="search" finished-at="2017-10-04T12:36:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kiran gmx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[#gmx]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[soYou Testing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyrecentsearchhashtag -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.searchTabPage@22875539]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:36:13Z" finished-at="2017-10-04T12:36:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.searchTabPage.verifyrecentsearchhashtag(java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.searchTabPage@22875539]" name="afterMethod" is-config="true" duration-ms="20" started-at="2017-10-04T12:36:28Z" finished-at="2017-10-04T12:36:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyrecentsearchhashtag status=SUCCESS method=searchTabPage.verifyrecentsearchhashtag(java.lang.String, java.lang.String, java.lang.String)[pri:42, instance:TestSc.searchTabPage@22875539] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="viewTrendingHashtag()[pri:43, instance:TestSc.searchTabPage@22875539]" name="viewTrendingHashtag" duration-ms="14409" started-at="2017-10-04T12:36:28Z" finished-at="2017-10-04T12:36:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewTrendingHashtag -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:TestSc.searchTabPage@22875539]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-10-04T12:36:28Z" finished-at="2017-10-04T12:36:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestSc.searchTabPage.viewTrendingHashtag() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestSc.searchTabPage@22875539]" name="afterMethod" is-config="true" duration-ms="15" started-at="2017-10-04T12:36:42Z" finished-at="2017-10-04T12:36:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=viewTrendingHashtag status=SUCCESS method=searchTabPage.viewTrendingHashtag()[pri:43, instance:TestSc.searchTabPage@22875539] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestSc.searchTabPage@22875539]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-10-04T12:36:42Z" finished-at="2017-10-04T12:36:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- TestSc.searchTabPage -->
     </test> <!-- soYou -->
   </suite> <!-- Regression Test -->
 </testng-results>

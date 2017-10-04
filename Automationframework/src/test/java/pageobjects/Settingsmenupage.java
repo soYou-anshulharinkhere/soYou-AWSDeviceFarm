@@ -8,6 +8,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.MobileBy.ByAccessibilityId;
 import io.appium.java_client.ios.IOSDriver;
 
@@ -240,28 +241,24 @@ public class Settingsmenupage {
 		@SuppressWarnings("unchecked")
 		public boolean setProfilepicture() throws InterruptedException{
 			try {
-				
 				driver.findElement(Profilebutton).click();
 				List<WebElement> e = driver.findElements(edit);
 				e.get(0).click();
-				driver.findElement(By.name("Photos")).click();
+				driver.findElement(By.name("Camera")).click();
 				if (isOKButtonDisplayed()) {
-					driver.findElementByName("OK").click();
-					driver.findElement(AllPhotos).click();
-					List<WebElement> e2 = driver.findElements(ImageCell);
-					System.out.println(e2);
-					e2.get(200).click();
-					driver.findElement(chooseButton).click();
-					Thread.sleep(15000);
-				}
-				else {
-					Thread.sleep(2000);
-					driver.findElement(AllPhotos).click();
-					List<WebElement> e1 = driver.findElements(ImageCell);
-					System.out.println(e1);
-					e1.get(200).click();
-					driver.findElement(chooseButton).click();
-					Thread.sleep(15000);
+					driver.findElement(OKButton).click();
+					driver.findElement(captureButton).click();
+					Thread.sleep(3000);
+					driver.findElement(UsePhoto).click();
+					Thread.sleep(10000);
+					return true;
+				} else {
+					Thread.sleep(1000);
+					driver.findElement(captureButton).click();
+					Thread.sleep(3000);
+					driver.findElement(UsePhoto).click();
+					Thread.sleep(10000);
+
 				}
 			driver.findElement(Backbutton).click();
 			driver.findElement(Backbutton).click();
@@ -282,20 +279,22 @@ public class Settingsmenupage {
 			driver.findElement(Profilebutton).click();
 			List<WebElement> list = driver.findElements(edit);
 			list.get(0).click();
-			driver.findElement(giftcamera).click();
+			driver.findElement(By.name("Camera")).click();
 			if (isOKButtonDisplayed()) {
-				driver.findElement(OKalert).click();
+				driver.findElement(OKbutton).click();
 				driver.findElement(captureButton).click();
 				Thread.sleep(3000);
 				driver.findElement(UsePhoto).click();
 				Thread.sleep(10000);
 				return true;
 			} else {
+				Thread.sleep(2000);
 				driver.findElement(captureButton).click();
 				Thread.sleep(3000);
 				driver.findElement(UsePhoto).click();
 				Thread.sleep(10000);
 			}
+			driver.findElement(Backbutton).click();
 			driver.findElement(Backbutton).click();
 			return true;
 		} catch (org.openqa.selenium.NoSuchElementException e) {
@@ -316,10 +315,11 @@ public class Settingsmenupage {
 				driver.findElementByName("Photos").click();
 				Thread.sleep(1000);
 				driver.findElement(AllPhotos).click();
-				List<WebElement> e2 = driver.findElements(ImageCell);
-				System.out.println(e2);
-				e2.get(201).click();
+//				List<WebElement> e2 = driver.findElements(ImageCell);
+//				System.out.println(e2);
+//				e2.get(11).click();
 				Thread.sleep(2000);
+				TouchAction  ts= new TouchAction(driver).tap(61, 668).perform();
 				driver.findElement(done).click();
 				Thread.sleep(15000);
 				driver.findElement(Backbutton).click();

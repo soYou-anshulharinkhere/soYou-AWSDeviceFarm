@@ -404,7 +404,7 @@ public boolean verifyCommentsOfPost(String commentText) throws InterruptedExcept
 		
 		List<WebElement> e = driver.findElements(postCell);
 		System.out.println(e.size());
-		e.get(1).click();
+		e.get(0).click();
 		
 		if(isVerifyPreviousCommentsDisplayed()){
 			driver.findElementByName("View previous comments").click();

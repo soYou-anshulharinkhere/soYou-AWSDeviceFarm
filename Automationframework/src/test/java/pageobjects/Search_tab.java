@@ -6,6 +6,7 @@ import java.util.NoSuchElementException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.ios.IOSDriver;
 
 public class Search_tab {
@@ -84,14 +85,13 @@ public class Search_tab {
 	}
 	
 	/* assert Trending */
-	@SuppressWarnings("unchecked")
 	public boolean navigateTohashtagDetailView() throws InterruptedException {
 		try {
 	//		assert(driver.findElement(listcells).getSize());
-			List<WebElement> trendinglist = driver.findElements(listcells);
-			System.out.println(trendinglist.size());
-			trendinglist.get(0).click();
-	
+//			List<WebElement> trendinglist = driver.findElements(listcells);
+//			System.out.println(trendinglist.size());
+//			trendinglist.get(0).click();
+			TouchAction  ts= new TouchAction(driver).tap(239, 104).perform();
 			return true;
 		} catch (org.openqa.selenium.NoSuchElementException e) {
 			return false;

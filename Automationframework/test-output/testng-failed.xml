@@ -35,20 +35,18 @@
     <parameter name="platformName" value="iOS"/>
     <parameter name="udid" value="e03daa8b2365bf156e6b0a31977add1b013b3a8a"/>
     <classes>
-      <class name="TestSc.composePage">
+      <class name="TestSc.SettingsPage">
         <methods>
           <include name="beforeSuite"/>
-          <include name="composetextasGift" invocation-numbers="0"/>
-          <include name="composeImageGiftFromGallery"/>
-          <include name="composeWeblinkasGift" invocation-numbers="0"/>
           <include name="afterClass"/>
           <include name="afterMethod"/>
-          <include name="composeVideoGiftFromGallery"/>
           <include name="afterSuite"/>
+          <include name="checkprofilePage"/>
           <include name="beforeClass"/>
+          <include name="verifyLogoutAction"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- TestSc.composePage -->
+      </class> <!-- TestSc.SettingsPage -->
     </classes>
   </test> <!-- soYou(failed) -->
 </suite> <!-- Failed suite [Regression Test] -->

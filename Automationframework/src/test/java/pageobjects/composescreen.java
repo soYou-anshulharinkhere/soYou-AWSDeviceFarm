@@ -347,7 +347,7 @@ public class composescreen {
 		}
 	}
 	/* select image */
-	@SuppressWarnings({ "unchecked", "unused" })
+	@SuppressWarnings({ "unused" })
 	public boolean selectImageFromGallery() throws InterruptedException {
 		try {
 			driver.findElement(imageButton).click();

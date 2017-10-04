@@ -43,7 +43,7 @@ public class IntermediateProfilePage extends AppInitializer {
 	@Test(priority=13)
 	public void CanvasPopUpMessage() throws IOException, InterruptedException {
 		CanvasScreen canvas=new CanvasScreen(getiosDriver());
-	//	getiosDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		getiosDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), canvas.IscanvasPopUpDisplayed(), "Check Whether canvas PopUp is displaying or not", "canvas PopUp is displaying");
 		

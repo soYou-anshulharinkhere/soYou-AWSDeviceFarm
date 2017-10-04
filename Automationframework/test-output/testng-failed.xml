@@ -46,7 +46,6 @@
           <include name="composeVideoGiftFromGallery"/>
           <include name="afterSuite"/>
           <include name="beforeClass"/>
-          <include name="composeGiftFromCamera"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- TestSc.composePage -->

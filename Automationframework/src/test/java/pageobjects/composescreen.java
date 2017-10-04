@@ -5,7 +5,12 @@ import java.util.NoSuchElementException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import io.appium.java_client.ios.IOSDriver;
 
+import com.google.common.collect.ImmutableList;
+
+import io.appium.java_client.PerformsTouchActions;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.MobileBy.ByAccessibilityId;
 import io.appium.java_client.ios.IOSDriver;
 
@@ -17,6 +22,7 @@ public class composescreen {
 	public composescreen(IOSDriver driver) {
 		this.driver = driver;
 	}
+	
 
 	/* page labels */
 	By nameField = By.xpath("//XCUIElementTypeTextField[@value='Enter name(s)']");
@@ -24,7 +30,7 @@ public class composescreen {
 	By plusbutton = By.xpath("//XCUIElementTypeOther/XCUIElementTypeButton");
 	By descriptiontext = By.xpath("//XCUIElementTypeTextView[@name='Say some thing.....'");
 	By imageButton = By.xpath("//XCUIElementTypeButton[@name='Button']");
-	By AllPhotos = By.xpath("//XCUIElementTypeCell[@name='All Photos']");
+	By AllPhotos = ByAccessibilityId.AccessibilityId("All Photos");
 	By videoButton = By.xpath("//XCUIElementTypeButton[@name='Gift Video']");
 	By videoCellList = By.xpath("//XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeButton");
 	By cameraButton = By.xpath("//XCUIElementTypeButton[@name='Gift Camera']");
@@ -341,7 +347,7 @@ public class composescreen {
 		}
 	}
 	/* select image */
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings({ "unchecked", "unused" })
 	public boolean selectImageFromGallery() throws InterruptedException {
 		try {
 			driver.findElement(imageButton).click();
@@ -350,21 +356,24 @@ public class composescreen {
 				Thread.sleep(3000);
 				driver.findElement(AllPhotos).click();
 				System.out.println(driver.findElements(ImageCell).size());
-				List<WebElement> e = driver.findElements(ImageCell);
-				System.out.println(e);
-				e.get(0).click();
-				driver.findElement(imageselectButton).click();
-				Thread.sleep(25000);
+				TouchAction  ts= new TouchAction(driver).tap(76, 178).perform();
+//				List<WebElement> e = driver.findElements(ImageCell);
+//				System.out.println(e);
+//				e.get(0).click();
+				driver.findElement(DoneButton).click();
+				Thread.sleep(10000);
 			}
 			else {
 				driver.findElement(imageButton).click();
+				Thread.sleep(3000);
 				driver.findElement(AllPhotos).click();
 				System.out.println(driver.findElements(ImageCell).size());
-				List<WebElement> e = driver.findElements(ImageCell);
-				System.out.println(e);
-				e.get(0).click();
-				driver.findElement(imageselectButton).click();
-				Thread.sleep(25000);
+				TouchAction  ts= new TouchAction(driver).tap(76, 178).perform();
+//				List<WebElement> e = driver.findElements(ImageCell);
+//				System.out.println(e);
+//				e.get(0).click();
+				driver.findElement(DoneButton).click();
+				Thread.sleep(10000);
 			}
 			return true;
 		} catch (org.openqa.selenium.NoSuchElementException e) {

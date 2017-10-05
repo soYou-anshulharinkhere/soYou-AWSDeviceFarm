@@ -1,3 +1,6 @@
+/* soYou Gyanmatrix Technologies pvt ltd.
+ * created by kiran
+ */
 package TestSc;
 
 import java.io.IOException;
@@ -19,7 +22,7 @@ public class recentlist_tab extends AppInitializer {
 	  return values;
 	 }
 
-		@Test(priority = 34)
+		@Test(priority = 38)
 		public void verifyrecentitemlist() throws IOException, InterruptedException {
 			recentlist_screen recent = new recentlist_screen(getiosDriver());
 
@@ -33,7 +36,7 @@ public class recentlist_tab extends AppInitializer {
 			
 		}
 
-	@Test(priority = 35,dataProvider="search")
+	@Test(priority = 39,dataProvider="search")
 	public void createChannel(String name,String hashtag,String channelname) throws IOException, InterruptedException {
 		recentlist_screen recent = new recentlist_screen(getiosDriver());
 
@@ -63,7 +66,7 @@ public class recentlist_tab extends AppInitializer {
 
 	}
 
-	@Test(priority = 36)
+	@Test(priority = 40)
 	public void verifyadminbadgeisDisplayed() throws IOException, InterruptedException {
 		recentlist_screen recent = new recentlist_screen(getiosDriver());
 		
@@ -86,7 +89,7 @@ public class recentlist_tab extends AppInitializer {
 
 	}
 
-	@Test(priority = 37)
+	@Test(priority = 41)
 	public void navigatetochannelinfopage() throws IOException, InterruptedException {
 		recentlist_screen recent = new recentlist_screen(getiosDriver());
 
@@ -116,8 +119,5 @@ public class recentlist_tab extends AppInitializer {
 		
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), recent.IsbackButtonDisplayed(),
 				"Check Whether back button is displayed  and clicked or not", "back button is displayed  and clicked");
-
-
 	}
-
 }

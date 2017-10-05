@@ -1,3 +1,6 @@
+/* soYou Gyanmatrix Technologies pvt ltd.
+ * created by kiran
+ */
 package TestSc;
 
 import java.io.IOException;
@@ -19,7 +22,7 @@ public class composePage extends AppInitializer{
 	
 	String hashtag = "#gmx";
 	
-	@Test(priority=26)
+	@Test(priority=30)
 	public void composeGiftFromCamera() throws IOException, InterruptedException {
 		composescreen composepage=new composescreen(getiosDriver());
 		
@@ -29,7 +32,7 @@ public class composePage extends AppInitializer{
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), composepage.sendButton(), "Check Whether send button clicked or not", "send button clicked");
 	}
 	
-	@Test(priority=27)
+	@Test(priority=31)
 	public void composeImageGiftFromGallery() throws IOException, InterruptedException {
 		composescreen composepage=new composescreen(getiosDriver());
 		
@@ -39,7 +42,7 @@ public class composePage extends AppInitializer{
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), composepage.sendButton(), "Check Whether send button clicked or not", "send button clicked");
 	}
 	
-	@Test(priority=28)
+	@Test(priority=32)
 	public void composeVideoGiftFromGallery() throws IOException, InterruptedException {
 		composescreen composepage=new composescreen(getiosDriver());
 		
@@ -49,7 +52,7 @@ public class composePage extends AppInitializer{
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), composepage.sendButton(), "Check Whether send button clicked or not", "send button clicked");
 	}
 	
-	@Test(priority=29,dataProvider="details")
+	@Test(priority=33,dataProvider="details")
 	public void composetextasGift( String mobilenumber,String countryname,String Firstname,String Lastname,String email,String Text,String link,String name,String groupName) throws IOException, InterruptedException {
 		composescreen composepage=new composescreen(getiosDriver());
 		
@@ -60,7 +63,7 @@ public class composePage extends AppInitializer{
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), composepage.sendButton(), "Check Whether send button clicked or not", "send button clicked");
 	}
 	
-	@Test(priority=30,dataProvider="details")
+	@Test(priority=34,dataProvider="details")
 	public void composeWeblinkasGift( String mobilenumber,String countryname,String Firstname,String Lastname,String email,String text,String Link,String name,String groupName) throws IOException, InterruptedException {
 		composescreen composepage=new composescreen(getiosDriver());
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), composepage.IsselectContactsDisplayed(), "Check Whether Select contacts is displaying or not", "Select contacts is displaying displaying");

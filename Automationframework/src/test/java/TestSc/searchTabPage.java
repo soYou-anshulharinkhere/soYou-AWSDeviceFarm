@@ -1,3 +1,6 @@
+/* soYou Gyanmatrix Technologies pvt ltd.
+ * created by kiran
+ */
 package TestSc;
 
 import java.io.IOException;
@@ -19,7 +22,7 @@ public class searchTabPage extends AppInitializer {
 	  return values;
 	 }
 	
-	@Test(priority=38)
+	@Test(priority=42)
 	public void verifyTrendingTextisDisplayed() throws IOException, InterruptedException {
 		Search_tab search=new Search_tab(getiosDriver());
 
@@ -31,7 +34,7 @@ public class searchTabPage extends AppInitializer {
 	
 	}
 	
-	@Test(priority=39,dataProvider="search")
+	@Test(priority=43,dataProvider="search")
 	public void searchforuserinsearchtab(String name,String hashtag,String channelname) throws IOException, InterruptedException {
 		Search_tab search=new Search_tab(getiosDriver());
 		
@@ -46,7 +49,7 @@ public class searchTabPage extends AppInitializer {
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), search.iscancelbuttonclicked(), "Check Whether cancel text is done or not", "cancel text is done or not");
 	}
 	
-	@Test(priority=40,dataProvider="search")
+	@Test(priority=44,dataProvider="search")
 	public void verifyrecentsearch(String name,String hashtag,String channelname) throws IOException, InterruptedException {
 		Search_tab search=new Search_tab(getiosDriver());
 		
@@ -59,7 +62,7 @@ public class searchTabPage extends AppInitializer {
 //		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), search.iscancelbuttonclicked(), "Check Whether cancel text is done or not", "cancel text is done or not");
 	}
 	
-	@Test(priority=41,dataProvider="search")
+	@Test(priority=45,dataProvider="search")
 	public void searchfHashtaginsearchtab(String name,String hashtag,String channelname) throws IOException, InterruptedException {
 		Search_tab search=new Search_tab(getiosDriver());
 		
@@ -78,7 +81,7 @@ public class searchTabPage extends AppInitializer {
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), search.iscancelbuttonclicked(), "Check Whether cancel text is done or not", "cancel text is done or not");
 	}
 	
-	@Test(priority=42,dataProvider="search")
+	@Test(priority=46,dataProvider="search")
 	public void verifyrecentsearchhashtag(String name,String hashtag,String channelname) throws IOException, InterruptedException {
 		Search_tab search=new Search_tab(getiosDriver());
 		
@@ -96,7 +99,7 @@ public class searchTabPage extends AppInitializer {
 	}
 	
 	
-	@Test(priority=43)
+	@Test(priority=47)
 	public void viewTrendingHashtag() throws IOException, InterruptedException {
 		Search_tab search=new Search_tab(getiosDriver());
 		

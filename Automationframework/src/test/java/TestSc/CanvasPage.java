@@ -1,3 +1,6 @@
+/* soYou Gyanmatrix Technologies pvt ltd.
+ * created by kiran
+ */
 package TestSc;
 
 import java.io.IOException;
@@ -162,4 +165,71 @@ public class CanvasPage extends AppInitializer {
 		
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.verifyCommentsOfPost(commentText), "Check Whether view previous comments is displaying or not", "view previous comments is displaying");
 	}
+	
+	@Test(priority=26)
+	public void MarkPostAsSpam() throws IOException, InterruptedException{
+		DetailedviewPage viewpage=new DetailedviewPage(getiosDriver());
+	
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.navigatetoDetailView(),  "Check Whether navigation to detail view is done or not", "navigation to detail view is done");
+	
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.ClickMoreButton(), "Check Whether more Button is clicked or not", "more Button is clicked");
+		
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.clickOnSpamButton(),  "Check Whether Spam Button is clicked or not", "Spam Button is clicked");
+		
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.isSpamTextDisplayed(), "Check Whether Spam Text is Displayed or not", "Spam text is Displayed");
+		
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.isYesButtonClicked(), "Check Whether Yes Button is clicked or not", "Yes Button is clicked");
+		
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.isOkButtonDisplayed(), "Check Whether OK Text is Displayed or not", "Ok text is Displayed");
+	
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.isBackButtonDisplayed(), "Verify whether Back Button Displayed", "Back Button Displayed");
+	
+	}
+	
+	@Test(priority=27)
+	public void DeleteAnPostFromcanvas() throws IOException, InterruptedException{
+		DetailedviewPage viewpage=new DetailedviewPage(getiosDriver());
+	
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.navigatetoDetailView(),  "Check Whether navigation to detail view is done or not", "navigation to detail view is done");
+	
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.ClickMoreButton(), "Check Whether more Button is clicked or not", "more Button is clicked");
+		
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.isDeleteBUttonDisplayed(), "Check Whether Delete Button is displaying or not", "Delete Button is displaying");
+		
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.isDeleteTextDisplayed(), "Check Whether Delete text is displaying or not", "Delete text is displaying");
+		
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.isYesButtonClicked(), "Check Whether Yes Button is clicked or not", "Yes Button is clicked");
+		
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.isBackButtonDisplayed(), "Verify whether Back Button Displayed", "Back Button Displayed");
+	
+	}
+	
+	@Test(priority=28)
+	public void BlockuserFromcanvas() throws IOException, InterruptedException{
+		DetailedviewPage viewpage=new DetailedviewPage(getiosDriver());
+	
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.navigatetoOthersCanvasfromownCanvas(),  "Check Whether navigation to detail view is done or not", "navigation to detail view is done");
+	
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.BlockAnUser(), "Check user block is success or not", "user block is success");
+	}
+	
+	
+	@Test(priority=29)
+	public void UnBlockuserFromcanvas() throws IOException, InterruptedException{
+		DetailedviewPage viewpage=new DetailedviewPage(getiosDriver());
+		Settingsmenupage menu = new  Settingsmenupage(getiosDriver());
+	
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), menu.IsMenuButtonClicking(),  "Check Whether navigation to detail view is done or not", "navigation to detail view is done");
+	
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.UnBlockAnUser(), "Check Blocked user is clicked or not", "Blocked user is clicked");
+	
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.isUnBlockTextDisplayed(), "Check Whether Unblock text is displaying or not", "Unblock text is displaying ");
+		
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.isUnBlockButtonDisplayed(), "Check Whether Unblock Button is clicked  or not", "Unblock Button is clicked ");
+		
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.isBackButtonDisplayed(), "Verify whether Back Button Displayed", "Back Button Displayed");
+		
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), viewpage.isBackButtonDisplayed(), "Verify whether Back Button Displayed", "Back Button Displayed");
+	}
+	
 }

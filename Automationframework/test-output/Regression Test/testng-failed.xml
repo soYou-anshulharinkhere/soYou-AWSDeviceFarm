@@ -1,54 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Regression Test]">
-  <parameter name="app" value="/Users/gmx/Desktop/soYou_66/SoYou.app"/>
-  <parameter name="noReset" value="true"/>
-  <parameter name="MobileOS" value="ios"/>
-  <parameter name="xcodeOrgId" value="V862VGVUC2"/>
-  <parameter name="bundleId" value="com.joyn.soyou"/>
-  <parameter name="deviceName" value="so&#039;s iPhone"/>
-  <parameter name="xcodeSigningId" value="iPhone Developer"/>
-  <parameter name="agentPath" value="/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj"/>
-  <parameter name="bootstrapPath" value="/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent"/>
-  <parameter name="userNewWDA" value="true"/>
-  <parameter name="platformVersion" value="10.2.1"/>
-  <parameter name="device-type" value="iOS"/>
-  <parameter name="testing_platform" value="default"/>
-  <parameter name="automationName" value="XCUITest"/>
-  <parameter name="platformName" value="iOS"/>
-  <parameter name="udid" value="e03daa8b2365bf156e6b0a31977add1b013b3a8a"/>
   <test name="soYou(failed)">
-    <parameter name="app" value="/Users/gmx/Desktop/soYou_66/SoYou.app"/>
-    <parameter name="noReset" value="true"/>
+    <parameter name="app" value="/Users/anshulharinkhere/Library/Developer/Xcode/DerivedData/SoYou-dobzstlzhtfwkjdvgccohyhwlqfc/Build/Products/Debug-iphoneos/SoYou.app"/>
+    <parameter name="noReset" value="false"/>
     <parameter name="MobileOS" value="ios"/>
     <parameter name="xcodeOrgId" value="V862VGVUC2"/>
     <parameter name="bundleId" value="com.joyn.soyou"/>
-    <parameter name="deviceName" value="so&#039;s iPhone"/>
+    <parameter name="deviceName" value="iPhone"/>
     <parameter name="xcodeSigningId" value="iPhone Developer"/>
-    <parameter name="agentPath" value="/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj"/>
-    <parameter name="bootstrapPath" value="/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent"/>
+    <parameter name="agentPath" value="/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj"/>
+    <parameter name="bootstrapPath" value="/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent"/>
     <parameter name="userNewWDA" value="true"/>
-    <parameter name="platformVersion" value="10.2.1"/>
+    <parameter name="platformVersion" value="11.1.2"/>
     <parameter name="device-type" value="iOS"/>
     <parameter name="testing_platform" value="default"/>
     <parameter name="automationName" value="XCUITest"/>
     <parameter name="platformName" value="iOS"/>
-    <parameter name="udid" value="e03daa8b2365bf156e6b0a31977add1b013b3a8a"/>
+    <parameter name="udid" value="0c4d88ae8ffeaac0a58b59b9f7d2a9788488203d"/>
     <classes>
-      <class name="TestSc.composePage">
+      <class name="TestSc.LoginPage">
         <methods>
           <include name="beforeSuite"/>
-          <include name="composetextasGift" invocation-numbers="0"/>
-          <include name="composeImageGiftFromGallery"/>
-          <include name="composeWeblinkasGift" invocation-numbers="0"/>
+          <include name="SelectCountryFromList"/>
           <include name="afterClass"/>
+          <include name="EnterMobileNumber"/>
+          <include name="EnterOTPScreen"/>
           <include name="afterMethod"/>
-          <include name="composeVideoGiftFromGallery"/>
           <include name="afterSuite"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- TestSc.composePage -->
+      </class> <!-- TestSc.LoginPage -->
+      <class name="TestSc.welcomescreen">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="Welcomepage"/>
+          <include name="NotificationPoup"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="Welcomepage2"/>
+          <include name="Welcomepage5"/>
+          <include name="beforeClass"/>
+          <include name="Welcomepage3"/>
+          <include name="Welcomepage4"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- TestSc.welcomescreen -->
     </classes>
   </test> <!-- soYou(failed) -->
 </suite> <!-- Failed suite [Regression Test] -->

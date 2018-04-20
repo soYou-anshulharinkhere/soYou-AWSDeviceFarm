@@ -1,3 +1,6 @@
+/* soYou Gyanmatrix Technologies pvt ltd.
+ * created by kiran
+ */
 package pageobjects;
 
 import java.util.List;
@@ -5,6 +8,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.MobileBy.ByAccessibilityId;
 import io.appium.java_client.ios.IOSDriver;
 
@@ -81,11 +85,13 @@ public class recentlist_screen {
 	}
 	
 	/* assert back button */
+	@SuppressWarnings("unused")
 	public boolean IsAddFriendsButtonDisplayed() throws InterruptedException {
 		try {
 		//	assert (driver.findElement(AddFriends).isDisplayed());
-			Thread.sleep(5000);
-			driver.findElement(AddFriends).click();
+			Thread.sleep(2000);
+			TouchAction  ts= new TouchAction(driver).tap(117, 338).perform();
+		//	driver.findElement(AddFriends).click();
 			return true;
 
 		} catch (org.openqa.selenium.NoSuchElementException e) {

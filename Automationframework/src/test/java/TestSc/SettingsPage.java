@@ -10,7 +10,7 @@ import com.framework.internal.feature.AppInitializer;
 import pageobjects.Settingsmenupage;
 
 public class SettingsPage extends AppInitializer {
-	@Test(priority=44)
+	@Test(priority=48)
 	public void CheckAboutText() throws IOException, InterruptedException {
 		Settingsmenupage Settings=new Settingsmenupage(getiosDriver());
 		
@@ -23,7 +23,7 @@ public class SettingsPage extends AppInitializer {
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), Settings.isBackbuttonClicked(), "Verify whether back button is clicked or not", "back button is clicked");
 	}
 
-//	@Test(priority=45)
+//	@Test(priority=49)
 	public void checkTermsandConditions() throws IOException, InterruptedException  {
 		Settingsmenupage Settings=new Settingsmenupage(getiosDriver());
 		
@@ -34,7 +34,7 @@ public class SettingsPage extends AppInitializer {
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), Settings.isBackbuttonClicked(), "Verify whether back button is clicked or not", "back button is clicked");
 	}
 	
-//	@Test(priority=46)
+//	@Test(priority=50)
 	public void checkPrivacyPolicy() throws IOException, InterruptedException  {
 		Settingsmenupage Settings=new Settingsmenupage(getiosDriver());
 		
@@ -45,7 +45,7 @@ public class SettingsPage extends AppInitializer {
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), Settings.isBackbuttonClicked(), "Verify whether back button is clicked or not", "back button is clicked");
 	}
 	
-	@Test(priority=47)
+	@Test(priority=51)
 	public void checkBlockedUsers() throws IOException, InterruptedException  {
 		Settingsmenupage Settings=new Settingsmenupage(getiosDriver());
 		
@@ -58,7 +58,7 @@ public class SettingsPage extends AppInitializer {
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), Settings.isBackbuttonClicked(), "Verify whether back button is clicked or not", "back button is clicked");
 	}
 	
-	@Test(priority=48)
+	@Test(priority=52)
 	public void checkprofilePage() throws IOException, InterruptedException  {
 		Settingsmenupage Settings=new Settingsmenupage(getiosDriver());
 		
@@ -73,7 +73,7 @@ public class SettingsPage extends AppInitializer {
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), Settings.isBackbuttonClicked(), "Verify whether back button is clicked or not", "back button is clicked");
 	}
 	
-	@Test(priority=49)
+	@Test(priority=53)
 	public void verifyLogoutAction() throws IOException, InterruptedException  {
 		Settingsmenupage Settings=new Settingsmenupage(getiosDriver());
 		

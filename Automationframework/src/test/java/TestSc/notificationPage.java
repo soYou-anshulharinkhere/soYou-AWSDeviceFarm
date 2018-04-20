@@ -10,7 +10,7 @@ import com.framework.internal.feature.AppInitializer;
 import pageobjects.Notifications_tab;
 
 public class notificationPage extends AppInitializer {
-	@Test(priority=31)
+	@Test(priority=35)
 	public void verifyPostNavigationFromNotificationTab() throws IOException, InterruptedException {
 		Notifications_tab notify=new Notifications_tab(getiosDriver());
 		
@@ -20,7 +20,7 @@ public class notificationPage extends AppInitializer {
 		
 	}
 
-	@Test(priority=32)
+	@Test(priority=36)
 	public void swipeBetweenTabs() throws IOException, InterruptedException {
 		Notifications_tab notify=new Notifications_tab(getiosDriver());
 		
@@ -29,7 +29,7 @@ public class notificationPage extends AppInitializer {
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), notify.SwipeToYouTab(), "Check Whether Swipe to Friends tab is success or not", "Swipe to Friends tab is success");
 	}
 	
-//	@Test(priority=33)
+//	@Test(priority=37)
 	public void verifyopeningpostinfriendstab() throws IOException, InterruptedException {
 		Notifications_tab notify=new Notifications_tab(getiosDriver());
 		

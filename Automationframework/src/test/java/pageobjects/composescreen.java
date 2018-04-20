@@ -1,4 +1,7 @@
- package pageobjects;
+/* soYou Gyanmatrix Technologies pvt ltd.
+ * created by kiran
+ */
+package pageobjects;
 
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -29,7 +32,7 @@ public class composescreen {
 	By cancelButton = By.xpath("//XCUIElementTypeButton[@name='Cancel']");
 	By plusbutton = By.xpath("//XCUIElementTypeOther/XCUIElementTypeButton");
 	By descriptiontext = By.xpath("//XCUIElementTypeTextView[@name='Say some thing.....'");
-	By imageButton = By.xpath("//XCUIElementTypeButton[@name='Button']");
+	By imageButton = By.xpath("//XCUIElementTypeButton[@name='Gift Image']");
 	By AllPhotos = ByAccessibilityId.AccessibilityId("All Photos");
 	By videoButton = By.xpath("//XCUIElementTypeButton[@name='Gift Video']");
 	By videoCellList = By.xpath("//XCUIElementTypeTable/XCUIElementTypeCell/XCUIElementTypeButton");
@@ -65,9 +68,9 @@ public class composescreen {
 	By ComposeTextArea = By.xpath("//XCUIElementTypeOther/XCUIElementTypeTextView");
 	By userTagging=By.xpath("//XCUIElementTypeCell/XCUIElementTypeStaticText[@name='Kiran Gmx']");
 	By chooseButton = By.xpath("//XCUIElementTypeButton[@name='Choose']");
-	By TabBar= By.xpath("//XCUIElementTypeTabBar/XCUIElementTypeButton");
+	By TabBar= By.xpath("//XCUIElementTypeApplication[@name='soYou']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeTabBar/XCUIElementTypeButton[3]");
 	By NoMatchFound = By.xpath("//XCUIElementTypeStaticText[@name='No Matches Found']");
-	By TableListCell = By.xpath("//XCUIElementTypeTable/XCUIElementTypeCell");
+	By TableListCell = By.xpath("//XCUIElementTypeApplication[@name='soYou']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTable");
 	By AddButton =  ByAccessibilityId.AccessibilityId("Add");
 	By AddFriends = ByAccessibilityId.AccessibilityId("Add Friends");
 	By CreateChannel = ByAccessibilityId.AccessibilityId("Create Channel");
@@ -83,10 +86,15 @@ public class composescreen {
 	public boolean IsselectContactsDisplayed() throws InterruptedException {
 		try {
 			Thread.sleep(500);
-			List<WebElement> cell = driver.findElements(TabBar);
-			cell.get(2).click();
-			driver.findElement(nameField).click();
-			Thread.sleep(3000);
+//			List<WebElement> cell = driver.findElements(TabBar);
+//			cell.get(2).click();
+			Thread.sleep(1000);
+			//driver.findElement(TabBar).click();
+			TouchAction touchAction=new TouchAction(driver);
+			touchAction.tap(	208, 702).perform().release();
+			Thread.sleep(1000);
+			//driver.findElement(nameField).click();
+		
 			return true;
 		} catch (org.openqa.selenium.NoSuchElementException e) {
 			return false;
@@ -97,9 +105,11 @@ public class composescreen {
 	@SuppressWarnings("unchecked")
 	public boolean IsContactsListDisplayed() throws InterruptedException {
 		try {
-			List<WebElement> cell1 = driver.findElements(TableListCell);
-			cell1.get(5).click();
-			driver.findElement(selectButton).click();
+//			List<WebElement> cell1 = driver.findElements(TableListCell);
+//			cell1.get(5).click();
+			TouchAction SlctCntct =new TouchAction(driver);
+			SlctCntct.tap(200, 157).perform().release();
+			//driver.findElement(selectButton).click();
 			return true;
 		} catch (org.openqa.selenium.NoSuchElementException e) {
 			return false;
@@ -221,15 +231,19 @@ public class composescreen {
 			if (isOKButtonDisplayed()) {
 				driver.findElement(OKButton).click();
 				driver.findElement(captureButton).click();
-				Thread.sleep(3000);
-				driver.findElement(UsePhoto).click();
-				Thread.sleep(10000);
+				Thread.sleep(1000);
+				//driver.findElement(UsePhoto).click();
+				TouchAction UsePhoto = new TouchAction(driver);
+				UsePhoto.tap(350, 690).perform().release();
+				Thread.sleep(1000);
 				return true;
 			} else {
 				driver.findElement(captureButton).click();
-				Thread.sleep(3000);
-				driver.findElement(UsePhoto).click();
-				Thread.sleep(10000);
+				Thread.sleep(1000);
+				//driver.findElement(UsePhoto).click();
+				TouchAction UsePhoto = new TouchAction(driver);
+				UsePhoto.tap(350, 690).perform().release();
+				Thread.sleep(1000);
 			}
 		} catch (org.openqa.selenium.NoSuchElementException e) {
 			return false;
@@ -347,7 +361,7 @@ public class composescreen {
 		}
 	}
 	/* select image */
-	@SuppressWarnings({ "unchecked", "unused" })
+	@SuppressWarnings({ "unused" })
 	public boolean selectImageFromGallery() throws InterruptedException {
 		try {
 			driver.findElement(imageButton).click();
@@ -500,7 +514,8 @@ public class composescreen {
 	/* click on Send Button */
 	public boolean sendButton() throws InterruptedException {
 		try {
-			assert(driver.findElement(sendButton).isDisplayed());
+			//assert(driver.findElement(sendButton).isDisplayed());
+			Thread.sleep(10000);
 			driver.findElement(sendButton).click();
 			Thread.sleep(10000);
 			return true;

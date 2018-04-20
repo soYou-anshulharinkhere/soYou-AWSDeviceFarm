@@ -1,3 +1,6 @@
+/* soYou Gyanmatrix Technologies pvt ltd.
+ * created by kiran
+ */
 package pageobjects;
 
 import java.util.List;
@@ -8,6 +11,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.MobileBy.ByAccessibilityId;
 import io.appium.java_client.ios.IOSDriver;
 
@@ -34,8 +38,8 @@ public class Settingsmenupage {
 	By Privacybutton = By.xpath("//XCUIElementTypeStaticText[@name='Privacy Policy']");
 	By privacytext = By.name("SoYou Privacy Policy to be included with General Availability release.");
 	By Termsbutton = By.xpath("//XCUIElementTypeStaticText[@name='Terms']");
-	By Logoutbutton = By.xpath("//XCUIElementTypeStaticText[@name='Log out']");
-	By menuButton = By.xpath("//XCUIElementTypeButton[@name='menu']");
+	By Logoutbutton = ByAccessibilityId.AccessibilityId("Log out");
+	By menuButton = ByAccessibilityId.AccessibilityId("NavigationDrawer");
 	By OKbutton = By.xpath("//XCUIElementTypeButton[@name='OK']");
 	By yesButton = By.xpath("//XCUIElementTypeButton[@name='Yes']");
 	By noButton = By.xpath("//XCUIElementTypeButton[@name='No']");
@@ -55,6 +59,12 @@ public class Settingsmenupage {
 	By ImageCell = By.xpath("//XCUIElementTypeCell");
 	By imageselectButton = By.xpath("//XCUIElementTypeButton[@name='Select(1)']");
 	By AllPhotos = By.xpath("//XCUIElementTypeCell[@name='All Photos']");
+	
+	
+	
+	
+	
+	
 	
 	/* assert Back button */
 	public boolean isBackbuttonClicked() {
@@ -240,28 +250,24 @@ public class Settingsmenupage {
 		@SuppressWarnings("unchecked")
 		public boolean setProfilepicture() throws InterruptedException{
 			try {
-				
 				driver.findElement(Profilebutton).click();
 				List<WebElement> e = driver.findElements(edit);
 				e.get(0).click();
-				driver.findElement(By.name("Photos")).click();
+				driver.findElement(By.name("Camera")).click();
 				if (isOKButtonDisplayed()) {
-					driver.findElementByName("OK").click();
-					driver.findElement(AllPhotos).click();
-					List<WebElement> e2 = driver.findElements(ImageCell);
-					System.out.println(e2);
-					e2.get(200).click();
-					driver.findElement(chooseButton).click();
-					Thread.sleep(15000);
-				}
-				else {
-					Thread.sleep(2000);
-					driver.findElement(AllPhotos).click();
-					List<WebElement> e1 = driver.findElements(ImageCell);
-					System.out.println(e1);
-					e1.get(200).click();
-					driver.findElement(chooseButton).click();
-					Thread.sleep(15000);
+					driver.findElement(OKButton).click();
+					driver.findElement(captureButton).click();
+					Thread.sleep(3000);
+					driver.findElement(UsePhoto).click();
+					Thread.sleep(10000);
+					return true;
+				} else {
+					Thread.sleep(1000);
+					driver.findElement(captureButton).click();
+					Thread.sleep(3000);
+					driver.findElement(UsePhoto).click();
+					Thread.sleep(10000);
+
 				}
 			driver.findElement(Backbutton).click();
 			driver.findElement(Backbutton).click();
@@ -282,20 +288,22 @@ public class Settingsmenupage {
 			driver.findElement(Profilebutton).click();
 			List<WebElement> list = driver.findElements(edit);
 			list.get(0).click();
-			driver.findElement(giftcamera).click();
+			driver.findElement(By.name("Camera")).click();
 			if (isOKButtonDisplayed()) {
-				driver.findElement(OKalert).click();
+				driver.findElement(OKbutton).click();
 				driver.findElement(captureButton).click();
 				Thread.sleep(3000);
 				driver.findElement(UsePhoto).click();
 				Thread.sleep(10000);
 				return true;
 			} else {
+				Thread.sleep(2000);
 				driver.findElement(captureButton).click();
 				Thread.sleep(3000);
 				driver.findElement(UsePhoto).click();
 				Thread.sleep(10000);
 			}
+			driver.findElement(Backbutton).click();
 			driver.findElement(Backbutton).click();
 			return true;
 		} catch (org.openqa.selenium.NoSuchElementException e) {
@@ -316,10 +324,11 @@ public class Settingsmenupage {
 				driver.findElementByName("Photos").click();
 				Thread.sleep(1000);
 				driver.findElement(AllPhotos).click();
-				List<WebElement> e2 = driver.findElements(ImageCell);
-				System.out.println(e2);
-				e2.get(201).click();
+//				List<WebElement> e2 = driver.findElements(ImageCell);
+//				System.out.println(e2);
+//				e2.get(11).click();
 				Thread.sleep(2000);
+				TouchAction  ts= new TouchAction(driver).tap(61, 668).perform();
 				driver.findElement(done).click();
 				Thread.sleep(15000);
 				driver.findElement(Backbutton).click();

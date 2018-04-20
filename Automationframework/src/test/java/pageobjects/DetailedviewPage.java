@@ -11,8 +11,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.touch.TouchActions;
 
-import io.appium.java_client.MobileBy.ByAccessibilityId;
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.MobileBy.ByAccessibilityId;
 import io.appium.java_client.ios.IOSDriver;
 
 public class DetailedviewPage {
@@ -28,6 +28,13 @@ public class DetailedviewPage {
 	By backbutton = By.xpath("//XCUIElementTypeButton[@name='Back']");
 	By back = By.xpath("//XCUIElementTypeButton[@name='back']");
 	By morebutton = By.xpath("//XCUIElementTypeButton[@name='more black']");
+	By more= ByAccessibilityId.AccessibilityId("more");
+	By menuButton = By.xpath("//XCUIElementTypeButton[@name='menu']");
+	By Block = ByAccessibilityId.AccessibilityId("Block");
+	By BlockedUsersbutton = By.xpath("//XCUIElementTypeStaticText[@name='Blocked Users']");
+	By BlockList = By.xpath("//XCUIElementTypeTable/XCUIElementTypeCell");
+	By UnblockText = ByAccessibilityId.AccessibilityId("Unblock user?");
+	By UnblockButton= ByAccessibilityId.AccessibilityId("Unblock");
 	By Playbutton = By.xpath("//XCUIElementTypeButton[@name='Play']");
 	By sharebutton = By.xpath("//XCUIElementTypeCell/XCUIElementTypeButton[@name='share transparent']");
 	By resharebutton = By.xpath("//XCUIElementTypeButton[@name='Share in soYou']");
@@ -40,12 +47,18 @@ public class DetailedviewPage {
 	By nameField = By.xpath("//XCUIElementTypeTextField[@value='Enter name(s)']");
 	By cancelButton = By.xpath("//XCUIElementTypeButton[@name='Cancel']");
 	By plusbutton = By.xpath("//XCUIElementTypeOther/XCUIElementTypeButton");
-	By descriptiontext = By.xpath("//XCUIElementTypeTextView[@value='Say something...']");
+	By descriptiontext = By.xpath("//XCUIElementTypeApplication[@name='soYou']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextView");
 	By imageButton = By.xpath("//XCUIElementTypeButton[@name='Button']");
 	By videoButton = By.xpath("//XCUIElementTypeButton[@name='Gift Video']");
 	By cameraButton = By.xpath("//XCUIElementTypeButton[@name='Gift Camera']");
 	By sendButton = By.xpath("//XCUIElementTypeButton[@name='Send']");
 	By SelectText= ByAccessibilityId.AccessibilityId("Select");
+	By Spam= ByAccessibilityId.AccessibilityId("Spam");
+	By SpamText = ByAccessibilityId.AccessibilityId("Do you wish to report this gift as Spam?");
+	By DeleteButton= ByAccessibilityId.AccessibilityId("Delete");
+	By DeleteTExt = ByAccessibilityId.AccessibilityId("Do you wish to delete this gift?");
+	By Yes= ByAccessibilityId.AccessibilityId("Yes");
+	By No= ByAccessibilityId.AccessibilityId("No");
 	By contactstext = By.name("“SoYou” Would Like to Access Your Contacts");
 	By closeButton = By.xpath("//XCUIElementTypeButton[@name='log out']");
 	By close= By.xpath("//XCUIElementTypeButton[@name='close']");
@@ -62,7 +75,7 @@ public class DetailedviewPage {
 	By nextbutton = By.xpath("//XCUIElementTypeButton[@name='next']");
 	By ProfilepicPlaceHolder = By.xpath("//XCUIElementTypeImage[@name='Default_FB']");
 	By groupnamebutton = By.xpath("//XCUIElementTypeTextField[@value='Group Header']");
-	By OKalert = By.xpath("//XCUIElementTypeButton[@name='Ok']");
+	By OKalert = ByAccessibilityId.AccessibilityId("Ok");
 	By composeTab = By.xpath("//XCUIElementTypeTabBar");
 	By DoneButton = By.xpath("//XCUIElementTypeButton[@name='Done']");
 	By imageselectButton = By.xpath("//XCUIElementTypeButton[@name='Select(1)']");
@@ -75,9 +88,9 @@ public class DetailedviewPage {
 	By tabBar = By.xpath("//XCUIElementTypeTabBar/XCUIElementTypeButton");
 	By linkcell =By.xpath("//XCUIElementTypeTable/XCUIElementTypeCell[1]");
 	By SenderCell = By.xpath("//XCUIElementTypeTable/XCUIElementTypeCell[2]");
-	By addComment = By.xpath("//XCUIElementTypeOther/XCUIElementTypeTextView[@value='Add a Comment']");
+	By addComment = By.xpath("//XCUIElementTypeApplication[@name='soYou']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTextView");
 	By replycell = By.xpath("//XCUIElementTypeOther/XCUIElementTypeTextView");
-	By contactsCell = By.xpath("//XCUIElementTypeCell[4]");
+	By contactsCell = By.xpath("//XCUIElementTypeApplication[@name='soYou']/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]");
 	By GroupNameList = By.xpath("//XCUIElementTypeStaticText[contains(@name,'Friends')]");
 	By sender = By.xpath("//XCUIElementTypeCell/XCUIElementTypeButton");
 	
@@ -120,12 +133,99 @@ public class DetailedviewPage {
 		}
 	}
 	
+	/* assert more Button */
+	public boolean ClickMoreButton() throws InterruptedException {
+
+		try {
+			driver.findElement(morebutton).click();
+			Thread.sleep(500);
+			return true;
+		} catch (org.openqa.selenium.NoSuchElementException e) {
+			return false;
+		}
+	}
+	
+	/* assert yes Button */
+	public boolean isYesButtonClicked() throws InterruptedException {
+
+		try {
+			driver.findElement(Yes).click();
+			Thread.sleep(1000);
+			return true;
+		} catch (org.openqa.selenium.NoSuchElementException e) {
+			return false;
+		}
+	}
+	
+	/* assert OK Button */
+	public boolean isOkButtonDisplayed() throws InterruptedException {
+
+		try {
+			driver.findElement(OKalert).click();
+			Thread.sleep(1000);
+			return true;
+		} catch (org.openqa.selenium.NoSuchElementException e) {
+			return false;
+		}
+	}
+	
+	/* assert Spam Button */
+	public boolean clickOnSpamButton() throws InterruptedException {
+
+		try {
+			driver.findElement(Spam).click();
+			Thread.sleep(1000);
+			return true;
+		} catch (org.openqa.selenium.NoSuchElementException e) {
+			return false;
+		}
+	}
+	
+	/* assert Spam Text */
+	public boolean isSpamTextDisplayed() throws InterruptedException {
+
+		try {
+			Thread.sleep(500);
+			driver.findElement(SpamText).isDisplayed();
+			return true;
+		} catch (org.openqa.selenium.NoSuchElementException e) {
+			return false;
+		}
+	}
+	
+	
+	/* assert Spam Text */
+	public boolean isDeleteTextDisplayed() throws InterruptedException {
+
+		try {
+			Thread.sleep(500);
+			driver.findElement(DeleteTExt).isDisplayed();
+			return true;
+		} catch (org.openqa.selenium.NoSuchElementException e) {
+			return false;
+		}
+	}
+	
+	
+	/* assert Delete Button */
+	public boolean isDeleteBUttonDisplayed() throws InterruptedException {
+
+		try {
+			driver.findElement(DeleteButton).click();
+			Thread.sleep(1000);
+			return true;
+		} catch (org.openqa.selenium.NoSuchElementException e) {
+			return false;
+		}
+	}
+	
 	/* assert Back Button */
 	public boolean isBackButtonDisplayed() throws InterruptedException {
 
 		try {
 			Thread.sleep(2000);
-			driver.findElement(backbutton).click();
+			driver.navigate().back();
+			//driver.findElement(backbutton).click();
 			return true;
 		} catch (org.openqa.selenium.NoSuchElementException e) {
 			return false;
@@ -146,28 +246,39 @@ public class DetailedviewPage {
 	}
 
 	/* Clicking on share butoon from detailed view */
-	public boolean SelectContactfromList() {
+	public boolean SelectContactfromList() throws InterruptedException {
 
 		try {
-			if (isOkayButtonDisplayed()) {
-				driver.findElementByName("OK").click();
-				driver.findElement(contactsCell).click();
-				driver.findElement(selectButton).click();
-			} else {
-				driver.findElement(contactsCell).click();
-				driver.findElement(selectButton).click();
-			}
+//			if (isOkayButtonDisplayed()) {
+//				//driver.findElementByName("OK").click();
+//				driver.findElement(contactsCell).click();
+//				TouchAction touchAction=new TouchAction(driver);
+//				touchAction.tap(	381, 43).perform().release();
+//				//driver.findElement(selectButton).click();
+//			} else {
+			
+				//driver.findElement(contactsCell).click();
+				TouchAction touchAction=new TouchAction(driver);
+				touchAction.tap(	200, 98).perform();
+				TouchAction touchAction2=new TouchAction(driver);
+				touchAction2.tap(381, 43).perform();
+				//driver.findElement(selectButton).click();
+	
 			return true;
-		} catch (org.openqa.selenium.NoSuchElementException e) {
+		}
+		 catch (org.openqa.selenium.NoSuchElementException e) {
 			return false;
 		}
 	}
 
+	
+	
 	/* Add Text while re-sharing gift */
 	public boolean ComposeTextWhileResharing(String description)
 			throws InterruptedException {
 
 		try {
+			
 			driver.findElement(descriptiontext).sendKeys(description);
 			return true;
 		} catch (org.openqa.selenium.NoSuchElementException e) {
@@ -208,14 +319,34 @@ public class DetailedviewPage {
 		}
 	}
 
-	/* navigate to Others Canvas */
+	/* navigate to detail view of post */
 	@SuppressWarnings("unchecked")
 	public boolean navigatetoDetailViewofPost() throws InterruptedException {
 		try {
+			Thread.sleep(6000);
+			TouchAction touchAction=new TouchAction(driver);
+			touchAction.tap(	110, 145).perform().release();
+			
+//			List<WebElement>  e= driver.findElements(postCell);
+//			System.out.println(e.size());
+//			e.get(1).click();
+			Thread.sleep(1000);
+			return true;
+		} catch (org.openqa.selenium.NoSuchElementException e) {
+			return false;
+		}
+	}
+	
+	/* navigate to detail view of post */
+	@SuppressWarnings("unchecked")
+	public boolean navigatetoDetailView() throws InterruptedException {
+		try {
 		//	Thread.sleep(6000);
-			List<WebElement>  e= driver.findElements(postCell);
-			System.out.println(e.size());
-			e.get(0).click();
+//			List<WebElement>  e= driver.findElements(postCell);
+//			System.out.println(e.size());
+//			e.get(4).click();
+			TouchAction touchAction=new TouchAction(driver);
+			touchAction.tap(	110, 145).perform().release();
 			Thread.sleep(1000);
 			return true;
 		} catch (org.openqa.selenium.NoSuchElementException e) {
@@ -232,6 +363,60 @@ public class DetailedviewPage {
 			e.get(0).click();
 			driver.findElement(SenderCell).click();
 			Thread.sleep(1000);
+			return true;
+		} catch (org.openqa.selenium.NoSuchElementException e) {
+			return false;
+		}
+	}
+	
+	
+	/* Block an user */
+	public boolean BlockAnUser() throws InterruptedException {
+		try {
+			Thread.sleep(1000);
+			driver.findElement(more).click();
+			driver.findElement(Block).click();
+			Thread.sleep(1000);
+			return true;
+		} catch (org.openqa.selenium.NoSuchElementException e) {
+			return false;
+		}
+	}
+	
+	/* UnBlock an user */
+	@SuppressWarnings("unchecked")
+	public boolean UnBlockAnUser() throws InterruptedException {
+		try {
+			Thread.sleep(2000);
+			driver.findElement(menuButton).click();
+			driver.findElement(BlockedUsersbutton).click();
+			Thread.sleep(1000);
+			List<WebElement> block= 	driver.findElements(BlockList);
+			System.out.println(block.size());
+			block.get(0).click();
+			return true;
+		} catch (org.openqa.selenium.NoSuchElementException e) {
+			return false;
+		}
+	}
+	
+	/* UnBlock an user */
+	public boolean isUnBlockTextDisplayed() throws InterruptedException {
+		try {
+			Thread.sleep(500);
+			driver.findElement(UnblockText).isDisplayed();
+			return true;
+		} catch (org.openqa.selenium.NoSuchElementException e) {
+			return false;
+		}
+	}
+	
+	/* UnBlock an user */
+	public boolean isUnBlockButtonDisplayed() throws InterruptedException {
+		try {
+			Thread.sleep(500);
+			driver.findElement(UnblockButton).click();
+			Thread.sleep(2000);
 			return true;
 		} catch (org.openqa.selenium.NoSuchElementException e) {
 			return false;
@@ -255,11 +440,13 @@ public class DetailedviewPage {
 	@SuppressWarnings("unchecked")
 	public boolean navigatetoOthersCanvasfromownCanvas() throws InterruptedException {
 		try {
-			List<WebElement>  e= driver.findElements(postCell);
-			System.out.println(e.size());
-			driver.findElement(sender).click();
-			Thread.sleep(1000);
-			driver.findElement(backbutton).click();
+//			List<WebElement>  e= driver.findElements(postCell);
+//			System.out.println(e.size());
+			//driver.findElement(sender).click();
+			Thread.sleep(500);
+			driver.findElement(postCell).click();
+//			Thread.sleep(1000);
+//			driver.findElement(backbutton).click();
 			return true;
 		} catch (org.openqa.selenium.NoSuchElementException e) {
 			return false;
@@ -393,7 +580,7 @@ public class DetailedviewPage {
 public boolean verifyCommentsOfPost(String commentText) throws InterruptedException {
 	try {
 		Thread.sleep(1000);
-		for (int i=0;i<=21;i++)
+		for (int i=0;i<=3;i++)
 		{
 			driver.findElement(addComment).sendKeys(commentText);
 			driver.findElement(sendButton).click();
@@ -402,9 +589,11 @@ public boolean verifyCommentsOfPost(String commentText) throws InterruptedExcept
 		driver.findElement(backbutton).click();
 		Thread.sleep(1000);
 		
-		List<WebElement> e = driver.findElements(postCell);
-		System.out.println(e.size());
-		e.get(1).click();
+//		List<WebElement> e = driver.findElements(postCell);
+//		System.out.println(e.size());
+//		e.get(0).click();
+		TouchAction touchAction=new TouchAction(driver);
+		touchAction.tap(	110, 145).perform().release();
 		
 		if(isVerifyPreviousCommentsDisplayed()){
 			driver.findElementByName("View previous comments").click();

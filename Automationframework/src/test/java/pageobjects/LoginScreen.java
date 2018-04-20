@@ -17,11 +17,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.MobileBy.ByAccessibilityId;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.ios.IOSDriver;
 
 @SuppressWarnings("unused")
 public class LoginScreen {
-	@SuppressWarnings("rawtypes")
 	public IOSDriver driver;
 
 	@SuppressWarnings("rawtypes")
@@ -33,33 +33,61 @@ public class LoginScreen {
 	By DontAllowPermissions = By.xpath("//XCUIElementTypeButton[@name='Don’t Allow']");
 	By Verifyyournumbertitle = By.name("Verify Your Number");
 	By SMSVerificationmessage = By.name("SoYou will send an SMS message to verify your phone number.");
-	By Countryselectiontab = By.xpath("//XCUIElementTypeOther/XCUIElementTypeButton");
-	By mobilenumberfield = By.xpath("//XCUIElementTypeTextField[@value='Mobile Number']");
-	By mobilenumberfield2 = By.xpath("//XCUIElementTypeTextField");
+	By defaultCountryNameUnitedStates=ByAccessibilityId.AccessibilityId("United States");
+	By defaultCountryNameIndia=ByAccessibilityId.AccessibilityId("India");
+	By Countryselectiontab = ByAccessibilityId.AccessibilityId("CountryName");
+	By mobilenumberfield = By.xpath("//XCUIElementTypeApplication[@name=\"soYou\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]");
+
 	By countrycode = By.name("+91");
 	By submitbutton = ByAccessibilityId.AccessibilityId("Submit");
-	By searchcountry = By.xpath("//XCUIElementTypeTextField[@value='Search']");
+	By searchcountry = ByAccessibilityId.AccessibilityId("Search");
 	By cancel = ByAccessibilityId.AccessibilityId("Cancel");
 	By EnterOTPtitle = By.xpath("//XCUIElementTypeStaticText[@name='Enter OTP']");
 	By allow = ByAccessibilityId.AccessibilityId("Allow");
 	By Dont_allow = ByAccessibilityId.AccessibilityId("Don’t Allow");
-	By Done = ByAccessibilityId.AccessibilityId("Done");
-	By CountrySearchBar = By.xpath("//XCUIElementTypeTable/XCUIElementTypeCell");
-	By OTPValue = By.xpath("//XCUIElementTypeButton[@name='1']");
+	By Done = By.xpath("//XCUIElementTypeButton[@name=\"Done\"]");
+	By CountrySearchBar = By.xpath("//XCUIElementTypeApplication[@name='soYou']/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable[1]/XCUIElementTypeCell[1]");
+	By OTPValue = ByAccessibilityId.AccessibilityId("1");
 	By OKButton = ByAccessibilityId.AccessibilityId("OK");
-	By ResendOtp = By.xpath("XCUIElementTypeButton[@name='Resend OTP']");
-	
+	By ResendOtp = By.xpath("//XCUIElementTypeButton[@name='Resend OTP']");
+	By OkButtonOnSimulater = ByAccessibilityId.AccessibilityId("Done");
+
 	/* click on submit button */
 	public boolean clickSubmit() {
 		try {
-			driver.findElement(submitbutton).click();
-			return true;
+			return driver.findElement(submitbutton).isDisplayed(); 
 		} catch (org.openqa.selenium.NoSuchElementException e) {
 			System.out.println("Submit Button is  not Displayed");
 			return false;
 		}
 	}
-
+	public boolean ClickSubmitButton() throws InterruptedException {
+		
+	try {
+		
+	if (clickSubmit()) {
+		 driver.findElement(submitbutton).click();
+		 return false;
+	} else {
+		driver.findElement(OkButtonOnSimulater).click();
+	}
+	}catch(org.openqa.selenium.NoSuchElementException e){
+		System.out.println("Submit Button is  not Displayed");
+		
+		}
+	return true;
+	}
+	
+	
+	public boolean OkButtonOnSimulater() {
+		try {
+			return driver.findElement(OkButtonOnSimulater).isDisplayed();
+			
+		} catch (org.openqa.selenium.NoSuchElementException e) {
+			System.out.println("Ok Button only for simulator is  not Displayed");
+			return false;
+		}
+	}
 	/* click on cancel button */
 	public boolean clickCancel() {
 		try {
@@ -76,11 +104,11 @@ public class LoginScreen {
 	 * 
 	 * @param mobileNumber of the user
 	 */
-	public boolean IsMobileNumberFieldDisplayed(String mobileNumber) {
+	public boolean IsMobileNumberFieldDisplayed(String phNo) {
 		try {
-			assert (driver.findElement(mobilenumberfield).isDisplayed());
-			driver.findElement(mobilenumberfield).clear();
-			driver.findElement(mobilenumberfield).sendKeys(mobileNumber);
+			//assert (driver.findElement(mobilenumberfield).isDisplayed());
+			//driver.findElement(mobilenumberfield).clear();
+			driver.findElement(mobilenumberfield).sendKeys(phNo);
 			return true;
 		} catch (org.openqa.selenium.NoSuchElementException e) {
 			System.out.println("Mobile Number is not entered");
@@ -95,14 +123,14 @@ public class LoginScreen {
 	 */
 	public boolean EnterOTP() throws InterruptedException {
 		try {
-			Thread.sleep(1000);
+			Thread.sleep(600);
 			for (int i = 0; i <= 3; i++) {
 				// click the button 1 in loop
 				driver.findElement(OTPValue).click();
-				}
+			}
 			Thread.sleep(1000);
 			if (isOkayButtonDisplayed()) {
-					driver.findElement(OKButton).click();
+				driver.findElement(OKButton).click();
 			}
 			return true;
 		} catch (org.openqa.selenium.NoSuchElementException e) {
@@ -120,24 +148,40 @@ public class LoginScreen {
 			return false;
 		}
 	}
-	
-	
+
+
 	/*
 	 * asserting Select country cell
 	 */
+	public boolean defaultCountryNameIndia() {
+		try {
+			driver.findElement(defaultCountryNameIndia).isDisplayed();
+			return true;
+		} catch (org.openqa.selenium.NoSuchElementException e) {
+			System.out.println("defaultCountryName is  not Displayed");
+			return false;
+		}
+	}
+	public boolean defaultCountryNameUnitedStates() {
+		try {
+			driver.findElement(defaultCountryNameUnitedStates).isDisplayed();
+			return true;
+		} catch (org.openqa.selenium.NoSuchElementException e) {
+			System.out.println("defaultCountryName is  not Displayed");
+			return false;
+		}
+	}
 	public boolean ISSelectCountryCellDisplayed()throws InterruptedException {
 		try {
-			if (IsNotoficationPermissionPopupDisplayed()) {
-				driver.findElement(allow).click();
-				Thread.sleep(500);
-				driver.findElement(Countryselectiontab).isDisplayed();
-				driver.findElement(Countryselectiontab).click();
-				return true;
-			} else {
-				driver.findElement(Countryselectiontab).isDisplayed();
-				driver.findElement(Countryselectiontab).click();
-				return true;
-			}
+			
+			if (defaultCountryNameUnitedStates()) {
+							driver.findElement(defaultCountryNameUnitedStates).click();
+							return true;
+						} else {
+						driver.findElement(defaultCountryNameIndia).click();
+			      	return true;
+			
+						}	
 		} catch (org.openqa.selenium.NoSuchElementException e) {
 			System.out.println("Select country cell is  not Displayed");
 			return false;
@@ -152,7 +196,9 @@ public class LoginScreen {
 	@SuppressWarnings("unchecked")
 	public boolean ISSelectCountrysearchBarDisplayed(String countryname)throws InterruptedException {
 		try {
+
 			driver.findElement(searchcountry).isDisplayed();
+			driver.findElement(searchcountry).click();
 			driver.findElement(searchcountry).sendKeys(countryname);
 			List<WebElement> countryList = driver.findElements(CountrySearchBar);
 			countryList.get(0).click();
@@ -213,10 +259,9 @@ public class LoginScreen {
 	 */
 	public boolean VerifyTheMobileNumber(String MobileNumber) throws InterruptedException {
 		try {
-			Thread.sleep(5000);
-			System.out.println("value"+driver.findElement(mobilenumberfield2).getAttribute("value"));
-			return driver.findElement(mobilenumberfield2).getAttribute("value").equals(MobileNumber);
-			
+			System.out.println("value"+driver.findElement(mobilenumberfield).getAttribute("value"));
+			return driver.findElement(mobilenumberfield).getAttribute("value").equals(MobileNumber);
+
 		} catch (org.openqa.selenium.NoSuchElementException e) {
 			System.out.println("Entered Mobile Number is not matched");
 			return false;
@@ -226,9 +271,10 @@ public class LoginScreen {
 	/* Verify EnterOTPtitle */
 	public boolean VerifyEnterOTPtitle() throws InterruptedException {
 		try {
-	//		Thread.sleep(5000);
+			//		Thread.sleep(5000);
 			return driver.findElement(EnterOTPtitle).isDisplayed();
-			
+		
+
 		} catch (org.openqa.selenium.NoSuchElementException e) {
 			System.out.println("Enter OTP Title is  not Displayed");
 			return false;

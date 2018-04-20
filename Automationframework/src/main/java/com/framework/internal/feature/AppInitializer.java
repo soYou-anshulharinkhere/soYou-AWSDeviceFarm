@@ -47,6 +47,7 @@ public class AppInitializer extends CustomVerification {
 	
 	
 	
+	
 	//@Parameters({TestNGXMLParameters.DEVICE_TYPE,TestNGXMLParameters.DEVICE_URL,TestNGXMLParameters.DEVICE_NAME,TestNGXMLParameters.DEVICE_VERSION,TestNGXMLParameters.MOBILE_PLATFORM,TestNGXMLParameters.TESTING_PLATFORM,TestNGXMLParameters.TEST_RUN,TestNGXMLParameters.MACHINE_HOST,TestNGXMLParameters.APP_HOSTING_ENVIRONMENT,TestNGXMLParameters.APP_PACKAGE})
 	
 	@Parameters({TestNGXMLParameters.DEVICE_TYPE,TestNGXMLParameters.DEVICE_URL,TestNGXMLParameters.DEVICE_NAME_ANDROID,TestNGXMLParameters.DEVICE_VERSION,TestNGXMLParameters.MOBILE_PLATFORM,TestNGXMLParameters.TESTING_PLATFORM,TestNGXMLParameters.TEST_RUN,TestNGXMLParameters.MACHINE_HOST,TestNGXMLParameters.APP_HOSTING_ENVIRONMENT,TestNGXMLParameters.APP_PACKAGE,TestNGXMLParameters.PLATFORM_NAME,TestNGXMLParameters.PLATFORM_VERSION,TestNGXMLParameters.DEVICE_NAME_iOS,TestNGXMLParameters.APP_NAME,TestNGXMLParameters.NO_RESET,TestNGXMLParameters.UDID,TestNGXMLParameters.AUTOMATION_NAME,TestNGXMLParameters.BUNDLEDID,TestNGXMLParameters.DEVELOPMENT_TEAM,TestNGXMLParameters.AGENT_PATH,TestNGXMLParameters.BOOTSTRAPPATH,TestNGXMLParameters.CODE_SIGN_IDENTITY,TestNGXMLParameters.AUTOACCEPTALERTS,TestNGXMLParameters.USENEWWDA,TestNGXMLParameters.XCODEORGID,TestNGXMLParameters.APP,TestNGXMLParameters.APP_ACTIVITY,TestNGXMLParameters.MOBILE_OS})
@@ -196,8 +197,8 @@ public class AppInitializer extends CustomVerification {
     public  void beforeSuite(@Optional("soYou") String suiteName) throws IOException, SlackApiException {
     	WebDriverInitializer.loadWebDriverConfigFile(FileUtility.getTestResourceFilePath()+"/externalresource/selenium_webdriver_config.properties");
     	
-    	//Sending the message in slack channel
- //  	SlackMessenger.loadSlackConfigProperty(FileUtility.getTestResourceFilePath()+"/externalresource/slackConfig.properties").sendTextMessage(SlackConfig.getTestStartMessage());
+ //     	Sending the message in slack channel
+   	SlackMessenger.loadSlackConfigProperty(FileUtility.getTestResourceFilePath()+"/externalresource/slackConfig.properties").sendTextMessage(SlackConfig.getTestStartMessage());
      	
 //    	/**Assigning the TestSuitename to generate report*/
     	ExtentReportManager.suiteName=suiteName;
@@ -211,8 +212,8 @@ public class AppInitializer extends CustomVerification {
     @AfterSuite
     protected  void afterSuite() throws IOException, SlackApiException {
      	WebDriverInitializer.loadWebDriverConfigFile(FileUtility.getTestResourceFilePath()+"/externalresource/selenium_webdriver_config.properties");
-  //  	SlackMessenger.loadSlackConfigProperty(FileUtility.getTestResourceFilePath()+"/externalresource/slackConfig.properties").sendFile();
-   //	SlackMessenger.loadSlackConfigProperty(FileUtility.getTestResourceFilePath()+"/externalresource/slackConfig.properties").sendTextMessage(SlackConfig.getTestEndMessage());
+//    	SlackMessenger.loadSlackConfigProperty(FileUtility.getTestResourceFilePath()+"/externalresource/slackConfig.properties").sendFile();
+//  	SlackMessenger.loadSlackConfigProperty(FileUtility.getTestResourceFilePath()+"/externalresource/slackConfig.properties").sendTextMessage(SlackConfig.getTestEndMessage());
 
     	/** Closing the extent report after writing the report */
     	extent.close();

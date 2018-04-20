@@ -1,8 +1,12 @@
+/* soYou Gyanmatrix Technologies pvt ltd.
+ * created by kiran
+ */
 package TestSc;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.testng.annotations.Test;
 
 import com.framework.internal.feature.AppInitializer;
@@ -14,9 +18,18 @@ import pageobjects.IntermediateScreen;
 import pageobjects.composescreen;
 
 public class IntermediateProfilePage extends AppInitializer {
+	
+	private static final String UserFirstName = "UserFirstName";
+	private static final String UserLastName = "UserLastName";
+	
+	String randomName = RandomStringUtils.randomAlphabetic(4);
+	
+	
+	String Firstname = UserFirstName+randomName;
+	String Lastname = UserLastName+randomName;
+	
 	/* constants*/
-	String Firstname = "SoYou";
-	String Lastname = "App";
+
 	String email = "soyouapp@apple.com";
 	
 	@Test(priority=10)
@@ -40,13 +53,13 @@ public class IntermediateProfilePage extends AppInitializer {
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), profile.VerifyclickOnLetMeIn(), "verify let me in button is clicked or not", "let me in button is clicked");
 	}
 	
-	@Test(priority=13)
-	public void CanvasPopUpMessage() throws IOException, InterruptedException {
-		CanvasScreen canvas=new CanvasScreen(getiosDriver());
-	//	getiosDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
-		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), canvas.IscanvasPopUpDisplayed(), "Check Whether canvas PopUp is displaying or not", "canvas PopUp is displaying");
-		
-	//	verifyTrue(ExtentTestManager.getTest(), getiosDriver(), canvas.IsnoGiftsTextDisplayed(), "Verify whether no gits found text is displayed or not", "no gits found text is displayed");
-	}
+//	@Test(priority=13)
+//	public void CanvasPopUpMessage() throws IOException, InterruptedException {
+//		CanvasScreen canvas=new CanvasScreen(getiosDriver());
+//		getiosDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//		
+//		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), canvas.IscanvasPopUpDisplayed(), "Check Whether canvas PopUp is displaying or not", "canvas PopUp is displaying");
+//		
+//	 	verifyTrue(ExtentTestManager.getTest(), getiosDriver(), canvas.IsnoGiftsTextDisplayed(), "Verify whether no gits found text is displayed or not", "no gits found text is displayed");
+//	}
 }

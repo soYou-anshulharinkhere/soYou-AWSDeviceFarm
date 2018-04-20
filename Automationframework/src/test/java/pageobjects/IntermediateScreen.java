@@ -23,9 +23,9 @@ public class IntermediateScreen {
 	/* Page Labels */
 	By camera = ByAccessibilityId.AccessibilityId("Camera");
 	By gallery = ByAccessibilityId.AccessibilityId("Gallery");
-	By EnterFirstName = By.xpath("//XCUIElementTypeTextField[@value='Enter First Name *']");
-	By EnterLastName = By.xpath("//XCUIElementTypeTextField[@value='Enter Last Name *']");
-	By OkLetmeInButton = By.xpath("//XCUIElementTypeButton[@name='OK, let me in']");
+	By EnterFirstName = ByAccessibilityId.AccessibilityId("EnterFirstName");
+	By EnterLastName = ByAccessibilityId.AccessibilityId("EnterLastName");
+	By OkLetmeInButton = ByAccessibilityId.AccessibilityId("LetMeInButton");
 	By ORtitle = By.xpath("//XCUIElementTypeStaticText[@name='OR']");
 	By OKalert = By.xpath("//XCUIElementTypeButton[@name='Ok']");
 	By Facebooklinkbutton = By.xpath("//XCUIElementTypeButton[@name='facebook']");
@@ -161,7 +161,7 @@ public class IntermediateScreen {
 				driver.findElement(captureButton).click();
 				Thread.sleep(3000);
 				driver.findElement(UsePhoto).click();
-				Thread.sleep(25000);
+				Thread.sleep(9000);
 	//			driver.findElement(DoneButton).click();
 				return true;
 			} else {

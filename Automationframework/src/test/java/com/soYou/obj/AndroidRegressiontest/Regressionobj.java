@@ -1,5 +1,7 @@
 package com.soYou.obj.AndroidRegressiontest;
 
+//import static com.framework.internal.feature.AppInitializer.driver;
+
 import java.util.List;
 import java.util.NoSuchElementException;
 
@@ -7,7 +9,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidKeyCode;
 
 public class Regressionobj {
 
@@ -19,7 +23,12 @@ public class Regressionobj {
 	public AndroidDriver driver;
 	/*Page Elements*/
 
+	//WelcomeScreens 
+
+	By WelcomeScreenSkip=By.id("com.joyn.soyou:id/btnSkip");
+
 	//Mobile Number Screen 
+
 	By MobileNumberHeader=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.TextView[1]");
 	By MobileNumberSubHeader=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinarLayout/android.widget.TextView[2]"); 
 	By MobileNumberField=By.id("com.joyn.soyou:id/etmobileNumber");
@@ -37,34 +46,170 @@ public class Regressionobj {
 	By permissionDeny=By.id("com.android.packageinstaller:id/permission_deny_button");
 
 	//OTP Screen 
+
+	By Entercontactonsrch=By.id("com.google.android.googlequicksearchbox:id/search_box_input");
+	By ContactAppclick=By.name("Contacts");
+	By SrchExistingNameInContctLst=By.id("com.android.contacts:id/menu_search");
+	By SrchName=By.id("com.android.contacts:id/search_view");
+	By NameSelect=By.name("Anshul");
+	By MoreOption=By.id("More options");
+	By DeleteClick=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[1]/android.widget.RelativeLayout/android.widget.TextView");
+	By DeleteConfirm=By.id("android:id/button1");
+	By addNewContactBtn=By.id("com.android.contacts:id/floating_action_button");
+	By EnterContctNm=By.xpath("/hierarchy/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.EditText");
+	By EnterContctNo=By.xpath("/hierarchy/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.EditText");
+	By SaveContct=By.id("com.android.contacts:id/menu_save");
+
 	By OTPSrcHeader=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.TextView[1]");
 	By OTPSrcSubHeader=By.id("com.joyn.soyou:id/tvEnterOtpPlaceHolder");
 	By RequestNewOTPText=By.id("com.joyn.soyou:id/tvNewOtp");
 	By WrongNumberText=By.id("com.joyn.soyou:id/tvWrongNumber");
 	By EnterOTPNumberField=By.id("com.joyn.soyou:id/etOtp");
-	
+	By ContactPermissionAllow=By.id("com.android.packageinstaller:id/permission_allow_button");
 	By OTPMisMatchWarning=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout");
 
-//Intermidiate Screen 
-	
+	//Intermidiate Screen 
+
 	By DefalultProfPicPlaceHolder=By.id("com.joyn.soyou:id/ivProfilePicture");
+	By RemovePhoto=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[2]");
+	By Removepermission=By.id("android:id/button2");
+	By AddANewPhoto=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[1]");
 	By FirstNameTextField=By.id("com.joyn.soyou:id/rlRootView");
 	By LastNameTextField=By.id("com.joyn.soyou:id/tiLastName");
 	By DoneButton=By.id("com.joyn.soyou:id/btnDone");
 	By AllowPermission=By.id("com.android.packageinstaller:id/permission_allow_button");
-	By OpenCamera=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.LinearLayout/com.android.internal.widget.ViewPager/android.widget.LinearLayout/android.widget.GridView/android.widget.LinearLayout[1]/android.widget.FrameLayout");
+	By OpenCamera=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.LinearLayout/com.android.internal.widget.ViewPager/android.widget.LinearLayout/android.widget.GridView/android.widget.LinearLayout[1]/android.widget.FrameLayout/android.widget.ImageView");
 	By ClickCameraButton=By.id("MENUID_SHUTTER");
 	By ClickedOkButton=By.id("OK Button");
 	By CropDoneButton=By.id("com.joyn.soyou:id/crop_image_menu_crop");
-	//Tab BarLayout
-	By FirstTab=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.support.v7.app.ActionBar.Tab[1]/android.widget.ImageView");
-	By SecondTab=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.support.v7.app.ActionBar.Tab[2]/android.widget.ImageView");
-	By ThirdTab=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.support.v7.app.ActionBar.Tab[3]/android.widget.ImageView");
-	By FourthTab=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.support.v7.app.ActionBar.Tab[4]/android.widget.ImageView");
-	By FifthTab=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.support.v7.app.ActionBar.Tab[5]/android.widget.ImageView");	
-				
+
+	//BannerImageSet
+	By Bannerimagedit=By.id("com.joyn.soyou:id/ivEditIcon");
 
 
+
+	//Canvas
+
+	By SecondTab=By.id("com.joyn.soyou:id/ivTabOne");
+	By ProfileMenuBurgerButton=By.id("com.joyn.soyou:id/ivIcon");
+	By Profileoption=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ListView/android.widget.LinearLayout[1]/android.widget.TextView");
+	By DefalultProfPicPlaceHolderinprofilescreen=By.id("com.joyn.soyou:id/civEditIcon");
+	By ProfEditSaveButton=By.id("com.joyn.soyou:id/action_done");
+
+
+	By AddFriendsOption=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.widget.TextView");
+	By BlockedUserOption=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ListView/android.widget.LinearLayout[3]/android.widget.TextView");
+	By CanvasThreeDotBlockButton=By.id("com.joyn.soyou:id/ivIcon");
+	By Block=By.id("com.joyn.soyou:id/contents");
+	By BlockedFirstUserInList=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ListView/android.widget.RelativeLayout[1]");
+	By UnblockYes=By.id("android:id/button2");
+	By BlockedScreenBack=By.id("Navigate up");
+	By OptionScreenBackButton=By.id("Navigate up");
+	By PrivacyPolicy=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ListView/android.widget.LinearLayout[4]/android.widget.TextView");
+	By TermsOption=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ListView/android.widget.LinearLayout[5]/android.widget.TextView");
+	By AboutOption=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ListView/android.widget.LinearLayout[7]/android.widget.TextView");
+	By LogoutOption=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ListView/android.widget.LinearLayout[8]/android.widget.TextView");
+	By LogoutYesPermission=By.id("android:id/button2");
+
+
+
+	//Activity Tab (first tab)
+	By ActivityTab=By.id("com.joyn.soyou:id/ivTabFive");
+	By ActivityTabsearchField=By.id("com.joyn.soyou:id/search_bar");
+	By Firstrowinactivity=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[1]");
+
+
+	//Compose Tab
+	By composetab=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.support.v7.app.ActionBar.Tab[3]/android.widget.RelativeLayout/android.widget.ImageView");
+	By SelectscreenBackButton=By.xpath("//android.widget.ImageButton[@content-desc=\"Navigate up\"]");
+	By PlusButtonForAddUserandCreateChannel=By.xpath("//android.widget.ImageView[@content-desc=\"More options\"]");
+	By EnterNameTextField=By.id("com.joyn.soyou:id/chips_recycler");
+	By SelectFirstUser=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.FrameLayout[2]/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[1]");
+	By ComposeTextField=By.id("com.joyn.soyou:id/etGiftDescription");
+	By SendButton=By.id("com.joyn.soyou:id/btnSendGift");
+	By Galley=By.id("com.joyn.soyou:id/btnGallery");
+	By Camera=By.id("com.joyn.soyou:id/btnCamera");
+	By locationPermission=By.id("com.android.packageinstaller:id/permission_allow_button");
+	By Video=By.id("com.joyn.soyou:id/btnVideoUpload");
+	By Location=By.id("com.joyn.soyou:id/btnLocation");
+	By SelectThisLocation=By.id("com.google.android.gms:id/select_marker_location");
+	By SelectLocation=By.id("com.google.android.gms:id/confirm_button");
+	By ContactCrossCancelButton=By.id("com.joyn.soyou:id/delete_button");
+	By SpaceAfteraddingcontactInToField=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.ScrollView/android.widget.ScrollView/android.support.v7.widget.RecyclerView/android.widget.EditText");
+    By Plusbutton=By.id("More options");
+    By SelectScreenNameTextField=By.id("com.joyn.soyou:id/chips_recycler");
+    By AddFriends=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[1]");
+    By CreateChannel=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[2]");
+    By ChannelNameTextField=By.id("com.joyn.soyou:id/tiName");
+    By CreateChannelNextButton=By.id("com.joyn.soyou:id/next");
+    By CreateChannelSelectFirstUserFromList=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[1]");
+    By CreateChannelDoneButton=By.id("Done");
+    
+
+	// Recent User and channel list($th tab)
+	By Recent4thTab=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.support.v7.app.ActionBar.Tab[4]/android.widget.RelativeLayout");
+	By SearchIcon=By.id("com.joyn.soyou:id/action_search");
+	By PlusButtonIcon=By.xpath("//android.widget.ImageView[@content-desc=\"More options\"]");
+	By RecentSearchedUser=By.id("com.joyn.soyou:id/rlRecentSearchContainer");
+	By SearchTextfield=By.id("com.joyn.soyou:id/search_src_text");
+	By SearchListFirstUser=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[1]/android.widget.RelativeLayout/android.widget.RelativeLayout[1]/android.widget.LinearLayout");
+	By RecentsearchedFirstUser=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[1]");
+
+
+	//Notification Tab(5thtab)
+	By NotificationTab=By.id("com.joyn.soyou:id/ivBellIcon");
+	By ForFirstAcceptButtonOnNotification=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout[2]/android.widget.FrameLayout/android.widget.RelativeLayout/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[1]/android.widget.LinearLayout[2]/android.widget.Button[2]");
+	By FirstNotificationDetailVieNavigation=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout[2]/android.widget.FrameLayout/android.widget.RelativeLayout/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[1]");
+	By ForFirstBlockButtonOnNotification=By.id("com.joyn.soyou:id/btnBlock");
+	By ForFirstNotification=By.id("com.joyn.soyou:id/rlNotificationContainer");
+
+
+	//Detail View Screen
+
+	By DetailScreenThreeDotButton=By.id("More options");
+	By DetailScreenBackButton=By.id("Navigate up");
+	By DetailViewScreenCommentTextField=By.id("com.joyn.soyou:id/etComments");
+	By DetailViewScreenSendButton=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.Button");
+	By Reshare=By.id("com.joyn.soyou:id/ivReshare");
+	By ShareOnsoYou=By.id("com.joyn.soyou:id/fragment_history_bottom_sheet_edit");
+	By ForwardToListFirstContact=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[1]");
+	By ForwardToDone=By.id("Done");
+	By ShareComposeTextField=By.id("com.joyn.soyou:id/etReshare");
+	By ShareComposeDone=By.id("Done");
+
+	
+	//Delete And Spam 
+	
+	By FirstitemFromCanvas= By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout[2]/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[2]/android.widget.RelativeLayout/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[1]");
+	By DetailviewThreeDotButton= By.id("More options");
+	By DetailViewDeleteOption=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.widget.RelativeLayout/android.widget.TextView");
+    By DeleteConfirmation=By.id("android:id/button2");
+    
+
+
+	//Objets
+
+
+	public boolean WelcomeScreenSkip(){ 
+		try{ 
+			driver.findElement(WelcomeScreenSkip).click();
+			return true;
+		}catch(NoSuchElementException e){ 	
+			return false;
+		} 
+	} 
+
+
+
+	public void HideKeboard(){
+		try{
+			driver.navigate().back();
+			driver.navigate().back();
+			System.out.println("Keyboard is closing");
+		}catch(NoSuchElementException e){
+			System.out.println("Keyboard is not closing");
+		}
+	}
 
 
 
@@ -72,7 +217,7 @@ public class Regressionobj {
 	public boolean MobileNumSrcHeader(){
 		try{
 			return driver.findElement(MobileNumberHeader).isDisplayed();
-			
+
 		}catch(NoSuchElementException e){
 			return false;
 		}
@@ -172,6 +317,37 @@ public class Regressionobj {
 	//OTP Screen 
 
 
+	public void Backtohomesrc(){
+		try{
+			driver.navigate().back();
+		}catch(NoSuchElementException e){
+
+		}
+
+	}
+	public boolean Entercontactonsrch(String text)
+
+	{
+		try{
+			driver.findElement(Entercontactonsrch).sendKeys(text);
+			return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+
+
+	public boolean ContactAppclick()
+
+	{
+		try{
+			driver.findElement(ContactAppclick).click();
+			return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+
 	public boolean OTPsSrcHeader(){
 		try{
 			return driver.findElement(OTPSrcHeader).isDisplayed();
@@ -197,17 +373,17 @@ public class Regressionobj {
 		try{
 			driver.findElement(WrongNumberText).click();
 			return driver.findElement(WrongNumberText).isDisplayed();
-			
+
 		}catch(NoSuchElementException e){
 			return false;
 		}
 	}
-	
+
 	public boolean WrongNumberclick(){
 		try{
 			driver.findElement(WrongNumberText).click();
 			return true;
-			
+
 		}catch(NoSuchElementException e){
 			return false;
 		}
@@ -222,9 +398,21 @@ public class Regressionobj {
 			return false;
 		}
 	}
-	
+
+	public boolean AllowContactPermission() {
+
+		try {
+			driver.findElement(ContactPermissionAllow).click();
+			return true;
+
+		}catch(NoSuchElementException e)
+		{		
+			return false;
+		}
+
+	}
 	public boolean ValidOTP(String ValidOTP) {
-	
+
 		try {
 			driver.findElement(EnterOTPNumberField).sendKeys(ValidOTP);
 			return true;
@@ -242,9 +430,9 @@ public class Regressionobj {
 			return false;
 		}
 	}
-//Intermidiate Screen 
+	//Intermidiate Screen 
 
-	
+
 	public boolean IsDefalultProfPicPlaceHolderDisplay(){
 		try{
 			return driver.findElement(DefalultProfPicPlaceHolder).isDisplayed();
@@ -253,7 +441,7 @@ public class Regressionobj {
 		}
 	}
 	public boolean FirstNameTextField(String FirstName) {
-		
+
 		try {
 			driver.findElement(FirstNameTextField).sendKeys(FirstName);
 			return true;
@@ -264,9 +452,9 @@ public class Regressionobj {
 		}
 
 	}
-	
+
 	public boolean LastNameTextField(String LastName) {
-		
+
 		try {
 			driver.findElement(LastNameTextField).sendKeys(LastName);
 			return true;
@@ -281,18 +469,50 @@ public class Regressionobj {
 		try{
 			driver.findElement(DefalultProfPicPlaceHolder).click();
 			return true;
-			
+
 		}catch(NoSuchElementException e){
 			return false;
 		}
 	}
-	
-	
+
+	public boolean ClickRemovePhoto(){
+		try{
+			driver.findElement(RemovePhoto).click();
+			driver.findElement(Removepermission).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+
+
+	public boolean DefalultProfPicPlaceHolderinprofilescreen(){
+		try{
+			driver.findElement(DefalultProfPicPlaceHolderinprofilescreen).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+
+
+	public boolean ClickAddANewPhoto(){
+		try{
+			driver.findElement(AddANewPhoto).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+
 	public boolean ClickIntermidiateSrcDoneButton(){
 		try{
 			driver.findElement(DoneButton).click();
 			return true;
-			
+
 		}catch(NoSuchElementException e){
 			return false;
 		}
@@ -302,7 +522,7 @@ public class Regressionobj {
 		try{
 			driver.findElement(AllowPermission).click();
 			return true;
-			
+
 		}catch(NoSuchElementException e){
 			return false;
 		}
@@ -311,91 +531,739 @@ public class Regressionobj {
 		try{
 			driver.findElement(OpenCamera).click();
 			return true;
-			
+
 		}catch(NoSuchElementException e){
 			return false;
 		}
 	}
-	
+
 	public boolean ClickCameraButton(){
 		try{
 			driver.findElement(ClickCameraButton).click();
+			TouchAction  ts= new TouchAction(driver).tap(536, 1653).perform();
 			return true;
-			
+
 		}catch(NoSuchElementException e){
 			return false;
 		}
 	}
-	
+
 	public boolean ClickedOkButton(){
 		try{
 			driver.findElement(ClickedOkButton).click();
 			return true;
-			
+
 		}catch(NoSuchElementException e){
 			return false;
 		}
 	}
-	
+
 	public boolean ClickCropDoneButton(){
 		try{
 			driver.findElement(CropDoneButton).click();
 			return true;
-			
+
 		}catch(NoSuchElementException e){
 			return false;
 		}
 	}
-	
-	//Tab Bar Layout
-	public boolean ClickFirstTab(){
+
+
+
+	public boolean ClickProfEditSaveButton(){
 		try{
-			driver.findElement(FirstTab).click();
+			driver.findElement(ProfEditSaveButton).click();
 			return true;
-			
+
 		}catch(NoSuchElementException e){
 			return false;
 		}
 	}
-	public boolean ClickSecondTab(){
+	public boolean ClickBannerimagedit(){
+		try{
+			driver.findElement(Bannerimagedit).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+
+
+	//Tab Bar Layout
+	public boolean ClickSeocndTab(){
 		try{
 			driver.findElement(SecondTab).click();
 			return true;
-			
+
 		}catch(NoSuchElementException e){
 			return false;
 		}
 	}
-	public boolean ClickThirdTab(){
+	public boolean ClickProfileMenuBurgerButton(){
 		try{
-			driver.findElement(ThirdTab).click();
+			driver.findElement(ProfileMenuBurgerButton).click();
 			return true;
-			
+
 		}catch(NoSuchElementException e){
 			return false;
 		}
 	}
-	public boolean ClickFourthTab(){
+	public boolean ClickProfileoption(){
 		try{
-			driver.findElement(FourthTab).click();
+			driver.findElement(Profileoption).click();
 			return true;
-			
+
 		}catch(NoSuchElementException e){
 			return false;
 		}
 	}
-	public boolean ClickFifthTab(){
+	public boolean ClickDefalultProfPicPlaceHolderinprofilescreen(){
 		try{
-			driver.findElement(FifthTab).click();
-			//List<WebElement> elements = driver.findElementsByAndroidUIAutomator("new UiSelector().clickable(true)");
+			driver.findElement(DefalultProfPicPlaceHolderinprofilescreen).click();
 			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+
+	//Option Screen 
+
+
+	public boolean AddFriendsOption(){
+		try{
+			driver.findElement(AddFriendsOption).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean BlockedUserOption(){
+		try{
+			driver.findElement(BlockedUserOption).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean CanvasThreeDotBlockButton(){
+		try{
+			driver.findElement(CanvasThreeDotBlockButton).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean Block(){
+		try{
+			driver.findElement(Block).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean BlockedFirstUserInList(){
+		try{
+			driver.findElement(BlockedFirstUserInList).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean UnblockYes(){
+		try{
+			driver.findElement(UnblockYes).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean BlockedScreenBack(){
+		try{
+			driver.findElement(BlockedScreenBack).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean OptionScreenBackButton(){
+		try{
+			driver.pressKeyCode(AndroidKeyCode.BACK);
+			//driver.findElement(OptionScreenBackButton).click();
 			
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean PrivacyPolicy(){
+		try{
+			driver.findElement(PrivacyPolicy).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean TermsOption(){
+		try{
+			driver.findElement(TermsOption).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean AboutOption(){
+		try{
+			driver.findElement(AboutOption).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean LogoutOption(){
+		try{
+			driver.findElement(LogoutOption).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean LogoutYesPermission(){
+		try{
+			driver.findElement(LogoutYesPermission).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	// Recent user and Channel tab 
+
+	public boolean Recent4thTab (){
+		try{
+			driver.findElement(Recent4thTab).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean SearchIcon(){
+		try{
+			driver.findElement(SearchIcon).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean PlusButtonIcon (){
+		try{
+			driver.findElement(PlusButtonIcon).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	
+	public boolean RecentSearchedUser(){
+		try{
+			driver.findElement(RecentSearchedUser).click();
+			return true;
+
 		}catch(NoSuchElementException e){
 			return false;
 		}
 	}
 	
 	
+	public boolean SearchTextfield(String SearchTextField){
+		try{
+			driver.findElement(SearchTextfield).sendKeys(SearchTextField);
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean SearchListFirstUser(){
+		try{
+			driver.findElement(SearchListFirstUser).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean RecentsearchedFirstUser(){
+		try{
+			driver.findElement(RecentsearchedFirstUser).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	//Notification Tab 
+
+	public boolean NotificationTab(){
+		try{
+			driver.findElement(NotificationTab).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean ForFirstAcceptButtonOnNotification(){
+		try{
+			driver.findElement(ForFirstAcceptButtonOnNotification).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean FirstNotificationDetailVieNavigation(){
+		try{
+			driver.findElement(FirstNotificationDetailVieNavigation).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean ForFirstBlockButtonOnNotification(){
+		try{
+			driver.findElement(ForFirstBlockButtonOnNotification).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean ForFirstNotification(){
+		try{
+			driver.findElement(ForFirstNotification).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+
+	// Compose Tab 
+
+	public boolean composetab(){
+		try{
+			driver.findElement(composetab).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean SelectscreenBackButton(){
+		try{
+			driver.findElement(SelectscreenBackButton).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean PlusButtonForAddUserandCreateChannel(){
+		try{
+			driver.findElement(PlusButtonForAddUserandCreateChannel).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean EnterNameTextField(){
+		try{
+			driver.findElement(EnterNameTextField).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean SelectFirstUser(){
+		try{
+			driver.findElement(SelectFirstUser).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean ComposeTextField(String ComposeMessage){
+		try{
+			driver.findElement(ComposeTextField).click();
+			driver.findElement(ComposeTextField).sendKeys(ComposeMessage);
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean SendButton(){
+		try{
+			driver.findElement(SendButton).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean Galley(){
+		try{
+			driver.findElement(Galley).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean Camera(){
+		try{
+			driver.findElement(Camera).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean Video(){
+		try{
+			driver.findElement(Video).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean Location(){
+		try{
+			driver.findElement(Location).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean locationPermission(){
+		try{
+			driver.findElement(locationPermission).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+
+	public boolean SelectThisLocation(){
+		try{
+			driver.findElement(SelectThisLocation).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean SelectLocation(){
+		try{
+			driver.findElement(SelectLocation).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean ContactCrossCancelButton(){
+		try{
+			driver.findElement(ContactCrossCancelButton).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean SpaceAfteraddingcontactInToField(){
+		try{
+			driver.findElement(SpaceAfteraddingcontactInToField).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	 
+	    public boolean Plusbutton(){
+			try{
+				driver.findElement(Plusbutton).click();
+				return true;
+
+			}catch(NoSuchElementException e){
+				return false;
+			}
+		}
+	    public boolean SelectScreenNameTextField(){
+			try{
+				driver.findElement(SelectScreenNameTextField).click();
+				return true;
+
+			}catch(NoSuchElementException e){
+				return false;
+			}
+		}
+	    public boolean AddFriends(){
+			try{
+				driver.findElement(AddFriends).click();
+				return true;
+
+			}catch(NoSuchElementException e){
+				return false;
+			}
+		}
+	    public boolean CreateChannel(){
+			try{
+				driver.findElement(CreateChannel).click();
+				return true;
+
+			}catch(NoSuchElementException e){
+				return false;
+			}
+		}
+	    public boolean ChannelNameTextField(String ChannelName){
+			try{
+				driver.findElement(ChannelNameTextField).sendKeys(ChannelName);
+				return true;
+
+			}catch(NoSuchElementException e){
+				return false;
+			}
+		}
+	    public boolean CreateChannelNextButton(){
+			try{
+				driver.findElement(CreateChannelNextButton).click();
+				return true;
+
+			}catch(NoSuchElementException e){
+				return false;
+			}
+		}
+	    public boolean CreateChannelSelectFirstUserFromList(){
+			try{
+				driver.findElement(CreateChannelSelectFirstUserFromList).click();
+				return true;
+
+			}catch(NoSuchElementException e){
+				return false;
+			}
+		}
+	    public boolean CreateChannelDoneButton(){
+			try{
+				driver.findElement(CreateChannelDoneButton).click();
+				return true;
+
+			}catch(NoSuchElementException e){
+				return false;
+			}
+		}
+	// Activity Tab 
+	public boolean ActivityTab(){
+		try{
+			driver.findElement(ActivityTab).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean ActivityTabsearchField(String ChannelName){
+		try{
+			driver.findElement(ActivityTabsearchField).sendKeys(ChannelName);
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean Firstrowinactivity(){
+		try{
+			driver.findElement(Firstrowinactivity).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+
+	//Detail View Screen
+
+	public boolean DetailScreenThreeDotButton(){
+		try{
+			driver.findElement(DetailScreenThreeDotButton).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+
+	public boolean DetailScreenBackButton(){
+		try{
+			driver.findElement(DetailScreenBackButton).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean DetailViewScreenCommentTextField(String comments){
+		try{
+			driver.findElement(DetailViewScreenCommentTextField).sendKeys(comments);
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean DetailViewScreenSendButton(){
+		try{
+			driver.findElement(DetailViewScreenSendButton).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean ScrollUp(){
+		try{
+			TouchAction ts = new TouchAction(driver);
+			ts.press(507, 1320).moveTo(4, -581).release().perform();
+		
+		//  driver.swipe(261,681,297,681, 400);
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean Reshare(){
+		try{
+			driver.findElement(Reshare).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean ShareOnsoYou(){
+		try{
+			driver.findElement(ShareOnsoYou).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean ForwardToListFirstContact(){
+		try{
+			driver.findElement(ForwardToListFirstContact).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean ForwardToDone(){
+		try{
+			driver.findElement(ForwardToDone).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean ShareComposeTextField(String ShareComposeText){
+		try{
+			driver.findElement(ShareComposeTextField).sendKeys(ShareComposeText);
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean ShareComposeDone(){
+		try{
+			driver.findElement(ShareComposeDone).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	
+	
+	// Delete 
+	
+	
+    
+	public boolean FirstitemFromCanvas(){
+		try{
+			driver.findElement(FirstitemFromCanvas).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean DetailviewThreeDotButton(){
+		try{
+			driver.findElement(DetailviewThreeDotButton).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean DetailViewDeleteOption(){
+		try{
+			driver.findElement(DetailViewDeleteOption).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean DeleteConfirmation(){
+		try{
+			driver.findElement(DeleteConfirmation).click();
+			return true;
+
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+
 	/*Page Elements*/
 
 	//	//First Screen 

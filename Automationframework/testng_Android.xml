@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <suite name="Regression Test" parallel="tests" >
 
   <test name="RegressionAndroid">
@@ -10,14 +9,12 @@
   	        <parameter name="device-type" value="android" />
   	        <parameter name="testing_platform" value="default" />
   	        
-  	        
   	        <parameter name="device-name" value="41009e1df26eb139" />
-			<parameter name="device-version" value="6.0" />
-			<parameter name="app" value="/Users/anshulharinkhere/Documents/soYou-Android/app/build/outputs/apk/app-debug.apk" />
+			<parameter name="device-version" value="6.0.1" />
+			<parameter name="app" value="/Users/anshulharinkhere/Documents/soYou-Android/app/build/outputs/apk/debug/app-debug.apk" />
 			<parameter name="app-package" value="com.joyn.soyou" />	
 			<parameter name="appActivity" value="splash.SplashScreen" />
-			<parameter name="noReset" value="true" />
-			
+			<parameter name="noReset" value="false" />
 		</parameters>
 		
     <classes>

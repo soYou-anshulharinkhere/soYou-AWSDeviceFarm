@@ -1,3 +1,4 @@
+
 package TestSc;
 
 import java.io.IOException;
@@ -37,7 +38,9 @@ public class welcomescreen extends AppInitializer{
 		
 //		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), a.isFirstSrcSubHeaderDisplay(), "Check Whether FirstSrcSubHeader is  displaying or not", "FirstSrcSubHeader is  displaying");
 	
-	a.clickOnSecondSrcClk();	
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), a.clickOnSecondSrcClk(), "Check Whether FirstSrcSubHeader is  displaying or not", "FirstSrcSubHeader is  displaying");
+		
+
 	}
 	
 	@Test(priority=2)
@@ -51,7 +54,8 @@ public class welcomescreen extends AppInitializer{
 		
 //		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), a.isSecondSrcSubHeaderDisplay(), "Check Whether SecondSrcSubHeaderDisplay is  displaying or not", "SecondSrcSubHeaderDisplay is  displaying");
 	
-	a.clickOnThirdSrcClk();
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), a.clickOnThirdSrcClk(), "Check Whether Third Src tab is clicking or not", "Third Src tab is clicking");
+		
 	}
 	@Test(priority=3)
 	public void Welcomepage3() throws InterruptedException, IOException{
@@ -64,7 +68,9 @@ public class welcomescreen extends AppInitializer{
 		
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), a.isThirdSrcSubHeaderDisplay(), "Check Whether ThirdSrcSubHeader is  displaying or not", "ThirdSrcSubHeader is  displaying");
 	
-	a.clickOnThirdSrcClk();
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), a.clickOnFourthSrcClk(), "Check Whether ThirdSrc tab is  clicking or not", "ThirdSrc tab is  clicking");
+		
+	
 	
 }
 	@Test(priority=4)
@@ -78,7 +84,9 @@ public class welcomescreen extends AppInitializer{
 		
 		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), a.isFourthSrcSubHeaderDisplay(), "Check Whether FourthSrcSubHeader is  displaying or not", "FourthSrcSubHeader is  displaying");
 	
-	a.clickOnFourthSrcClk();
+		verifyTrue(ExtentTestManager.getTest(), getiosDriver(), a.clickOnFifthSrcClk(), "Check Whether FourthSrc tab  is  clicking or not", "FourthSrc tab is  clicking");
+		
+
 	
 }
 	@Test(priority=5)

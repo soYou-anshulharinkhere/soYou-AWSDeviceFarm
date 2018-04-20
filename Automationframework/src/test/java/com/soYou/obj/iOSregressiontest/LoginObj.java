@@ -33,7 +33,7 @@ public class LoginObj {
 	// By FirstSrcHeader=ByAccessibilityId.AccessibilityId("Welcome to soYou");
 	By FirstSrcHeader = By.xpath("//XCUIElementTypeApplication[@name=\"soYou\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther//XCUIElementTypeStaticText[@name=\"Welcome to soYou\"]");
 	By FirstSrcSubHeader = By.xpath("//XCUIElementTypeOther//XCUIElementTypeStaticText[@name=\"Less Me, more You.\"]");
-	  
+	  By SecondSrcClk=By.xpath("//XCUIElementTypeApplication[@name=\"soYou\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther[2]");
 	 //Second Welcome Screen 
 	  
 	  By _WelcomeSecondScreenLogo=By.xpath("//XCUIElementTypeApplication[@name=\"soYou\"]//XCUIElementTypeWindow[1]");
@@ -53,7 +53,7 @@ public class LoginObj {
 	  By _WelcomeFourthScreenLogo=By.xpath("/XCUIElementTypeApplication[@name=\"soYou\"]//XCUIElementTypeWindow[1]");
 	  By FourthSrcHeader=ByAccessibilityId.AccessibilityId("Canvas");
 	  By FourthSrcSubHeader=ByAccessibilityId.AccessibilityId("Decide what to keep on your Public Canvas.");
-	  By FifthSrcClk=By.xpath("//XCUIElementTypeApplication[@name=soYou]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]");
+	  By FifthSrcClk=By.xpath("//XCUIElementTypeApplication[@name=\"soYou\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther[5]");
 	  
 	  //Fifth Welcome Screen 
 	  
@@ -69,6 +69,9 @@ public class LoginObj {
 	  //By CountryName=ByAccessibilityId.AccessibilityId("soYou will send an SMS to verify your phone number.");
 	 By MobileNumberEnterFld=By.xpath("//XCUIElementTypeApplication[@name=\"soYou\"]//XCUIElementTypeWindow[1]//XCUIElementTypeOther//XCUIElementTypeOther[1]//XCUIElementTypeOther//XCUIElementTypeOther[2]");
 	 By SubmitButton=ByAccessibilityId.AccessibilityId("Submit");
+	 
+	 
+	 
 	  
 
 	  
@@ -96,35 +99,17 @@ public class LoginObj {
 			  
 		  }
 	  }
-	  
-	  public void clickOnSecondSrcClk(){
-		
-			  
-		// driver.findElement(SecondSrcClk).click();
-			  
-			  //List<WebElement> el=driver.findElement(allMenuTab).findElements(allMenu);
-			  
-//			  List<WebElement> el=driver.findElement(two);
-//			  for (int i=0;i<=el.size();i++) {
-//				System.out.println("Index :"+i+" Values:"+el.get(i).getText()); 
-//				try {
-//					TouchAction as=new TouchAction(driver);
-//					as.press(el.get(i));
-//					//System.out.println("Index Of The Button which is clickble is ="+i);
-//				}catch(Exception e) {
-//					System.out.println("Unable To Click On Button");
-//				}
-//			  }
-//			  WebElement el2=driver.findElement(one);
-//			  el2.click(); 	
-		
-		  driver.swipe(261,681,297,681, 400);
-	  
+	
 
-
-		
+	  public boolean clickOnSecondSrcClk(){
+		  try{
+			  driver.findElement(SecondSrcClk).click();
+		   return true;
+		  }catch(Exception e){
+			  return false;
+			  
+		  }
 	  }
-
 
 //	  public boolean isClickDisplay() {
 //		 try {
@@ -179,8 +164,15 @@ public class LoginObj {
 		  }
 	  }
 	  
-	  public void clickOnThirdSrcClk(){
-		  driver.swipe(255, 681, 291, 681, 400);
+	 
+
+	  public boolean clickOnThirdSrcClk(){
+		  try{
+		 driver.findElement(ThirdSrcClk).click();
+		   return true;
+		  }catch(Exception e){
+			  return false;
+		  }
 	  }
 	  
 	  
@@ -209,10 +201,16 @@ public class LoginObj {
 		  }
 	  }
 	  
-	  public void clickOnFourthSrcClk(){
-		  driver.swipe(249, 681, 285, 681, 400);
-	  }
+	 
 	  
+	  public boolean clickOnFourthSrcClk(){
+		  try{
+		  driver.findElement(FourthSrcClk).click();
+		  return true;
+		  }catch(Exception e){
+			  return false;
+		  }
+	  }
 	  
 	  public boolean is_WelcomeFourthScreenLogoDisplay(){
 		  try{
@@ -240,8 +238,13 @@ public class LoginObj {
 		  }
 	  }
 	  
-	  public void clickOnFifthSrcClk(){
-		  driver.swipe(243, 681, 258, 681, 400);
+	  public boolean clickOnFifthSrcClk(){
+		  try {
+		  driver.findElement(FifthSrcClk).click();
+		  return true;
+		  }catch(Exception e) {
+			  return false;
+		  }
 	  }
 	  
 	

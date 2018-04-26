@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Regression Test" parallel="none" >
+ <test  verbose="1" name="soYou">
+  
+  	<parameters>
+  	         
+  	         
+  	         <parameter name="MobileOS" value="ios" />
+  	        <parameter name="platformName" value="iOS" />
+  	        <parameter name="device-type" value="iOS" />
+  	        <parameter name="testing_platform" value="default" />
+  	        
+  	        
+  	        <parameter name="deviceName" value="so's iPhone" />
+			<parameter name="platformVersion" value="10.2.1" />
+			<parameter name="automationName" value="XCUITest" />
+			<parameter name="udid" value="e03daa8b2365bf156e6b0a31977add1b013b3a8a" />
+<!-- 			<parameter name="useNewWDA" value="true" />	 -->
+			<parameter name="bundleId" value="com.joyn.soyou" />
+			<parameter name="noReset" value="true" />
+			<parameter name="xcodeSigningId" value="iPhone Developer" />
+			<parameter name="xcodeOrgId" value="V862VGVUC2" />
+			<parameter name="app" value="/Users/gmx/Desktop/soYou_62/SoYou.app" />
+			<parameter name="bootstrapPath" value="/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent" />
+			<parameter name="agentPath" value="/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj" />
+			<parameter name="userNewWDA" value="true" />
+			
+		</parameters>
+		
+    <classes>
+
+	<class name="TestSc.welcomescreen"/>
+	<class name="TestSc.LoginPage"/>
+	<class name="TestSc.IntermediateProfilePage"/>
+	<class name="TestSc.CanvasPage"/>
+	<class name="TestSc.composePage"/>
+	<class name="TestSc.notificationPage"/>
+	<class name="TestSc.recentlist_tab" />
+	<class name="TestSc.searchTabPage"/>
+	<class name="TestSc.SettingsPage"/>
+  
+    </classes>
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+	

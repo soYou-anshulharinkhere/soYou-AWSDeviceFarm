@@ -73,7 +73,7 @@ public class AppiumDriverFactory {
 			driverios = new IOSDriver(new URL("http://0.0.0.0:4723/wd/hub"), caps);
 
 			return driverios;
-			Anshul
+			
 		}
 		
 	

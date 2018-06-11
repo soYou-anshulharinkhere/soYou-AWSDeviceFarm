@@ -371,8 +371,8 @@
 				<inherited> true</inherited>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>TestNg.xml</suiteXmlFile>
-						>
+						<suiteXmlFile>testng_iOSCloud.xml</suiteXmlFile>
+						
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

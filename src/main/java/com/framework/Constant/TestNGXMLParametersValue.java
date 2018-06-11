@@ -14,6 +14,8 @@ public final class TestNGXMLParametersValue {
 	
 	public static String IOS="iOS";	
 	public static String ANDROID="android";
+	public static String iOScloud="iOSCloud";
+	
 	
 	
 	

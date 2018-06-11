@@ -1,6 +1,8 @@
 package com.framework.internal.feature;
 import java.io.IOException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.remote.DesiredCapabilities;
 import com.file.utils.ExternalResourcePath;
 import com.file.utils.PropertiesFileReader;
@@ -74,7 +76,38 @@ public class AppiumDriverFactory {
 
 			return driverios;
 			
+			
 		}
+	
+	public static IOSDriver getDriveriOSCloud(String platform,String deviceURL,String androiddeviceName,String deviceVersion,String androidmobilePlatform,String apppackage,String iosdeviceName,String iOSplatformName,String platformVersion,String automationName,String udid,String useNewWDA,String bundleId,String noReset,String xcodeSigningId,String xcodeOrgId,String app,String bootstrapPath,String agentPath,String AppActivity,String MobileOS) throws IOException{			
+	
+		System.out.println("Appium Is Taking iOS Cloud Device");
+	
+		DesiredCapabilities dc=DesiredCapabilities.iphone();
+		dc.setCapability("platformName", "iOS");
+		
+		dc.setCapability("platformVersion", "11.2");
+		dc.setCapability("appiumVersion", "1.7.2");
+		dc.setCapability("deviceName", "iPhone 6s Plus Simulator");
+		dc.setCapability("browserName", "safari");
+	//	dc.setCapability("app","sauce-storage:soYou.zip");
+		
+//	dc.setCapability("platformName", "iOSplatformName");
+//		
+//		dc.setCapability("platformVersion", "platformVersion");
+//		dc.setCapability("appiumVersion", "1.3.4");
+//		dc.setCapability("deviceName", "iosdeviceName");
+//		dc.setCapability("browserName", "");
+//		dc.setCapability("app","sauce-storage:UICatalog.app.zip");
+
+		IOSDriver driver =new IOSDriver(new URL("http://AnshulHarinkhere:58546bce-42dc-4883-a488-17587f4e9d83@ondemand.saucelabs.com:80/wd/hub"),dc);
+        driver.get("https://www.google.co.in/");
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+
+		//driver.quit();
+		
+		return driver;
+	}
 		
 	
 

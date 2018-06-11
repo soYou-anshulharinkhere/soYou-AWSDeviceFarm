@@ -8,12 +8,12 @@
   	         
   	         <parameter name="MobileOS" value="ios" />
   	        <parameter name="platformName" value="iOS" />
-  	        <parameter name="device-type" value="iOS" />
+  	        <parameter name="device-type" value="iOSCloud" />
   	        <parameter name="testing_platform" value="default" />
   	        
   	        
   	        <parameter name="deviceName" value="so's iPhone" />
-			<parameter name="platformVersion" value="10.2.1" />
+			<parameter name="platformVersion" value="7.1" />
 			<parameter name="automationName" value="XCUITest" />
 			<parameter name="udid" value="e03daa8b2365bf156e6b0a31977add1b013b3a8a" />
 <!-- 			<parameter name="useNewWDA" value="true" />	 -->
@@ -21,7 +21,7 @@
 			<parameter name="noReset" value="true" />
 			<parameter name="xcodeSigningId" value="iPhone Developer" />
 			<parameter name="xcodeOrgId" value="V862VGVUC2" />
-			<parameter name="app" value="/Users/anshulharinkhere/Library/Developer/Xcode/Archives/2018-04-02/SoYou 02-04-18, 11.04 PM.xcarchive/Products/Applications/SoYou.app" />
+			<parameter name="app" value="/Users/anshulharinkhere/Desktop/iOS Build/SoYou.app" />
 			<parameter name="bootstrapPath" value="/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent" />
 			<parameter name="agentPath" value="/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj" />
 			<parameter name="userNewWDA" value="true" />
@@ -31,14 +31,8 @@
     <classes>
 
 	<class name="TestSc.welcomescreen"/>
-	<class name="TestSc.LoginPage"/>
-	<class name="TestSc.IntermediateProfilePage"/>
-	<class name="TestSc.CanvasPage"/>
-	<class name="TestSc.composePage"/>
-	<class name="TestSc.notificationPage"/>
-	<class name="TestSc.recentlist_tab" />
-	<class name="TestSc.searchTabPage"/>
-	<class name="TestSc.SettingsPage"/>
+	
+	
   
     </classes>
     

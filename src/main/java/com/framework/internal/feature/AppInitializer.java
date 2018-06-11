@@ -90,6 +90,12 @@ public class AppInitializer extends CustomVerification {
 					System.out.println("Android selection");
 					androiddriver.set(AppiumDriverInitializer.getAppiumDriverandroid(platform,deviceURL, androiddeviceName, deviceVersion, androidmobilePlatform, apppackage,iosdeviceName, iOSplatformName, platformVersion, automationName, udid, useNewWDA, bundleId, noReset, xcodeSigningId, xcodeOrgId, app, bootstrapPath, agentPath,AppActivity,MobileOS));
 				}
+				else if(deviceType.equals(TestNGXMLParametersValue.iOScloud)){
+
+					System.out.println("iOSCloud selection");
+					iosdriver.set(AppiumDriverInitializer.getAppiumDriveriosCloud(platform,deviceURL, androiddeviceName, deviceVersion, androidmobilePlatform, apppackage,iosdeviceName, iOSplatformName, platformVersion, automationName, udid, useNewWDA, bundleId, noReset, xcodeSigningId, xcodeOrgId, app, bootstrapPath, agentPath,AppActivity,MobileOS));
+				}
+			
 		}
 		else{
 			/**Instantiate the driver if the test is run from class file directly*/

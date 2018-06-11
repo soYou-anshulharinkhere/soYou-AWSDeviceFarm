@@ -314,6 +314,14 @@
 			<version>6.10</version>
 			<scope>compile</scope>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.saucelabs/sauce_testng -->
+<dependency>
+    <groupId>com.saucelabs</groupId>
+    <artifactId>sauce_testng</artifactId>
+    <version>2.1.9</version>
+</dependency>
+		
 
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -423,6 +431,9 @@
 					<artifactId>lifecycle-mapping</artifactId>
 					<version>1.0.0</version>
 					<configuration>
+				<suitXmlFiles>
+										<suitXmlFile>testng_iOSCloud.xml</suitXmlFile>
+							</suitXmlFiles>
 						<lifecycleMappingMetadata>
 							<pluginExecutions>
 								<pluginExecution>
@@ -433,6 +444,7 @@
 										<artifactId>
 											maven-compiler-plugin
 										</artifactId>
+										
 										<versionRange>
 											[2.3.2,)
 										</versionRange>
@@ -446,6 +458,7 @@
 								</pluginExecution>
 							</pluginExecutions>
 						</lifecycleMappingMetadata>
+								
 					</configuration>
 				</plugin>
 			

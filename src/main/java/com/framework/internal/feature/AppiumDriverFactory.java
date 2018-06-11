@@ -90,7 +90,7 @@ public class AppiumDriverFactory {
 		dc.setCapability("appiumVersion", "1.7.2");
 		dc.setCapability("deviceName", "iPhone 6s Plus Simulator");
 		dc.setCapability("browserName", "");
-		dc.setCapability("app","ec2-18-233-154-166.compute-1.amazonaws.com/jenkins/job/Sauce_appium_soYou/ws/SoYou.ipa");
+		dc.setCapability("app","sauce-storage:soYou.zip");
 		
 //	dc.setCapability("platformName", "iOSplatformName");
 //		
@@ -101,7 +101,7 @@ public class AppiumDriverFactory {
 //		dc.setCapability("app","sauce-storage:UICatalog.app.zip");
 
 		IOSDriver driver =new IOSDriver(new URL("http://AnshulHarinkhere:58546bce-42dc-4883-a488-17587f4e9d83@ondemand.saucelabs.com:80/wd/hub"),dc);
-        driver.get("https://www.google.co.in/");
+       // driver.get("https://www.google.co.in/");
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
 		//driver.quit();

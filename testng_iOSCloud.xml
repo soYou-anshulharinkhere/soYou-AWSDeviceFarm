@@ -21,7 +21,7 @@
 			<parameter name="noReset" value="true" />
 			<parameter name="xcodeSigningId" value="iPhone Developer" />
 			<parameter name="xcodeOrgId" value="V862VGVUC2" />
-			<parameter name="app" value="/Users/anshulharinkhere/Desktop/iOS Build/SoYou.app" />
+			<parameter name="app" value="http://ec2-18-233-154-166.compute-1.amazonaws.com/jenkins/job/Sauce_appium_soYou/ws/SoYou.ipa" />
 			<parameter name="bootstrapPath" value="/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent" />
 			<parameter name="agentPath" value="/Users/gmx/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj" />
 			<parameter name="userNewWDA" value="true" />

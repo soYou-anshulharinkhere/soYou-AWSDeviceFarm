@@ -89,8 +89,8 @@ public class AppiumDriverFactory {
 		dc.setCapability("platformVersion", "11.2");
 		dc.setCapability("appiumVersion", "1.7.2");
 		dc.setCapability("deviceName", "iPhone 6s Plus Simulator");
-		dc.setCapability("browserName", "safari");
-	//	dc.setCapability("app","sauce-storage:soYou.zip");
+		dc.setCapability("browserName", "");
+		dc.setCapability("app","http://ec2-18-233-154-166.compute-1.amazonaws.com/jenkins/job/Sauce_appium_soYou/ws/SoYou.ipa");
 		
 //	dc.setCapability("platformName", "iOSplatformName");
 //		
@@ -123,7 +123,6 @@ public class AppiumDriverFactory {
 			capabilities.setCapability("appActivity",getAppActivity()); 
 			capabilities.setCapability("noReset", getResetValue());
 			return new AndroidDriver(new URL(getDeviceRemoteURL()), capabilities);
-		
 	}
 	
 	private static String getDeviceName() throws IOException{

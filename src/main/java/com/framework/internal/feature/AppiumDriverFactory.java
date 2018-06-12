@@ -90,7 +90,8 @@ public class AppiumDriverFactory {
 		dc.setCapability("appiumVersion", "1.7.2");
 		dc.setCapability("deviceName", "iPhone 6s Plus Simulator");
 		dc.setCapability("browserName", "");
-		dc.setCapability("app","sauce-storage:soYou.app");
+	//	dc.setCapability("app","sauce-storage:soYou.app");
+		dc.setCapability("app","https://s3.amazonaws.com/aws-website-soyou-p0sly/ios/master/SoYou.ipa");
 		
 //	dc.setCapability("platformName", "iOSplatformName");
 //		

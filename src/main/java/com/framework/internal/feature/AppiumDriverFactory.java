@@ -48,8 +48,40 @@ public class AppiumDriverFactory {
 			
 			return driverandroid;
 		}
+	public static AndroidDriver getDriverandroidCloud(String platform,String deviceURL,String androiddeviceName,String deviceVersion,String androidmobilePlatform,String apppackage,String iosdeviceName,String iOSplatformName,String platformVersion,String automationName,String udid,String useNewWDA,String bundleId,String noReset,String xcodeSigningId,String xcodeOrgId,String app,String bootstrapPath,String agentPath,String AppActivity,String MobileOS) throws IOException{
 
-
+		
+		System.out.println("Appium Is Taking Android cloud Device");
+		
+//		DesiredCapabilities capabilities = new DesiredCapabilities();
+//		
+//		
+//
+//		capabilities.setCapability("deviceName", androiddeviceName);
+//		capabilities.setCapability("platformVersion", deviceVersion);
+//		capabilities.setCapability("platformName", androidmobilePlatform);
+//		capabilities.setCapability("app",app);
+//		capabilities.setCapability("appPackage",apppackage); 
+//		capabilities.setCapability("appActivity",AppActivity); 
+//		capabilities.setCapability("noReset", getResetValue());
+//		//driver= new AndroidDriver(new URL(deviceURL), capabilities);
+//		//return new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub", capabilities);
+//		driverandroid = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
+//		
+//		return driverandroid;
+		
+		DesiredCapabilities caps = DesiredCapabilities.android();
+		caps.setCapability("appiumVersion", "1.7.2");
+		caps.setCapability("deviceName","Samsung Galaxy S6 GoogleAPI Emulator");
+		caps.setCapability("deviceOrientation", "portrait");
+		caps.setCapability("browserName", "");
+		caps.setCapability("platformVersion","7.0");
+		caps.setCapability("platformName","Android");
+		caps.setCapability("app","https://s3.amazonaws.com/aws-website-soyou-p0sly/android/dev/app-release-bitrise-signed.apk");
+		
+		
+		
+	}
 
 	//	else if(MobileOS.equalsIgnoreCase(TestNGXMLParametersValue.IOS)){
 	public static IOSDriver getDriveriOS(String platform,String deviceURL,String androiddeviceName,String deviceVersion,String androidmobilePlatform,String apppackage,String iosdeviceName,String iOSplatformName,String platformVersion,String automationName,String udid,String useNewWDA,String bundleId,String noReset,String xcodeSigningId,String xcodeOrgId,String app,String bootstrapPath,String agentPath,String AppActivity,String MobileOS) throws IOException{			

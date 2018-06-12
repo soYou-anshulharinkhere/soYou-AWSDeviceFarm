@@ -95,6 +95,11 @@ public class AppInitializer extends CustomVerification {
 					System.out.println("iOSCloud selection");
 					iosdriver.set(AppiumDriverInitializer.getAppiumDriveriosCloud(platform,deviceURL, androiddeviceName, deviceVersion, androidmobilePlatform, apppackage,iosdeviceName, iOSplatformName, platformVersion, automationName, udid, useNewWDA, bundleId, noReset, xcodeSigningId, xcodeOrgId, app, bootstrapPath, agentPath,AppActivity,MobileOS));
 				}
+				else if(deviceType.equals(TestNGXMLParametersValue.Androidcloud)){
+
+					System.out.println("AndroidCloud selection");
+					androiddriver.set(AppiumDriverInitializer.getAppiumDriverAndroidCloud(platform,deviceURL, androiddeviceName, deviceVersion, androidmobilePlatform, apppackage,iosdeviceName, iOSplatformName, platformVersion, automationName, udid, useNewWDA, bundleId, noReset, xcodeSigningId, xcodeOrgId, app, bootstrapPath, agentPath,AppActivity,MobileOS));
+				}
 			
 		}
 		else{

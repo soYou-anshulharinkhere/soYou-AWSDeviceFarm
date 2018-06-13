@@ -18,8 +18,11 @@ public class Regressionobj {
 
 	public AndroidDriver driver;
 	/*Page Elements*/
+	
+	By WelcomescreenSkip=By.id("com.joyn.soyou:id/btnSkip");
 
 	//Mobile Number Screen 
+	
 	By MobileNumberHeader=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.TextView[1]");
 	By MobileNumberSubHeader=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinarLayout/android.widget.TextView[2]"); 
 	By MobileNumberField=By.id("com.joyn.soyou:id/etmobileNumber");
@@ -69,6 +72,16 @@ public class Regressionobj {
 
 
 	/*Objets*/
+	public boolean WelcomescreenSkip(){
+		try{
+			 driver.findElement(WelcomescreenSkip).click();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	
+	
 	public boolean MobileNumSrcHeader(){
 		try{
 			return driver.findElement(MobileNumberHeader).isDisplayed();

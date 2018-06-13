@@ -77,8 +77,11 @@ public class AppiumDriverFactory {
 		caps.setCapability("browserName", "");
 		caps.setCapability("platformVersion","7.0");
 		caps.setCapability("platformName","Android");
-		caps.setCapability("app","https://s3.amazonaws.com/aws-website-soyou-p0sly/android/dev/app-release-bitrise-signed.apk");
 		
+		caps.setCapability("app","https://s3.amazonaws.com/aws-website-soyou-p0sly/android/dev/app-release-bitrise-signed.apk");
+		driverandroid = new AndroidDriver(new URL("http://AnshulHarinkhere:58546bce-42dc-4883-a488-17587f4e9d83@ondemand.saucelabs.com:80/wd/hub"), caps);
+		
+		return driverandroid;
 		
 		
 	}
@@ -123,7 +126,7 @@ public class AppiumDriverFactory {
 		dc.setCapability("deviceName", "iPhone 6s Plus Simulator");
 		dc.setCapability("browserName", "");
 	//	dc.setCapability("app","sauce-storage:soYou.app");
-		dc.setCapability("app","https://s3.amazonaws.com/aws-website-soyou-p0sly/ios/master/SoYou.ipa");
+		dc.setCapability("app","https://s3.amazonaws.com/aws-website-soyou-p0sly/ios/dev/SoYou.ipa");
 		
 //	dc.setCapability("platformName", "iOSplatformName");
 //		

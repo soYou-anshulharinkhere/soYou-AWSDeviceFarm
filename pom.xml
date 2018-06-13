@@ -371,7 +371,7 @@
 				<inherited> true</inherited>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng_AndroidCloud.xml</suiteXmlFile>
+						<suiteXmlFile>testng_iOSCloud.xml</suiteXmlFile>
 						
 					</suiteXmlFiles>
 				</configuration>

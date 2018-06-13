@@ -64,6 +64,8 @@ public class Regressiontest extends AppInitializer{
 
 		Regressionobj a = new Regressionobj(getandroidDriver());		
 		getandroidDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.WelcomescreenSkip(), "Check whether mobile number header displaying or not", "Mobile number header is displaying");
+		
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.MobileNumSrcHeader(), "Check whether mobile number header displaying or not", "Mobile number header is displaying");
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.MobileNumSrcSubHeader(), "Check whether Mobile Num Src SubHeader displaying  or not", "Entering mobile number"+phNo);
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickOnSelectCountryDropDown(), "Check whether SelectCountryDropDown clicking or not", "SelectCountryDropDownn is clicking");

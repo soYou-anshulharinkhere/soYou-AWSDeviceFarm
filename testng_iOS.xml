@@ -31,14 +31,14 @@
     <classes>
 
 	<class name="TestSc.welcomescreen"/>
-	<class name="TestSc.LoginPage"/>
+	<!-- <class name="TestSc.LoginPage"/>
 	<class name="TestSc.IntermediateProfilePage"/>
 	<class name="TestSc.CanvasPage"/>
 	<class name="TestSc.composePage"/>
 	<class name="TestSc.notificationPage"/>
 	<class name="TestSc.recentlist_tab" />
 	<class name="TestSc.searchTabPage"/>
-	<class name="TestSc.SettingsPage"/>
+	<class name="TestSc.SettingsPage"/> -->
   
     </classes>
     

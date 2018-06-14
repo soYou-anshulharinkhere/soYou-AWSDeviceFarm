@@ -66,8 +66,8 @@ public class Regressiontest extends AppInitializer{
 		getandroidDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.WelcomescreenSkip(), "Check whether mobile number header displaying or not", "Mobile number header is displaying");
 		
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.MobileNumSrcHeader(), "Check whether mobile number header displaying or not", "Mobile number header is displaying");
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.MobileNumSrcSubHeader(), "Check whether Mobile Num Src SubHeader displaying  or not", "Entering mobile number"+phNo);
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.MobileNumSrcHeader(), "Check whether mobile number header displaying or not", "Mobile number header is displaying");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.MobileNumSrcSubHeader(), "Check whether Mobile Num Src SubHeader displaying  or not", "Entering mobile number"+phNo);
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickOnSelectCountryDropDown(), "Check whether SelectCountryDropDown clicking or not", "SelectCountryDropDownn is clicking");
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.EnterCountryName(CountryName), "Check whether Country Name is entering or not", "Country Name is entering");
 //		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SelectCountryNameFromDrpDwn(), "Check whether Country Name From DrpDwn is selecting or not", "Country Name From DrpDwn is selecting");

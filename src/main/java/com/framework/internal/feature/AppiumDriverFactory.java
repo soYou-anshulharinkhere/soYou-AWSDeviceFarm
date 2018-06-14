@@ -77,9 +77,12 @@ public class AppiumDriverFactory {
 		caps.setCapability("browserName", "");
 		caps.setCapability("platformVersion","7.0");
 		caps.setCapability("platformName","Android");
+		caps.setCapability("appPackage","com.joyn.soyou"); 
+		caps.setCapability("appActivity","splash.SplashScreen"); 
+		caps.setCapability("noReset", "true");
 		
 		caps.setCapability("app","https://s3.amazonaws.com/aws-website-soyou-p0sly/android/dev/app-release-bitrise-signed.apk");
-		driverandroid = new AndroidDriver(new URL("http://AnshulHarinkhere:58546bce-42dc-4883-a488-17587f4e9d83@ondemand.saucelabs.com:80/wd/hub"), caps);
+		driverandroid = new AndroidDriver(new URL("http://AnshulHarinkhere2:2c6ec26f-b2a3-41c4-a75e-ad17baef11c4@ondemand.saucelabs.com:80/wd/hub"), caps);
 		
 		return driverandroid;
 		
@@ -122,11 +125,11 @@ public class AppiumDriverFactory {
 		dc.setCapability("platformName", "iOS");
 		
 		dc.setCapability("platformVersion", "11.2");
-		dc.setCapability("appiumVersion", "1.7.2");
+		dc.setCapability("appiumVersion", "1.7.1");
 		dc.setCapability("deviceName", "iPhone 6s Plus Simulator");
 		dc.setCapability("browserName", "");
 	//	dc.setCapability("app","sauce-storage:soYou.app");
-		dc.setCapability("app","https://s3.amazonaws.com/aws-website-soyou-p0sly/ios/dev/SoYou.ipa");
+		dc.setCapability("app","https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-505183550923/builds/ios/dev/SoYou.app");
 		
 //	dc.setCapability("platformName", "iOSplatformName");
 //		
@@ -136,7 +139,7 @@ public class AppiumDriverFactory {
 //		dc.setCapability("browserName", "");
 //		dc.setCapability("app","sauce-storage:UICatalog.app.zip");
 
-		IOSDriver driver =new IOSDriver(new URL("http://AnshulHarinkhere:58546bce-42dc-4883-a488-17587f4e9d83@ondemand.saucelabs.com:80/wd/hub"),dc);
+		IOSDriver driver =new IOSDriver(new URL("http://AnshulHarinkhere2:2c6ec26f-b2a3-41c4-a75e-ad17baef11c4@ondemand.saucelabs.com:80/wd/hub"),dc);
        // driver.get("https://www.google.co.in/");
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 

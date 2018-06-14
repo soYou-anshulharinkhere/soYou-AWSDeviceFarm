@@ -432,7 +432,7 @@
 					<version>1.0.0</version>
 					<configuration>
 				<suitXmlFiles>
-										<suitXmlFile>testng_iOSCloud.xml</suitXmlFile>
+										<suitXmlFile>testng_AndroidCloud.xml</suitXmlFile>
 							</suitXmlFiles>
 						<lifecycleMappingMetadata>
 							<pluginExecutions>

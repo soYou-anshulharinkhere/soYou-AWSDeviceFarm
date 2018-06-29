@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidKeyCode;
 
 public class Regressionobj {
 
@@ -23,8 +24,8 @@ public class Regressionobj {
 
 	//Mobile Number Screen 
 	
-	By MobileNumberHeader=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.TextView[1]");
-	By MobileNumberSubHeader=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinarLayout/android.widget.TextView[2]"); 
+	By MobileNumberHeader=By.id("com.joyn.soyou:id/ivsoYouLogo");
+	By MobileNumberSubHeader=By.id("com.joyn.soyou:id/tvLoginTitle"); 
 	By MobileNumberField=By.id("com.joyn.soyou:id/etmobileNumber");
 	By NextFirstSrc=By.id("com.joyn.soyou:id/btnSubmit");
 	By ErrorInvalidNumber=By.id("com.joyn.soyou:id/snackbar_text");
@@ -40,11 +41,15 @@ public class Regressionobj {
 	By permissionDeny=By.id("com.android.packageinstaller:id/permission_deny_button");
 
 	//OTP Screen 
-	By OTPSrcHeader=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.TextView[1]");
+	By OTPSrcHeader=By.id("com.joyn.soyou:id/rlLogin");
 	By OTPSrcSubHeader=By.id("com.joyn.soyou:id/tvEnterOtpPlaceHolder");
 	By RequestNewOTPText=By.id("com.joyn.soyou:id/tvNewOtp");
 	By WrongNumberText=By.id("com.joyn.soyou:id/tvWrongNumber");
-	By EnterOTPNumberField=By.id("com.joyn.soyou:id/etOtp");
+	By EnterOTPNumberFirstField=By.id("com.joyn.soyou:id/pin_first_edittext");
+	By EnterOTPNumberSecondField=By.id("com.joyn.soyou:id/pin_second_edittext");
+	By EnterOTPNumberThirdField=By.id("com.joyn.soyou:id/pin_third_edittext");
+	By EnterOTPNumberFourthField=By.id("com.joyn.soyou:id/pin_forth_edittext");
+	
 	
 	By OTPMisMatchWarning=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout");
 
@@ -55,17 +60,16 @@ public class Regressionobj {
 	By LastNameTextField=By.id("com.joyn.soyou:id/tiLastName");
 	By DoneButton=By.id("com.joyn.soyou:id/btnDone");
 	By AllowPermission=By.id("com.android.packageinstaller:id/permission_allow_button");
-	By OpenCamera=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.LinearLayout/com.android.internal.widget.ViewPager/android.widget.LinearLayout/android.widget.GridView/android.widget.LinearLayout[1]/android.widget.FrameLayout");
-	By ClickCameraButton=By.id("MENUID_SHUTTER");
-	By ClickedOkButton=By.id("OK Button");
+	By OpenCamera=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.ListView/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout/android.widget.ImageView");
+	By ClickCameraButton=By.id("Shutter button");
+	By ClickedOkButton=By.id("com.android.camera:id/btn_done");
 	By CropDoneButton=By.id("com.joyn.soyou:id/crop_image_menu_crop");
 	//Tab BarLayout
-	By FirstTab=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.support.v7.app.ActionBar.Tab[1]/android.widget.ImageView");
-	By SecondTab=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.support.v7.app.ActionBar.Tab[2]/android.widget.ImageView");
-	By ThirdTab=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.support.v7.app.ActionBar.Tab[3]/android.widget.ImageView");
-	By FourthTab=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.support.v7.app.ActionBar.Tab[4]/android.widget.ImageView");
-	By FifthTab=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.support.v7.app.ActionBar.Tab[5]/android.widget.ImageView");	
-				
+	By FirstTab=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.support.v7.app.ActionBar.Tab[1]/android.widget.RelativeLayout/android.widget.ImageView");
+	By SecondTab=By.id("com.joyn.soyou:id/ivTabOne");
+	By ComposeTab=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.support.v7.app.ActionBar.Tab[3]/android.widget.RelativeLayout/android.widget.ImageView");
+	By FourthTab=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.support.v7.app.ActionBar.Tab[4]/android.widget.RelativeLayout/android.widget.ImageView");
+	By FifthTab=By.id("com.joyn.soyou:id/ivBellIcon");
 
 
 
@@ -164,15 +168,7 @@ public class Regressionobj {
 			return false;
 		}
 	}
-	public boolean AllowPermission(){
-		try{
-			driver.findElement(permissionallow).click();
-			return true;
-		}catch(NoSuchElementException e){
-			return false;
-		}
-	}
-
+	
 	public boolean IsLoaderAfterSubmittingTheMobileNumberDisplay(){
 		try{
 			return driver.findElement(LoaderAfterSubmittingTheMobileNumber).isDisplayed();
@@ -225,21 +221,22 @@ public class Regressionobj {
 			return false;
 		}
 	}
-	public boolean InvalidOTPEnter(String InvalidOTP)
+	public boolean InvalidOTPFirstEnter(String InvalidOTP)
 
 	{
 		try{
-			driver.findElement(EnterOTPNumberField).sendKeys(InvalidOTP);
+			driver.findElement(EnterOTPNumberFirstField).sendKeys(InvalidOTP);
 			return true;
 		}catch(NoSuchElementException e){
 			return false;
 		}
 	}
 	
-	public boolean ValidOTP(String ValidOTP) {
+	
+	public boolean ValidFirstOTP(String ValidOTP) {
 	
 		try {
-			driver.findElement(EnterOTPNumberField).sendKeys(ValidOTP);
+			driver.findElement(EnterOTPNumberFirstField).sendKeys(ValidOTP);
 			return true;
 
 		}catch(NoSuchElementException e)
@@ -248,6 +245,7 @@ public class Regressionobj {
 		}
 
 	}
+	
 	public boolean IsOTPMisMatchWarningDisplay(){
 		try{
 			return driver.findElement(OTPMisMatchWarning).isDisplayed();
@@ -303,7 +301,9 @@ public class Regressionobj {
 	
 	public boolean ClickIntermidiateSrcDoneButton(){
 		try{
+			
 			driver.findElement(DoneButton).click();
+			
 			return true;
 			
 		}catch(NoSuchElementException e){
@@ -381,7 +381,7 @@ public class Regressionobj {
 	}
 	public boolean ClickThirdTab(){
 		try{
-			driver.findElement(ThirdTab).click();
+			driver.findElement(ComposeTab).click();
 			return true;
 			
 		}catch(NoSuchElementException e){

@@ -20,7 +20,6 @@ import com.extentReportManager.ExtentTestManager;
 import com.framework.internal.feature.AppInitializer;
 import com.loany.obj.Signup.ObjSeekerSignUp;
 import com.soYou.obj.AndroidRegressiontest.CanvasObj;
-import com.soYou.obj.AndroidRegressiontest.RecentUserAndChannelObj;
 import com.soYou.obj.AndroidRegressiontest.Regressionobj;
 
 import java.io.File;
@@ -33,32 +32,23 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbookType;
 import org.openqa.selenium.By;
 
-public class RecentUserAndChannelTest extends AppInitializer{
+public class ComposeTest extends AppInitializer{
 	
 
-	String searchtext= "Randomtext";
 //	@DataProvider(name="WelcomeSrc")
 //	public Object[][] userdetails() throws Exception{
 //		Object[][] values=ExcelReader.getTableArray("C://Anshul//Automationframework//Data//Seekerdata1.xlsx","WelcomeScreens");
 //		return values;
 //	}
 	// 1st Welcome Screen --------------------->
-	
+
 	@Test(priority = 5)
 	public void Canvas() throws IOException, InterruptedException {
 
-		RecentUserAndChannelObj a = new RecentUserAndChannelObj(getandroidDriver());		
+		CanvasObj a = new CanvasObj(getandroidDriver());		
 		getandroidDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.FourthTab(), "Check whether mobile number header displaying or not", "Mobile number header is displaying");
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.EmptyViewCard(), "Check whether Country Name is entering or not", "Country Name is entering");
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.EmptyViewText(),"Check whether Country Name is entering or not", "Country Name is entering");
-		
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SearchTextField(searchtext),"Check whether Country Name is entering or not", "Country Name is entering");
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.NosearchResult(),"Check whether Country Name is entering or not", "Country Name is entering");
-		
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a."Check whether Country Name is entering or not", "Country Name is entering");
-		
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.MoreOptions(),"Check whether Country Name is entering or not", "Country Name is entering");
+		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.WelcomescreenSkip(), "Check whether mobile number header displaying or not", "Mobile number header is displaying");
+		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.EnterCountryName(CountryName), "Check whether Country Name is entering or not", "Country Name is entering");
 		
 	}
 }

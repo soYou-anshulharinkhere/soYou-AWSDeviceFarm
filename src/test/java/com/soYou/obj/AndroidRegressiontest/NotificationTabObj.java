@@ -21,6 +21,7 @@ public class NotificationTabObj {
 	/*Page Elements*/
 	
 	By NotificationTitleBarText=By.id("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.view.ViewGroup[1]/android.widget.TextView");
+
 	
 	
 	

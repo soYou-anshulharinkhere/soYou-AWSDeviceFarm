@@ -22,7 +22,7 @@
 		
     <classes>
     
-      <class name="com.soYou.test.AndroidRegressiontest.Regressiontest"/>
+      <class name="com.soYou.test.AndroidRegressiontest.CanvasTest"/>
     
     </classes>
     

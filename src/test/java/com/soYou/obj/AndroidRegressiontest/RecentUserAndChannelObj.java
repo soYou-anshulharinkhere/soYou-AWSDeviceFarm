@@ -20,6 +20,7 @@ public class RecentUserAndChannelObj {
 	public AndroidDriver driver;
 	/*Page Elements*/
 	
+	By FourthTab=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.support.v7.app.ActionBar.Tab[4]/android.widget.RelativeLayout/android.widget.ImageView");
 	By SearchIconOnRecentTab=By.id("Search");
 	By MoreOptions=By.id("More options");
 	By EmptyViewCard=By.id("com.joyn.soyou:id/ivEmptyView");
@@ -32,6 +33,9 @@ public class RecentUserAndChannelObj {
 	By AddFriendsSelectFriendTitle=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.view.ViewGroup/android.widget.TextView");
 	By ImportFacebookButton=By.id("com.joyn.soyou:id/btnImportFB");
 	By AddFriendsSelectFriendSerchTxtField=By.id("android:id/search_src_text");
+	By NosearchResult=By.id("com.joyn.soyou:id/tvEmptyView");
+	By SearchcancelButton=By.id("Clear query");
+	
 	
 	
 	
@@ -51,30 +55,41 @@ public class RecentUserAndChannelObj {
 	By CreateChannelSelectFriendSearchIcon=By.id("id	android:id/search_mag_icon");
 	By CreateChannelSelectFriendDone=By.id("Done");
 	
+
 	
 	
+
 	
 	/*Objets*/
-	public boolean CanvasProfEdit(){
+	
+	public boolean FourthTab(){
 		try{
-			 driver.findElement(CanvasProfEdit).click();
+			 driver.findElement(FourthTab).click();
 			 return true;
 		}catch(NoSuchElementException e){
 			return false;
 		}
 	}
-	public boolean CameraEditIcon(){
+	public boolean SearchIconOnRecentTab(){
 		try{
-			 driver.findElement(CameraEditIcon).click();
+			 driver.findElement(SearchIconOnRecentTab).click();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean MoreOptions(){
+		try{
+			 driver.findElement(MoreOptions).click();
 			 return true;
 		}catch(NoSuchElementException e){
 			return false;
 		}
 	}
 	
-	public boolean RemoveImageOption(){
+	public boolean EmptyViewCard(){
 		try{
-			return driver.findElement(RemoveImageOption).isDisplayed();
+			return driver.findElement(EmptyViewCard).isDisplayed();
 			
 		}catch(NoSuchElementException e){
 			return false;
@@ -82,86 +97,180 @@ public class RecentUserAndChannelObj {
 	}
 
 
-	public boolean ConfirmDelete(String phNo){
+	public boolean EmptyViewText(){
 		try{
-			driver.findElement(ConfirmDelete).sendKeys(phNo);
+			driver.findElement(EmptyViewText).getText().equals("You seem be the first in soYou among your friends. Go ahead and invite them.");
 			return true;
 		}catch(NoSuchElementException e){
 			return false;
 		}
 	}
-	public boolean EditProfileFirstNameTextField(){
+	
+	
+
+	
+	public boolean SearchTextField(String searchtext){
 		try{
-			 driver.findElement(EditProfileFirstNameTextField).click();
-			 return true;
+			  driver.findElement(SearchTextField).sendKeys(searchtext);
+			  
+			  return true;
+			 
 		}catch(NoSuchElementException e){
 			return false;
 		}
 	}
-	public boolean EditProfileLastNameTextField(){
+	public boolean SearchBackButton(){
 		try{
-			 driver.findElement(EditProfileLastNameTextField).click();
-			 return true;
-		}catch(NoSuchElementException e){
-			return false;
-		}
-	}
-	public boolean ProfileEditBackClick(){
-		try{
-			 driver.findElement(ProfileEditBackClick).click();
-			 return true;
-		}catch(NoSuchElementException e){
-			return false;
-		}
-	}
-	public boolean TitleBarEditprofiletext(){
-		try{
-			 driver.findElement(TitleBarEditprofiletext).click();
-			 return true;
-		}catch(NoSuchElementException e){
-			return false;
-		}
-	}
-	public boolean FacebookConnectButton(){
-		try{
-			 driver.findElement(FacebookConnectButton).click();
-			 return true;
-		}catch(NoSuchElementException e){
-			return false;
-		}
-	}
-	public boolean EmptyViewText(){
-		try{
-			 driver.findElement(EmptyViewText).click();
-			 return true;
-		}catch(NoSuchElementException e){
-			return false;
-		}
-	}
-	public boolean EmptyViewCard(){
-		try{
-			 driver.findElement(FacebookConnectButton).click();
-			 return true;
-		}catch(NoSuchElementException e){
-			return false;
-		}
-	}
-	public boolean PointerToCompose(){
-		try{
-			 driver.findElement(PointerToCompose).click();
-			 return true;
-		}catch(NoSuchElementException e){
-			return false;
-		}
-	}
-	public boolean ProfileImagePlaceholderImage(){
-		try{
-			 driver.findElement(ProfileImagePlaceholderImage).click();
+			 driver.findElement(SearchBackButton).click();
 			 return true;
 		}catch(NoSuchElementException e){
 			return false;
 		}
 	}
 	
+	public boolean NosearchResult(){
+		try{
+			 driver.findElement(NosearchResult).getText().equals("No search results");
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	
+	
+	public boolean SearchcancelButton(){
+		try{
+			 driver.findElement(SearchcancelButton).click();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	
+	public boolean AddFriends(){
+		try{
+			 driver.findElement(AddFriends).click();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean AddFriendsSelectFriendTitle(){
+		try{
+			 driver.findElement(AddFriendsSelectFriendTitle).isDisplayed();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean ImportFacebookButton(){
+		try{
+			 driver.findElement(ImportFacebookButton).click();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean AddFriendsSelectFriendSerchTxtField(){
+		try{
+			 driver.findElement(AddFriendsSelectFriendSerchTxtField).click();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+
+	
+	public boolean CreateChannel(){
+		try{
+			 driver.findElement(CreateChannel).click();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean CreateChannelText(){
+		try{
+			 driver.findElement(CreateChannelText).click();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean CreateChannelNextButton(){
+		try{
+			 driver.findElement(CreateChannelNextButton).click();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean ChannelNameTextField(){
+		try{
+			 driver.findElement(ChannelNameTextField).click();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean ChanneldDefaulltProfileImagePlaceholder(){
+		try{
+			 driver.findElement(ChanneldDefaulltProfileImagePlaceholder).isDisplayed();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean DiscardChannelYes(){
+		try{
+			 driver.findElement(DiscardChannelYes).click();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean DiscardChannelNo(){
+		try{
+			 driver.findElement(DiscardChannelNo).click();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	
+	
+	
+	public boolean CreateChannelSelectFriend(){
+		try{
+			 driver.findElement(CreateChannelSelectFriend).click();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean CreateChannelSelectFriendSearchTextField(){
+		try{
+			 driver.findElement(CreateChannelSelectFriendSearchTextField).click();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean CreateChannelSelectFriendSearchIcon(){
+		try{
+			 driver.findElement(CreateChannelSelectFriendSearchIcon).click();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean CreateChannelSelectFriendDone(){
+		try{
+			 driver.findElement(CreateChannelSelectFriendDone).click();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
 
 }

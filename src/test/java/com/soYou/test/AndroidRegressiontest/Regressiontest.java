@@ -128,7 +128,8 @@ public class Regressiontest extends AppInitializer{
 //		//verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickThirdTab(), "Check whether ThrirdTab is clicking and displaying or not", "ThrirdTab is clicking and displaying");
 //		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickFourthTab(), "Check whether fourthtab is clicking and displayig or not", "fourthtab is clicking and displayig");
 //		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickFifthTab(), "Check whether fifthtab is clicking and displaying or not", "fifthtab is clicking and displaying");
-//		
-//	
 //	}
+	
+	
+	
 }

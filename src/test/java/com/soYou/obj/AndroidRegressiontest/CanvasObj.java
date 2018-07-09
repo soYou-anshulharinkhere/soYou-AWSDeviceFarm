@@ -22,20 +22,47 @@ public class CanvasObj {
 	
 	By CanvasProfEdit=By.id("Edit");
 	By CameraEditIcon=By.id("com.joyn.soyou:id/civEditIcon");
-	By RemoveImageOption=By.id("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[2]");
+	By RemoveImageOption=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[2]");
 	By ConfirmDelete=By.id("android:id/button2");
 	By EditProfileFirstNameTextField=By.id("com.joyn.soyou:id/tiFirstName");
 	By EditProfileLastNameTextField=By.id("com.joyn.soyou:id/tiLastName");
 	By ProfileEditBackClick=By.id("Navigate up");
+	By SaveChanges=By.id("Done");
 	By TitleBarEditprofiletext=By.id("Navigate up");
 	By FacebookConnectButton=By.id("com.joyn.soyou:id/rlFbLogin");
 	By EmptyViewCard=By.id("com.joyn.soyou:id/ivEmptyView");
 	By EmptyViewText=By.id("com.joyn.soyou:id/tvEmptyCanvas");
 	By PointerToCompose=By.id("com.joyn.soyou:id/ivDirections");
 	By ProfileImagePlaceholderImage=By.id("com.joyn.soyou:id/civProfilePic");
+	By SecondTab=By.id("com.joyn.soyou:id/ivTabOne");
+	
+	By NavigationDrawer=By.id("Settings");
+	By OptionsTitleBar=By.xpath("hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.view.ViewGroup/android.widget.TextView");
+	By ProfileOption=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ListView/android.widget.LinearLayout[1]/android.widget.TextView");
+	By AddFriends=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.widget.TextView");
+	
+	
+	By BlockedUsers=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ListView/android.widget.LinearLayout[3]/android.widget.TextView");
+	By PrivacyPolicy=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ListView/android.widget.LinearLayout[4]/android.widget.TextView");
+	By Terms=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ListView/android.widget.LinearLayout[5]/android.widget.TextView");
+	By Feedback=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ListView/android.widget.LinearLayout[6]/android.widget.TextView");
+	By About=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ListView/android.widget.LinearLayout[7]/android.widget.TextView");
+	By LogOut=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ListView/android.widget.LinearLayout[8]/android.widget.TextView");
+
+	
+		
 	
 	
 	/*Objets*/
+	public boolean SecondTab(){
+		try{
+			 driver.findElement(SecondTab).click();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	
 	public boolean CanvasProfEdit(){
 		try{
 			 driver.findElement(CanvasProfEdit).click();
@@ -55,7 +82,8 @@ public class CanvasObj {
 	
 	public boolean RemoveImageOption(){
 		try{
-			return driver.findElement(RemoveImageOption).isDisplayed();
+			 driver.findElement(RemoveImageOption).click();
+			 return true;
 			
 		}catch(NoSuchElementException e){
 			return false;
@@ -63,9 +91,9 @@ public class CanvasObj {
 	}
 
 
-	public boolean ConfirmDelete(String phNo){
+	public boolean ConfirmDelete(){
 		try{
-			driver.findElement(ConfirmDelete).sendKeys(phNo);
+			driver.findElement(ConfirmDelete).click();
 			return true;
 		}catch(NoSuchElementException e){
 			return false;
@@ -95,9 +123,17 @@ public class CanvasObj {
 			return false;
 		}
 	}
+	public boolean SaveChanges(){
+		try{
+			 driver.findElement(SaveChanges).click();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
 	public boolean TitleBarEditprofiletext(){
 		try{
-			 driver.findElement(TitleBarEditprofiletext).click();
+			 driver.findElement(TitleBarEditprofiletext).isDisplayed();
 			 return true;
 		}catch(NoSuchElementException e){
 			return false;
@@ -113,7 +149,7 @@ public class CanvasObj {
 	}
 	public boolean EmptyViewText(){
 		try{
-			 driver.findElement(EmptyViewText).click();
+			 driver.findElement(EmptyViewText).isDisplayed();
 			 return true;
 		}catch(NoSuchElementException e){
 			return false;
@@ -121,7 +157,7 @@ public class CanvasObj {
 	}
 	public boolean EmptyViewCard(){
 		try{
-			 driver.findElement(FacebookConnectButton).click();
+			 driver.findElement(EmptyViewCard).isDisplayed();
 			 return true;
 		}catch(NoSuchElementException e){
 			return false;
@@ -129,7 +165,7 @@ public class CanvasObj {
 	}
 	public boolean PointerToCompose(){
 		try{
-			 driver.findElement(PointerToCompose).click();
+			 driver.findElement(PointerToCompose).isDisplayed();
 			 return true;
 		}catch(NoSuchElementException e){
 			return false;
@@ -137,7 +173,90 @@ public class CanvasObj {
 	}
 	public boolean ProfileImagePlaceholderImage(){
 		try{
-			 driver.findElement(ProfileImagePlaceholderImage).click();
+			 driver.findElement(ProfileImagePlaceholderImage).isDisplayed();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+
+			
+			public boolean NavigationDrawer(){
+		try{
+			 driver.findElement(NavigationDrawer).click();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean OptionsTitleBar(){
+		try{
+			 driver.findElement(OptionsTitleBar).isDisplayed();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean ProfileOption(){
+		try{
+			 driver.findElement(ProfileOption).click();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean AddFriends(){
+		try{
+			 driver.findElement(AddFriends).click();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+		
+	public boolean BlockedUsers(){
+		try{
+			 driver.findElement(BlockedUsers).click();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean PrivacyPolicy(){
+		try{
+			 driver.findElement(PrivacyPolicy).click();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean Terms(){
+		try{
+			 driver.findElement(Terms).isDisplayed();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean Feedback(){
+		try{
+			 driver.findElement(Feedback).click();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean About(){
+		try{
+			 driver.findElement(About).click();
+			 return true;
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
+	public boolean LogOut(){
+		try{
+			 driver.findElement(LogOut).click();
 			 return true;
 		}catch(NoSuchElementException e){
 			return false;

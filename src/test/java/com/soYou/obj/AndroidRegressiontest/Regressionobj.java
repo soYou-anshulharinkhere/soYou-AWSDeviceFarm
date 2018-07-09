@@ -60,7 +60,7 @@ public class Regressionobj {
 	By LastNameTextField=By.id("com.joyn.soyou:id/tiLastName");
 	By DoneButton=By.id("com.joyn.soyou:id/btnDone");
 	By AllowPermission=By.id("com.android.packageinstaller:id/permission_allow_button");
-	By OpenCamera=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.ListView/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout/android.widget.ImageView");
+	By OpenCamera=By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.ListView/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]");
 	By ClickCameraButton=By.id("Shutter button");
 	By ClickedOkButton=By.id("com.android.camera:id/btn_done");
 	By CropDoneButton=By.id("com.joyn.soyou:id/crop_image_menu_crop");

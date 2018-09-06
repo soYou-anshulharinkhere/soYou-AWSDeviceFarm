@@ -26,7 +26,7 @@ public class Regressionobj {
 	
 	By MobileNumberHeader=By.id("com.joyn.soyou:id/ivsoYouLogo");
 	By MobileNumberSubHeader=By.id("com.joyn.soyou:id/tvLoginTitle"); 
-	By MobileNumberField=By.id("com.joyn.soyou:id/etmobileNumber");
+	By MobileNumberField=By.id("com.joyn.soyou:id/etMobileNumber");
 	By NextFirstSrc=By.id("com.joyn.soyou:id/btnSubmit");
 	By ErrorInvalidNumber=By.id("com.joyn.soyou:id/snackbar_text");
 	By SelectCountryDropDown=By.id("com.joyn.soyou:id/imageView_arrow");

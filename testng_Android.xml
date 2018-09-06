@@ -12,17 +12,17 @@
   	        
   	        
   	        <parameter name="device-name" value="emulator-5554" />
-			<parameter name="device-version" value="7.1.1" />
-			<parameter name="app" value="/Users/anshulharinkhere/Documents/soYou-Android/app/build/outputs/apk/debug/app-debug.apk" />
+			<parameter name="device-version" value="8.1.0" />
+			<parameter name="app" value="/Users/apple/soYou-Android/app/build/outputs/apk/debug/app-debug.apk" />
 			<parameter name="app-package" value="com.joyn.soyou" />	
 			<parameter name="appActivity" value="splash.SplashScreen" />
 			<parameter name="noReset" value="true" />
-			//testtrigger
+			
 		</parameters>
 		
     <classes>
     
-      <class name="com.soYou.test.AndroidRegressiontest.CanvasTest"/>
+      <class name="com.soYou.test.AndroidRegressiontest.Regressiontest"/>
     
     </classes>
     

@@ -17,7 +17,7 @@
 			<parameter name="app-package" value="com.joyn.soyou" />	
 			<parameter name="appActivity" value="splash.SplashScreen" />
 			<parameter name="noReset" value="true" />
-			
+			//testtrigger
 		</parameters>
 		
     <classes>

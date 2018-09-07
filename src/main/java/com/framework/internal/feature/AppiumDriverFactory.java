@@ -82,7 +82,7 @@ public class AppiumDriverFactory {
 		caps.setCapability("noReset", "true");
 		
 		caps.setCapability("app","https://s3.amazonaws.com/aws-website-soyou-p0sly/android/dev/app-release-bitrise-signed.apk");
-		driverandroid = new AndroidDriver(new URL("http://AnshulHarinkhere2:2c6ec26f-b2a3-41c4-a75e-ad17baef11c4@ondemand.saucelabs.com:80/wd/hub"), caps);
+		driverandroid = new AndroidDriver(new URL("http://AnshulHarinkhere12345:82ce9645-d16e-4513-ba6e-1b41deb27b68@ondemand.saucelabs.com:80/wd/hub"), caps);
 		
 		return driverandroid;
 		

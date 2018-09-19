@@ -20,7 +20,7 @@ import com.extentReportManager.ExtentTestManager;
 import com.framework.internal.feature.AppInitializer;
 import com.loany.obj.Signup.ObjSeekerSignUp;
 import com.soYou.obj.AndroidRegressiontest.CanvasObj;
-import com.soYou.obj.AndroidRegressiontest.Regressionobj;
+import com.soYou.obj.AndroidRegressiontest.LoginObj;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -58,7 +58,7 @@ public class CanvasTest extends AppInitializer{
 	public void EditProfile() throws IOException, InterruptedException {
 
 		CanvasObj a = new CanvasObj(getandroidDriver());		
-		Regressionobj b = new Regressionobj(getandroidDriver());
+		LoginObj b = new LoginObj(getandroidDriver());
 		getandroidDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SecondTab(), "Check whether mobile number header displaying or not", "Mobile number header is displaying");
 		

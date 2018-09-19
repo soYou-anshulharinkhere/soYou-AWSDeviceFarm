@@ -21,8 +21,8 @@
 		</parameters>
 		
     <classes>
-    
-      <class name="com.soYou.test.AndroidRegressiontest.Regressiontest"/>
+       <class name="com.soYou.test.AndroidRegressiontest.LoginTest"/>
+      <class name="com.soYou.test.AndroidRegressiontest.FeedActivityTest"/>
     
     </classes>
     

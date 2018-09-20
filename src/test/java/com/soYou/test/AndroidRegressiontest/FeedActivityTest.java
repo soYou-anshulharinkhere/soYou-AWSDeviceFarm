@@ -52,7 +52,7 @@ public class FeedActivityTest extends AppInitializer{
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SendSomethingSelect(), "Check whether Country Name is entering or not", "Country Name is entering");
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ComposeMessage(), "Check whether Country Name is entering or not", "Country Name is entering");
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ComposeImageAttachOptionThroughCamera(), "Check whether Country Name is entering or not", "Country Name is entering");
-		//verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.MediaPermission(), "Check whether Country Name is entering or not", "Country Name is entering");
+	//	verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.MediaPermission(), "Check whether Country Name is entering or not", "Country Name is entering");
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), b.ClickCameraButton(), "Check whether Click Camera Button is displaying and clicking or not", "Mobile number header is displaying");
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), b.ClickedOkButton(), "Check whether Ok Button is clicking or not", "Ok Button is clicking");
 		Thread.sleep(5000);

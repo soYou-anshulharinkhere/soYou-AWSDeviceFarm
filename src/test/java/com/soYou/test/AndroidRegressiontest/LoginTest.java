@@ -117,6 +117,7 @@ public class LoginTest extends AppInitializer{
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.FirstNameTextField(FirstName), "Check whether First Name Text is entering or not", "First Name Text is"+FirstName);
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.LastNameTextField(LastName), "Check whether Last Name Text is entering or not", "Last Name Text is"+LastName);
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickDefalultProfPicPlaceHolder(), "Check whether Click Defalult ProfPic PlaceHolder is clicking or not", "Click Defalult ProfPic PlaceHolder is clicking");
+		Thread.sleep(5000);
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.AllowPermissionForProfilePicUpload(), "Check whether Allow Permission For Profile PicUpload is allowing or not", "Allow Permission For Profile PicUpload is allowing");
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickOpenCameraButton(),"Check whether Open Camera Button clicking or not", "Open Camera Button is clicking");
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickCameraButton(), "Check whether Click Camera Button is displaying and clicking or not", "Mobile number header is displaying");

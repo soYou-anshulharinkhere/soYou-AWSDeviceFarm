@@ -44,7 +44,7 @@ public class FeedActivityObj {
 	}
 	public boolean SeacrhTextfield(){
 		try{
-			 driver.findElementById("com.joyn.soyou:id/search_src_text").sendKeys("AUTO PROFILE");
+			 driver.findElementById("com.joyn.soyou:id/search_src_text").sendKeys("Sanjay Dutt");
 			return true;
 		}catch(NoSuchElementException e){
 			return false;
@@ -244,8 +244,7 @@ public class FeedActivityObj {
 	}
 		public boolean UnblockUserButtonOnBlockedUserList(){
 			try{	
-				driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ListView/android.widget.RelativeLayout").click();
-				
+				driver.findElementById("android:id/button2").click();
 				return true;
 			}catch(NoSuchElementException e){
 				return false;

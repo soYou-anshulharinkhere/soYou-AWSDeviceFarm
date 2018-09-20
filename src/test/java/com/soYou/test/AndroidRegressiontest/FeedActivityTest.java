@@ -105,6 +105,7 @@ public class FeedActivityTest extends AppInitializer{
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SettingIconCanvasSrc(), "Check whether Country Name is entering or not", "Country Name is entering");
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.BlockedUserInSettings(), "Check whether Country Name is entering or not", "Country Name is entering");
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.BlockedUserOnFirstPosition(), "Check whether Country Name is entering or not", "Country Name is entering");
+		Thread.sleep(5000);
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.UnblockUserButtonOnBlockedUserList(), "Check whether Country Name is entering or not", "Country Name is entering");
 		
 }

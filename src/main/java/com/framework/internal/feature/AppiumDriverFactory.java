@@ -72,7 +72,7 @@ public class AppiumDriverFactory {
 		
 		DesiredCapabilities caps = DesiredCapabilities.android();
 		caps.setCapability("appiumVersion", "1.7.2");
-		caps.setCapability("deviceName","Samsung Galaxy S6 GoogleAPI Emulator");
+		caps.setCapability("deviceName","Motorola_Moto_G4_real");
 		caps.setCapability("deviceOrientation", "portrait");
 		caps.setCapability("browserName", "");
 		caps.setCapability("platformVersion","7.0");

@@ -23,7 +23,7 @@
     <classes>
     
       <class name="com.soYou.test.AndroidRegressiontest.LoginTest"/>
-      <class name="com.soYou.test.AndroidRegressiontest.FeedActivityTest"/>
+      
     
     </classes>
     

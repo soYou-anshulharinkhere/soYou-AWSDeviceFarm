@@ -81,8 +81,8 @@ public class LoginTest extends AppInitializer{
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.EnterCountryName(CountryName), "Check whether Country Name is entering or not", "Country Name is entering");
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SelectCountryNameFromDrpDwn(), "Check whether Country Name From DrpDwn is selecting or not", "Country Name From DrpDwn is selecting");
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickOnNext(), "Check whether Next button on mobile no screen is clicking or not", "Next button on mobile no screen is clicking");
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.IsErrorEnterMobileNumberDisplay(), "Check whether Error for Enter MobileNumberDisplay is displaying or not", "Error for Enter MobileNumberDisplay is displaying");
-	
+	//	verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.IsErrorEnterMobileNumberDisplay(), "Check whether Error for Enter MobileNumberDisplay is displaying or not", "Error for Enter MobileNumberDisplay is displaying");
+	Thread.sleep(5000);
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.EnterMobNo(phNo), "Check whether mobile no is entering  or not", "Mobile no is entering ");
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickOnNext(), "Check whether Next button on mobile no screen is clicking or not", "Next button on mobile no screen is clicking");
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.IsLoaderAfterSubmittingTheMobileNumberDisplay(), "Check whe	ther Loader After Submitting TheMobileNumberDisplay is displaying or not", " Loader After Submitting TheMobileNumberDisplay is displaying");

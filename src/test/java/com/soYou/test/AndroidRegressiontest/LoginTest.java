@@ -137,22 +137,22 @@ public class LoginTest extends AppInitializer{
 //		FeedActivityObj a = new FeedActivityObj(getandroidDriver());
 //		LoginObj b = new LoginObj(getandroidDriver());
 //		getandroidDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.RecentTabClick(), "Check whether mobile number header displaying or not", "Mobile number header is displaying");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.RecentTabClick(), "Check whether Recent Tab Clicking or not", "Recent Tab is Clicking");
 //		Thread.sleep(5000);
-//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SeacrhIconRecentTab(), "Check whether Country Name is entering or not", "Country Name is entering");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SeacrhIconRecentTab(), "Check whether Seacrh Icon Recent Tab is clicking or not", "Seacrh Icon Recent Tab is clicking");
 //		
-//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SeacrhTextfield(), "Check whether Country Name is entering or not", "Country Name is entering");
-//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SearchedResultSelect(), "Check whether Country Name is entering or not", "Country Name is entering");
-//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SendSomethingSelect(), "Check whether Country Name is entering or not", "Country Name is entering");
-//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ComposeMessage(), "Check whether Country Name is entering or not", "Country Name is entering");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SeacrhTextfield(), "Check whether Seacrh Text field is entering the friend name or not", "Seacrh Text field is entering the friend name");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SearchedResultSelect(), "Check whether selecting the search result or not", "selecting the search result");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SendSomethingSelect(), "Check whether adding the user to TO text field or not", "Adding the user to TO text field ");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ComposeMessage(), "Check whether composing the post or not", "Composing the post");
 ////		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ComposeImageAttachOptionThroughCamera(), "Check whether Country Name is entering or not", "Country Name is entering");
 ////		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.MediaPermission(), "Check whether Country Name is entering or not", "Country Name is entering");
 ////		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), b.ClickCameraButton(), "Check whether Click Camera Button is displaying and clicking or not", "Mobile number header is displaying");
 ////		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), b.ClickedOkButton(), "Check whether Ok Button is clicking or not", "Ok Button is clicking");
 //		Thread.sleep(5000);
-//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.LocationAddcheck(), "Check whether Country Name is entering or not", "Country Name is entering");
-//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SendGift(), "Check whether Country Name is entering or not", "Country Name is entering");
-//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.UnapprovedGiftPopUp(), "Check whether Country Name is entering or not", "Country Name is entering");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.LocationAddcheck(), "Check whether adding the location or not", "Adding the location to compose post");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SendGift(), "Check whether Sending a Gift or not", "Ending a Gift");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.UnapprovedGiftPopUp(), "Check whether Showing the pop for unapproved post or not", "Showing the pop for unapproved post");
 //		
 //	}
 //	@Test(priority = 5)
@@ -161,11 +161,11 @@ public class LoginTest extends AppInitializer{
 //		FeedActivityObj a = new FeedActivityObj(getandroidDriver());
 //		LoginObj b = new LoginObj(getandroidDriver());
 //		Thread.sleep(5000);
-//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.CanvasTab(), "Check whether Country Name is entering or not", "Country Name is entering");
-//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SettingIconCanvasSrc(), "Check whether Country Name is entering or not", "Country Name is entering");
-//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.Logout(), "Check whether Country Name is entering or not", "Country Name is entering");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.CanvasTab(), "Check whether switching to canavas tab or not", "Switching to canavas tab");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SettingIconCanvasSrc(), "Check whether clicking  Setting Icon on Canvas Src or not", "Clicking  Setting Icon on Canvas Src");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.Logout(), "Check whether Logging out or not", "Logging out properly");
 //		Thread.sleep(5000);
-//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), b.WelcomescreenSkip(), "Check whether mobile number header displaying or not", "Mobile number header is displaying");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), b.WelcomescreenSkip(), "Check whether relogin and displaying the skip button or not", "Relogin and displaying the skip button");
 //		Thread.sleep(5000);
 //		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), b.MobileNumSrcHeader(), "Check whether mobile number header displaying or not", "Mobile number header is displaying");
 //		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), b.MobileNumSrcSubHeader(), "Check whether Mobile Num Src SubHeader displaying  or not", "Entering mobile number");
@@ -188,19 +188,19 @@ public class LoginTest extends AppInitializer{
 //		FeedActivityObj a = new FeedActivityObj(getandroidDriver());
 //		LoginObj b = new LoginObj(getandroidDriver());
 //		Thread.sleep(5000);
-//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.NotificationTab(), "Check whether Country Name is entering or not", "Country Name is entering");
-//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.NotificationTabFirstRowSelection(), "Check whether Country Name is entering or not", "Country Name is entering");
-//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.CommentDetailView(), "Check whether Country Name is entering or not", "Country Name is entering");
-//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.CommentDetailViewSend(), "Check whether Country Name is entering or not", "Country Name is entering");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.NotificationTab(), "Check whether switching to notification tab or not", "Switching to notification tab");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.NotificationTabFirstRowSelection(), "Check whether selecting the unapproved user post from notifications list or not", "Selecting the unapproved user post from notifications list");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.CommentDetailView(), "Check whether comment is entering to detail view or not", "Comment is entering to detail view");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.CommentDetailViewSend(), "Check whether comment is sending to detail view or not", "Comment is sending to detail view");
 //		Thread.sleep(5000);
 //		a.Back();
-//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.BlockForFirstPost(), "Check whether Country Name is entering or not", "Country Name is entering");
-//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.CanvasTab(), "Check whether Country Name is entering or not", "Country Name is entering");
-//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SettingIconCanvasSrc(), "Check whether Country Name is entering or not", "Country Name is entering");
-//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.BlockedUserInSettings(), "Check whether Country Name is entering or not", "Country Name is entering");
-//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.BlockedUserOnFirstPosition(), "Check whether Country Name is entering or not", "Country Name is entering");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.BlockForFirstPost(), "Check whether able to block the received post or not", "Able to block the received post");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.CanvasTab(), "Check whether able to select canvas tab or not to unblock the blocked user", "Able to select canvas tab");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SettingIconCanvasSrc(), "Check whether Setting Icon Canvas Src clicking or not", "Setting Icon in Canvas Src is clicking");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.BlockedUserInSettings(), "Check whether Blocked User option In Settings list is choosing or not", "Blocked User option In Settings list is choosing");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.BlockedUserOnFirstPosition(), "Check whether Blocked User On First Position are selecting or not", "Blocked User On First Position are selecting");
 //		Thread.sleep(5000);
-//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.UnblockUserButtonOnBlockedUserList(), "Check whether Country Name is entering or not", "Country Name is entering");
-//	}
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.UnblockUserButtonOnBlockedUserList(), "Check whether unblocking the blocked user or not", "unblocking the blocked user");
 	}
+	
 }

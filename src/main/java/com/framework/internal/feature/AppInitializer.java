@@ -66,7 +66,7 @@ public class AppInitializer extends CustomVerification {
 
 		/** Instantiate the driver if test is run from testNG xml file */
 	
-		System.out.println("1");
+	
 		if(platform.equals(TestNGXMLParametersValue.DEFAULT)){
 			
 			if(deviceType.equals(TestNGXMLParametersValue.DESKTOP)){
@@ -208,7 +208,7 @@ public class AppInitializer extends CustomVerification {
     	WebDriverInitializer.loadWebDriverConfigFile(FileUtility.getTestResourceFilePath()+"/externalresource/selenium_webdriver_config.properties");
     	
     	//Sending the message in slack channel
-  // 	SlackMessenger.loadSlackConfigProperty(FileUtility.getTestResourceFilePath()+"/externalresource/slackConfig.properties").sendTextMessage(SlackConfig.getTestStartMessage());
+   	SlackMessenger.loadSlackConfigProperty(FileUtility.getTestResourceFilePath()+"/externalresource/slackConfig.properties").sendTextMessage(SlackConfig.getTestStartMessage());
      	
 //    	/**Assigning the TestSuitename to generate report*/
     	ExtentReportManager.suiteName=suiteName;
@@ -222,8 +222,8 @@ public class AppInitializer extends CustomVerification {
     @AfterSuite
     protected  void afterSuite() throws IOException, SlackApiException {
      	WebDriverInitializer.loadWebDriverConfigFile(FileUtility.getTestResourceFilePath()+"/externalresource/selenium_webdriver_config.properties");
-//    	SlackMessenger.loadSlackConfigProperty(FileUtility.getTestResourceFilePath()+"/externalresource/slackConfig.properties").sendFile();
-//     	SlackMessenger.loadSlackConfigProperty(FileUtility.getTestResourceFilePath()+"/externalresource/slackConfig.properties").sendTextMessage(SlackConfig.getTestEndMessage());
+    	SlackMessenger.loadSlackConfigProperty(FileUtility.getTestResourceFilePath()+"/externalresource/slackConfig.properties").sendFile();
+     	SlackMessenger.loadSlackConfigProperty(FileUtility.getTestResourceFilePath()+"/externalresource/slackConfig.properties").sendTextMessage(SlackConfig.getTestEndMessage());
 
     	/** Closing the extent report after writing the report */
     	extent.close();

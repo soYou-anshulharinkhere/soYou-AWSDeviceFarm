@@ -18,10 +18,8 @@ public class EmailReporter {
 		ExternalResourcePath.setEmailConfigPropertyFilePath(emailConfigFileName);
 		EmailConfig.readAllEmailConfigProperties();
 		this.outPutFileDirecotory=outPutFileDirecotory;
-		emailReportName=EmailConfig.getEmailableReportName();
-		
-		
-	}
+		emailReportName=EmailConfig.getEmailableReportName();	
+		}
 	public void generateEmailReport(List<ISuite> suites){
 		
 		if(suites!=null){

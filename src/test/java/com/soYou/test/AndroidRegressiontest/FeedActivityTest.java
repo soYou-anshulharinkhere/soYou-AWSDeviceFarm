@@ -94,6 +94,7 @@ public class FeedActivityTest extends AppInitializer{
 		FeedActivityObj a = new FeedActivityObj(getandroidDriver());
 		LoginObj b = new LoginObj(getandroidDriver());
 		Thread.sleep(5000);
+		a.FeedActitvityTab();
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.NotificationTab(), "Check whether Country Name is entering or not", "Country Name is entering");
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.NotificationTabFirstRowSelection(), "Check whether Country Name is entering or not", "Country Name is entering");
 		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.CommentDetailView(), "Check whether Country Name is entering or not", "Country Name is entering");

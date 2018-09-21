@@ -19,6 +19,7 @@ import com.extentReportManager.ExtentTestManager;
 //import com.framework.internal.feature.BrowserInitializer;
 import com.framework.internal.feature.AppInitializer;
 import com.loany.obj.Signup.ObjSeekerSignUp;
+import com.soYou.obj.AndroidRegressiontest.FeedActivityObj;
 import com.soYou.obj.AndroidRegressiontest.LoginObj;
 
 import io.appium.java_client.MobileElement;
@@ -73,58 +74,133 @@ public class LoginTest extends AppInitializer{
 
 		LoginObj a = new LoginObj(getandroidDriver());		
 		getandroidDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.WelcomescreenSkip(), "Check whether mobile number header displaying or not", "Mobile number header is displaying");
-		Thread.sleep(5000);
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.MobileNumSrcHeader(), "Check whether mobile number header displaying or not", "Mobile number header is displaying");
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.MobileNumSrcSubHeader(), "Check whether Mobile Num Src SubHeader displaying  or not", "Entering mobile number"+phNo);
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickOnSelectCountryDropDown(), "Check whether SelectCountryDropDown clicking or not", "SelectCountryDropDownn is clicking");
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.EnterCountryName(CountryName), "Check whether Country Name is entering or not", "Country Name is entering");
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SelectCountryNameFromDrpDwn(), "Check whether Country Name From DrpDwn is selecting or not", "Country Name From DrpDwn is selecting");
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickOnNext(), "Check whether Next button on mobile no screen is clicking or not", "Next button on mobile no screen is clicking");
-	//	verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.IsErrorEnterMobileNumberDisplay(), "Check whether Error for Enter MobileNumberDisplay is displaying or not", "Error for Enter MobileNumberDisplay is displaying");
-	Thread.sleep(5000);
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.EnterMobNo(phNo), "Check whether mobile no is entering  or not", "Mobile no is entering ");
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickOnNext(), "Check whether Next button on mobile no screen is clicking or not", "Next button on mobile no screen is clicking");
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.IsLoaderAfterSubmittingTheMobileNumberDisplay(), "Check whe	ther Loader After Submitting TheMobileNumberDisplay is displaying or not", " Loader After Submitting TheMobileNumberDisplay is displaying");
-	}
-
-
-	
-	@Test(priority  = 2)
-	public void OTPScreenTest() throws  IOException, InterruptedException {
-		LoginObj a = new LoginObj(getandroidDriver());	
-		getandroidDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.OTPsSrcHeader(), "Check whether OTP Src Header displaying or not", "OTP Src Header displaying");
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.OTPSrcSubHeader(), "Check whether OTP Src Sub Header displaying or not", "OTP Src Sub Header displaying");
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.RequestNewOTPText(), "Check whether Request for New OTP Text displaying or not", "Request for New OTP Text displaying");
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.InvalidOTPFirstEnter(InvalidOTP), "Check whether Invalid OTP Entering or not", "Invalid OTP is Entering");
-	    Thread.sleep(5000);
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.WrongNumberclick(), "Check whether for Wrong Number edit click button is clicking or not", "Wrong Number edit click button is clicking ");
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.EnterMobNo(phNo), "Check whether Mob No is entering or not", "Mob No is entering");
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickOnNext(), "Check whether Next after entering mob no is clicking or not", " Next after entering mob no is clicking");
-		Thread.sleep(5000);
-		verifyTrue(ExtentTestManager.	getTest(),getandroidDriver(), a.ValidFirstOTP(ValidOTP), "Check whether Valid OTP is entering or not", "Valid OTP is entering");
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.AllowPermissionForProfilePicUpload(), "Check whether Valid OTP is entering or not", "Valid OTP is entering");
-		Thread.sleep(5000);
-	}
-	
-
-	
-	@Test(priority=3)
-	public void IntermidiateScreen()   throws  IOException, InterruptedException {
-		LoginObj a = new LoginObj(getandroidDriver());	
-		getandroidDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.FirstNameTextField(FirstName), "Check whether First Name Text is entering or not", "First Name Text is"+FirstName);
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.LastNameTextField(LastName), "Check whether Last Name Text is entering or not", "Last Name Text is"+LastName);
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickDefalultProfPicPlaceHolder(), "Check whether Click Defalult ProfPic PlaceHolder is clicking or not", "Click Defalult ProfPic PlaceHolder is clicking");
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.AllowPermissionForProfilePicUpload(), "Check whether Allow Permission For Profile PicUpload is allowing or not", "Allow Permission For Profile PicUpload is allowing");
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickOpenCameraButton(),"Check whether Open Camera Button clicking or not", "Open Camera Button is clicking");
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.AllowPermissionForProfilePicUpload(), "Check whether Allow Permission For Profile PicUpload is allowing or not", "Allow Permission For Profile PicUpload is allowing");
-		
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickCameraButton(), "Check whether Click Camera Button is displaying and clicking or not", "Mobile number header is displaying");
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickedOkButton(), "Check whether Ok Button is clicking or not", "Ok Button is clicking");
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickCropDoneButton(), "Check whether Crop Done Button is clicking or not", "Crop Done Button is clicking");
-		Thread.sleep(9000);
-		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickIntermidiateSrcDoneButton(), "Check whether Intermidiate Src Done Button is clicking or not", "Intermidiate Src Done Button is clicking");
+		System.out.println("1234");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.WelcomescreenSkip(), "Check whether mobile number header displaying or not", "Mobile number header is displaying");
+//		Thread.sleep(5000);
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.MobileNumSrcHeader(), "Check whether mobile number header displaying or not", "Mobile number header is displaying");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.MobileNumSrcSubHeader(), "Check whether Mobile Num Src SubHeader displaying  or not", "Entering mobile number"+phNo);
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickOnSelectCountryDropDown(), "Check whether SelectCountryDropDown clicking or not", "SelectCountryDropDownn is clicking");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.EnterCountryName(CountryName), "Check whether Country Name is entering or not", "Country Name is entering");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SelectCountryNameFromDrpDwn(), "Check whether Country Name From DrpDwn is selecting or not", "Country Name From DrpDwn is selecting");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickOnNext(), "Check whether Next button on mobile no screen is clicking or not", "Next button on mobile no screen is clicking");
+//	//	verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.IsErrorEnterMobileNumberDisplay(), "Check whether Error for Enter MobileNumberDisplay is displaying or not", "Error for Enter MobileNumberDisplay is displaying");
+//	Thread.sleep(5000);
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.EnterMobNo(phNo), "Check whether mobile no is entering  or not", "Mobile no is entering ");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickOnNext(), "Check whether Next button on mobile no screen is clicking or not", "Next button on mobile no screen is clicking");
+//		//verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.IsLoaderAfterSubmittingTheMobileNumberDisplay(), "Check whe	ther Loader After Submitting TheMobileNumberDisplay is displaying or not", " Loader After Submitting TheMobileNumberDisplay is displaying");
+//	
+//	}
+//
+//
+//	
+//	@Test(priority  = 2)
+//	public void OTPScreenTest() throws  IOException, InterruptedException {
+//		LoginObj a = new LoginObj(getandroidDriver());	
+//		getandroidDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.OTPsSrcHeader(), "Check whether OTP Src Header displaying or not", "OTP Src Header displaying");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.OTPSrcSubHeader(), "Check whether OTP Src Sub Header displaying or not", "OTP Src Sub Header displaying");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.RequestNewOTPText(), "Check whether Request for New OTP Text displaying or not", "Request for New OTP Text displaying");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.InvalidOTPFirstEnter(InvalidOTP), "Check whether Invalid OTP Entering or not", "Invalid OTP is Entering");
+//	    Thread.sleep(5000);
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.WrongNumberclick(), "Check whether for Wrong Number edit click button is clicking or not", "Wrong Number edit click button is clicking ");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.EnterMobNo(phNo), "Check whether Mob No is entering or not", "Mob No is entering");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickOnNext(), "Check whether Next after entering mob no is clicking or not", " Next after entering mob no is clicking");
+//		Thread.sleep(5000);
+//		verifyTrue(ExtentTestManager.	getTest(),getandroidDriver(), a.ValidFirstOTP(ValidOTP), "Check whether Valid OTP is entering or not", "Valid OTP is entering");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.AllowPermissionForProfilePicUpload(), "Check whether Valid OTP is entering or not", "Valid OTP is entering");
+//		Thread.sleep(5000);
+//	}
+//	
+//
+//	
+//	@Test(priority=3)
+//	public void IntermidiateScreen()   throws  IOException, InterruptedException {
+//		LoginObj a = new LoginObj(getandroidDriver());	
+//		getandroidDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.FirstNameTextField(FirstName), "Check whether First Name Text is entering or not", "First Name Text is"+FirstName);
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.LastNameTextField(LastName), "Check whether Last Name Text is entering or not", "Last Name Text is"+LastName);
+////		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickDefalultProfPicPlaceHolder(), "Check whether Click Defalult ProfPic PlaceHolder is clicking or not", "Click Defalult ProfPic PlaceHolder is clicking");
+////		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.AllowPermissionForProfilePicUpload(), "Check whether Allow Permission For Profile PicUpload is allowing or not", "Allow Permission For Profile PicUpload is allowing");
+////		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickOpenCameraButton(),"Check whether Open Camera Button clicking or not", "Open Camera Button is clicking");
+////		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.AllowPermissionForProfilePicUpload(), "Check whether Allow Permission For Profile PicUpload is allowing or not", "Allow Permission For Profile PicUpload is allowing");
+//	//	a.NextButtonByText();
+//		Thread.sleep(5000);
+//	//	verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickCameraButton(), "Check whether Click Camera Button is displaying and clicking or not", "Mobile number header is displaying");
+//		//verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickedOkButton(), "Check whether Ok Button is clicking or not", "Ok Button is clicking");
+//		//verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickCropDoneButton(), "Check whether Crop Done Button is clicking or not", "Crop Done Button is clicking");
+//		
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ClickIntermidiateSrcDoneButton(), "Check whether Intermidiate Src Done Button is clicking or not", "Intermidiate Src Done Button is clicking");
+//	}
+//	@Test(priority = 4)
+//	public void ComposePost() throws IOException, InterruptedException {
+//
+//		FeedActivityObj a = new FeedActivityObj(getandroidDriver());
+//		LoginObj b = new LoginObj(getandroidDriver());
+//		getandroidDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.RecentTabClick(), "Check whether mobile number header displaying or not", "Mobile number header is displaying");
+//		Thread.sleep(5000);
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SeacrhIconRecentTab(), "Check whether Country Name is entering or not", "Country Name is entering");
+//		
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SeacrhTextfield(), "Check whether Country Name is entering or not", "Country Name is entering");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SearchedResultSelect(), "Check whether Country Name is entering or not", "Country Name is entering");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SendSomethingSelect(), "Check whether Country Name is entering or not", "Country Name is entering");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ComposeMessage(), "Check whether Country Name is entering or not", "Country Name is entering");
+////		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.ComposeImageAttachOptionThroughCamera(), "Check whether Country Name is entering or not", "Country Name is entering");
+////		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.MediaPermission(), "Check whether Country Name is entering or not", "Country Name is entering");
+////		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), b.ClickCameraButton(), "Check whether Click Camera Button is displaying and clicking or not", "Mobile number header is displaying");
+////		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), b.ClickedOkButton(), "Check whether Ok Button is clicking or not", "Ok Button is clicking");
+//		Thread.sleep(5000);
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.LocationAddcheck(), "Check whether Country Name is entering or not", "Country Name is entering");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SendGift(), "Check whether Country Name is entering or not", "Country Name is entering");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.UnapprovedGiftPopUp(), "Check whether Country Name is entering or not", "Country Name is entering");
+//		
+//	}
+//	@Test(priority = 5)
+//	public void ReloginWithExistingUser() throws IOException, InterruptedException {
+//
+//		FeedActivityObj a = new FeedActivityObj(getandroidDriver());
+//		LoginObj b = new LoginObj(getandroidDriver());
+//		Thread.sleep(5000);
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.CanvasTab(), "Check whether Country Name is entering or not", "Country Name is entering");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SettingIconCanvasSrc(), "Check whether Country Name is entering or not", "Country Name is entering");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.Logout(), "Check whether Country Name is entering or not", "Country Name is entering");
+//		Thread.sleep(5000);
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), b.WelcomescreenSkip(), "Check whether mobile number header displaying or not", "Mobile number header is displaying");
+//		Thread.sleep(5000);
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), b.MobileNumSrcHeader(), "Check whether mobile number header displaying or not", "Mobile number header is displaying");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), b.MobileNumSrcSubHeader(), "Check whether Mobile Num Src SubHeader displaying  or not", "Entering mobile number");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), b.ClickOnSelectCountryDropDown(), "Check whether SelectCountryDropDown clicking or not", "SelectCountryDropDownn is clicking");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), b.EnterCountryName(CountryName), "Check whether Country Name is entering or not", "Country Name is entering");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), b.SelectCountryNameFromDrpDwn(), "Check whether Country Name From DrpDwn is selecting or not", "Country Name From DrpDwn is selecting");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), b.ClickOnNext(), "Check whether Next button on mobile no screen is clicking or not", "Next button on mobile no screen is clicking");
+//		//verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), b.IsErrorEnterMobileNumberDisplay(), "Check whether Error for Enter MobileNumberDisplay is displaying or not", "Error for Enter MobileNumberDisplay is displaying");
+//		Thread.sleep(5000);
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), b.EnterMobNo("9425138712"), "Check whether mobile no is entering  or not", "Mobile no is entering ");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), b.ClickOnNext(), "Check whether Next button on mobile no screen is clicking or not", "Next button on mobile no screen is clicking");
+//	Thread.sleep(5000);
+//	verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), b.ValidFirstOTP(ValidOTP), "Check whether Valid OTP is entering or not", "Valid OTP is entering");
+//	
+//}
+//
+//	@Test(priority = 6)
+//	public void ApprovePost() throws IOException, InterruptedException {
+//
+//		FeedActivityObj a = new FeedActivityObj(getandroidDriver());
+//		LoginObj b = new LoginObj(getandroidDriver());
+//		Thread.sleep(5000);
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.NotificationTab(), "Check whether Country Name is entering or not", "Country Name is entering");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.NotificationTabFirstRowSelection(), "Check whether Country Name is entering or not", "Country Name is entering");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.CommentDetailView(), "Check whether Country Name is entering or not", "Country Name is entering");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.CommentDetailViewSend(), "Check whether Country Name is entering or not", "Country Name is entering");
+//		Thread.sleep(5000);
+//		a.Back();
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.BlockForFirstPost(), "Check whether Country Name is entering or not", "Country Name is entering");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.CanvasTab(), "Check whether Country Name is entering or not", "Country Name is entering");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.SettingIconCanvasSrc(), "Check whether Country Name is entering or not", "Country Name is entering");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.BlockedUserInSettings(), "Check whether Country Name is entering or not", "Country Name is entering");
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.BlockedUserOnFirstPosition(), "Check whether Country Name is entering or not", "Country Name is entering");
+//		Thread.sleep(5000);
+//		verifyTrue(ExtentTestManager.getTest(),getandroidDriver(), a.UnblockUserButtonOnBlockedUserList(), "Check whether Country Name is entering or not", "Country Name is entering");
+//	}
 	}
 }

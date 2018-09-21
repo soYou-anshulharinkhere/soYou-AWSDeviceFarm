@@ -72,7 +72,7 @@ public class AppiumDriverFactory {
 		
 		DesiredCapabilities caps = DesiredCapabilities.android();
 		caps.setCapability("appiumVersion", "1.7.2");
-		caps.setCapability("deviceName","Motorola_Moto_G4_real");
+		caps.setCapability("deviceName","Samsung Galaxy S6 GoogleAPI Emulator");
 		caps.setCapability("deviceOrientation", "portrait");
 		caps.setCapability("browserName", "");
 		caps.setCapability("platformVersion","7.0");
@@ -82,7 +82,7 @@ public class AppiumDriverFactory {
 		caps.setCapability("noReset", "true");
 		
 		caps.setCapability("app","https://s3.amazonaws.com/aws-website-soyou-p0sly/android/dev/app-release-bitrise-signed.apk");
-		driverandroid = new AndroidDriver(new URL("http://AnshulHarinkhere12345:82ce9645-d16e-4513-ba6e-1b41deb27b68@ondemand.saucelabs.com:80/wd/hub"), caps);
+		driverandroid = new AndroidDriver(new URL("http://saucelab5:2107710e-ab3f-44d7-a1b6-62ed669bdc8f@ondemand.saucelabs.com:80/wd/hub"), caps);
 		
 		return driverandroid;
 		

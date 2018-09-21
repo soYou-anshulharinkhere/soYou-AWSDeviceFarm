@@ -23,6 +23,7 @@
     <classes>
     
       <class name="com.soYou.test.AndroidRegressiontest.LoginTest"/>
+
       
     
     </classes>

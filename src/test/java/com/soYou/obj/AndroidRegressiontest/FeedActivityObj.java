@@ -28,7 +28,7 @@ public class FeedActivityObj {
 	//	/*Objets*/
 	public boolean RecentTabClick(){
 		try{
-		driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.support.v7.app.ActionBar.Tab[4]/android.widget.RelativeLayout/android.widget.ImageView").click();
+		driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.support.v7.app.ActionBar.Tab[4]").click();
 			return true;
 		}catch(NoSuchElementException e){
 			return false;
@@ -44,7 +44,8 @@ public class FeedActivityObj {
 	}
 	public boolean SeacrhTextfield(){
 		try{
-			 driver.findElementById("com.joyn.soyou:id/search_src_text").sendKeys("Sanjay Dutt");
+			MobileElement el1 = (MobileElement) driver.findElementById("com.joyn.soyou:id/search_src_text");
+			el1.sendKeys("Sanjay Dutt");
 			return true;
 		}catch(NoSuchElementException e){
 			return false;
@@ -52,8 +53,7 @@ public class FeedActivityObj {
 	}
 	public boolean SearchedResultSelect(){
 		try{
-			MobileElement el1 = (MobileElement) driver.findElementById("com.joyn.soyou:id/rlContent");
-			el1.click();
+			driver.findElementById("com.joyn.soyou:id/rlContent").click();
 			return true;
 		}catch(NoSuchElementException e){
 			return false;

@@ -354,9 +354,19 @@ public class LoginObj {
 			return false;
 		}
 	}
+	public boolean NextButtonByText(){
+		try{
+			driver.findElementById("com.android.camera2:id/confirm_button").click();
+			return true;
+			
+		}catch(NoSuchElementException e){
+			return false;
+		}
+	}
 	public boolean ClickOpenCameraButton(){
 		try{
 			driver.findElement(OpenCamera).click();
+		
 			return true;
 			
 		}catch(NoSuchElementException e){
